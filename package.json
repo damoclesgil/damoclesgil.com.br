@@ -8,6 +8,7 @@
     "preview": "next build && next start",
     "build2": "contentlayer build && next build",
     "start": "next start",
+    "format": "prettier --write '{,!(node_modules|.cache|public)/**/}*.{js,json,css,md,mdx}'",
     "lint": "next lint"
   },
   "dependencies": {
