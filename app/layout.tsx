@@ -2,16 +2,33 @@ import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-// import { Analytics } from "@/components/analytics";
+import { AnalyticsVercel } from "@/components/vercel-analytics";
 import { ModeToggle } from "@/components/mode-toggle";
 import NextImage from "next/image";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Dâmocles Gil Marçal",
-  description: "Portfólio de um desenvolvedor front-end sênior chamado Dâmocles Gil Marçal",
+  description:
+    "Portfólio de um desenvolvedor front-end sênior chamado Dâmocles Gil Marçal",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: "https://damoclesgil.çom.br/",
+    siteName: "Dâmocles Gil Marçal",
+    title: "Dâmocles Gil Marçal",
+    images: [
+      {
+        url: "https://damoclesgil.çom.br/damoclesgil_og.png",
+        width: 1920,
+        height: 1080,
+        alt: "Dâmocles Gil Marçal",
+      },
+    ],
+  },
 };
 
 interface RootLayoutProps {
@@ -116,7 +133,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <p className="sr-only">Twitch</p>
             </a>
           </footer>
-          {/* <Analytics /> */}
+          <AnalyticsVercel />
           <GoogleAnalytics />
         </ThemeProvider>
       </body>

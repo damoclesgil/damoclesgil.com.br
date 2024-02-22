@@ -8,6 +8,9 @@
         "unifiedjs.vscode-mdx",
         "pulkitgangwar.nextjs-snippets",
         "bradlc.vscode-tailwindcss",
-        "vscode-icons-team.vscode-icons"
+        "vscode-icons-team.vscode-icons",
+        "esbenp.prettier-vscode",
+        "xabikos.javascriptsnippets",
+        "formulahendry.auto-rename-tag"
     ]
 }
