@@ -2,9 +2,10 @@ import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Analytics } from "@/components/analytics";
+// import { Analytics } from "@/components/analytics";
 import { ModeToggle } from "@/components/mode-toggle";
 import NextImage from "next/image";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -115,7 +116,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <p className="sr-only">Twitch</p>
             </a>
           </footer>
-          <Analytics />
+          {/* <Analytics /> */}
+          <GoogleAnalytics />
         </ThemeProvider>
       </body>
     </html>
