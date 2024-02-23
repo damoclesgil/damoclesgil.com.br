@@ -6,6 +6,7 @@ import { AnalyticsVercel } from "@/components/vercel-analytics";
 import { ModeToggle } from "@/components/mode-toggle";
 import NextImage from "next/image";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Logo } from "@/components/Logo";
 import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -46,14 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <header>
               <div className="flex items-center justify-between">
                 <Link href="/">
-                  <NextImage
-                    className="rounded-full"
-                    src="/dg-logo.jpeg"
-                    width="60"
-                    height="60"
-                    alt="Dâmocles Gil Marçal Logo"
-                    title="Dâmocles Gil"
-                  />
+                  <Logo />
                 </Link>
                 <nav className="flex ml-auto text-sm font-medium space-x-6">
                   <Link href="/">Home</Link>

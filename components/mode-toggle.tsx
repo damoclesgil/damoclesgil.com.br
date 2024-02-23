@@ -3,13 +3,14 @@
 import { useTheme } from "next-themes"
 
 export function ModeToggle() {
-  const { setTheme, theme } = useTheme()
+  const { setTheme, theme, /*systemTheme */ } = useTheme()
 
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       className="rounded-md w-6 h-6 flex items-center justify-center">
       <span className="sr-only">Toggle mode</span>
+      {/* {systemTheme === "dark" ? 'is dark' : 'is white'} */}
       {theme !== "dark" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
