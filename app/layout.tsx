@@ -7,6 +7,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Logo } from "@/components/Logo";
 import { Metadata } from "next";
+import { SpeedInsightsVercel } from "@/components/SpeedInsightsVercel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -127,6 +128,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </a>
           </footer>
           <AnalyticsVercel />
+          <SpeedInsightsVercel />
           <GoogleAnalytics />
         </ThemeProvider>
       </body>
