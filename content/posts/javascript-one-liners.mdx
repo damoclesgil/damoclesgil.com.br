@@ -1,0 +1,128 @@
+---
+title: Javascript One-Liners.
+description: Mastering Javascript One-Liners to Look Like a pro
+date: 2024-02-23
+---
+
+Javascript one-liners are all about writing succinct, efficient, and elegant pieces of code that not only perform a task with the least verbosity but also exhibit the power and expressiveness of modern ES Javascript. It’s about enhancing your coding style, making it clean, readable, and—above all—professional.
+
+## Introduction to Javascript One-Liners
+
+A single line of Javascript can accomplish what used to take multiple lines, thanks to the evolution of ES6 and beyond, offering new functional features that make coding less of an effort and more of an art. These Javascript one-liners are not just about writing less code; they're about improving code quality, reducing errors, and making it highly approachable for other developers to understand.
+
+### Generate a Random String
+
+This is perfect for when you need a unique ID or a nonce for a session token. This one-liner shows just how expressive Javascript can be.
+
+```Javascript
+const randomString = () => Math.random().toString(36).slice(2);
+```
+
+### Check If a Day is a Weekday
+
+Something so useful yet so simple. It’s quick checks like these that can save you a ton of time.
+
+```Javascript
+const isWeekday = (date) => date.getDay() % 6 !== 0;
+```
+
+### Copying Content to Clipboard
+
+It’s all about enhancing user experience with minimal code.
+
+```Javascript
+const copyToClipboard = (content) => navigator.clipboard.writeText(content);
+```
+
+### Shuffle an Array
+
+Great for randomising elements such as when you’re making a quiz or a game.
+
+```Javascript
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+```
+
+### Convert RGBA to Hexadecimal and Vice Versa
+
+Such conversions are handy for developing color pickers or design related tools.
+
+```javascript
+const rgbaToHex = (r, g, b) => '#' + [r, g, b].map((num) => parseInt(num).toString(16).padStart(2, '0')).join('')
+const hexToRgba = (hex) => {
+  const [r, g, b] = hex.match(/\w\w/g).map((val) => parseInt(val, 16))
+  return `rgba(${r}, ${g}, ${b}, 1)`
+}
+```
+
+### Capitalize the First Letter of a String
+
+Ideal for form inputs or when normalizing data for display.
+
+```javascript
+const capitalize = (str) => `${str.charAt(0).toUpperCase()}${str.slice(1)}`
+```
+
+### Calculate Percentage
+
+This is essential for applications that involve reports and analytics.
+
+```javascript
+const calculatePercent = (value, total) => Math.round((value / total) * 100)
+```
+
+### Get a Random Element From an Array
+
+It’s always fun to surprise users with something random.
+
+```javascript
+const getRandomItem = (items) => items[Math.floor(Math.random() * items.length)]
+```
+
+### Remove Duplicate Elements
+
+Essential for data processing to ensure uniqueness.
+
+```javascript
+const removeDuplicates = (arr) => [...new Set(arr)]
+```
+
+### Sorting Elements By a Certain Property
+
+Perfect for lists that require dynamic ordering.
+
+```javascript
+const sortBy = (arr, key) => arr.sort((a, b) => (a[key] > b[key] ? 1 : -1))
+```
+
+### Convert String to camelCase
+
+el casing is integral in Javascript for variable naming conventions.
+
+```javascript
+const toCamelCase = (str) => str.trim().replace(/_\s]+(.)?/g, (_, c) => (c ? c.toUpperCase() : ''))
+```
+
+### Folding a Long Line Without Breaking Words
+
+Ideal for text formatting in UI elements space is constrained.
+
+```javascript
+const foldLine = (line, maxChars) => line.replace(new RegExp(`(.{1,${maxChars}})(\\s+|$)`, 'g'), '$1\n').trim()
+```
+
+### Escape HTML Special Characters
+
+To prevent XSS attacks, escaping input is crucial:
+
+```javascript
+const escapeHTML = (str) =>
+  str.replace(/[&<>"']/g, (m) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]))
+```
+
+### Reverse a String
+
+It's simple yet frequently for algorithms and logic puzzles.
+
+```javascript
+const reverseString = (str) => str.split('').reverse().join('')
+```

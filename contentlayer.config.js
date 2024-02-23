@@ -1,15 +1,16 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files"
+import highlight from "rehype-highlight"
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const computedFields = {
   slug: {
     type: "string",
-    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    resolve: (doc) => `/${doc._raw.flattenedPath}`
   },
   slugAsParams: {
     type: "string",
-    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
-  },
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/")
+  }
 }
 
 export const Page = defineDocumentType(() => ({
@@ -19,13 +20,13 @@ export const Page = defineDocumentType(() => ({
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
-      type: "string",
-    },
+      type: "string"
+    }
   },
-  computedFields,
+  computedFields
 }))
 
 export const Post = defineDocumentType(() => ({
@@ -35,20 +36,21 @@ export const Post = defineDocumentType(() => ({
   fields: {
     title: {
       type: "string",
-      required: true,
+      required: true
     },
     description: {
-      type: "string",
+      type: "string"
     },
     date: {
       type: "date",
-      required: true,
-    },
+      required: true
+    }
   },
-  computedFields,
+  computedFields
 }))
 
 export default makeSource({
   contentDirPath: "./content",
   documentTypes: [Post, Page],
+  mdx: { rehypePlugins: [highlight] }
 })

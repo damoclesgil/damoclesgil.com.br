@@ -8,28 +8,15 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Logo } from "@/components/Logo";
 import { Metadata } from "next";
 import { SpeedInsightsVercel } from "@/components/SpeedInsightsVercel";
+import seoConfig from '@/utils/seoConfig'
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dâmocles Gil Marçal",
   description:
-    "Um blog de um desenvolvedor front-end que gosta de animes, games, vuejs e nextjs. ",
-  openGraph: {
-    type: "website",
-    locale: "pt_BR",
-    url: "https://damoclesgil.com.br/",
-    siteName: "Dâmocles Gil Marçal",
-    title: "Dâmocles Gil Marçal",
-    images: [
-      {
-        url: "https://damoclesgil.com.br/damoclesgil_og.png",
-        width: 1200,
-        height: 630,
-        alt: "Dâmocles Gil Marçal",
-      },
-    ],
-  },
+    "A blog by a front-end engineer who likes anime, games, vuejs and nextjs.",
+    ...seoConfig,
 };
 
 interface RootLayoutProps {
@@ -38,7 +25,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <body
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
