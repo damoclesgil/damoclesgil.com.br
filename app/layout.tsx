@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { AnalyticsVercel } from "@/components/vercel-analytics";
 import { ModeToggle } from "@/components/mode-toggle";
-import NextImage from "next/image";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { Logo } from "@/components/Logo";
 import { Metadata } from "next";
@@ -14,18 +13,18 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dâmocles Gil Marçal",
   description:
-    "Portfólio de um desenvolvedor front-end sênior chamado Dâmocles Gil Marçal",
+    "Um blog de um desenvolvedor front-end que gosta de animes, games, vuejs e nextjs. ",
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://damoclesgil.çom.br/",
+    url: "https://damoclesgil.com.br/",
     siteName: "Dâmocles Gil Marçal",
     title: "Dâmocles Gil Marçal",
     images: [
       {
-        url: "https://damoclesgil.çom.br/damoclesgil_og.png",
-        width: 1920,
-        height: 1080,
+        url: "https://damoclesgil.com.br/damoclesgil_og.png",
+        width: 1200,
+        height: 630,
         alt: "Dâmocles Gil Marçal",
       },
     ],
@@ -38,7 +37,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
@@ -50,9 +49,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <Logo />
                 </Link>
                 <nav className="flex ml-auto text-sm font-medium space-x-6">
-                  <Link href="/">Home</Link>
-                  <Link href="/about">About</Link>
-                  <Link href="/setup">Setup</Link>
+                  <Link href="/" className="text-white">Home</Link>
+                  <Link href="/about" className="text-white1">About</Link>
+                  <Link href="/setup" className="text-white1">Setup</Link>
                   <ModeToggle />
                 </nav>
               </div>
