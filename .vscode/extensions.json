@@ -1,16 +1,4 @@
 {
-    "recommendations": [
-        "ms-vscode.vscode-typescript-next",
-        "visualstudioexptteam.vscodeintellicode",
-        "visualstudioexptteam.intellicode-api-usage-examples",
-        "dsznajder.es7-react-js-snippets",
-        "dbaeumer.vscode-eslint",
-        "unifiedjs.vscode-mdx",
-        "pulkitgangwar.nextjs-snippets",
-        "bradlc.vscode-tailwindcss",
-        "vscode-icons-team.vscode-icons",
-        "esbenp.prettier-vscode",
-        "xabikos.javascriptsnippets",
-        "formulahendry.auto-rename-tag"
-    ]
+  "recommendations": ["astro-build.astro-vscode"],
+  "unwantedRecommendations": []
 }
