@@ -10,7 +10,7 @@
     --color-accent: 0, 193, 106;
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
-    --color-border:  0, 193, 106;
+    --color-border: 0, 193, 106;
   }
   html[data-theme="dark"] {
     --color-fill: 33, 39, 55;
@@ -69,8 +69,10 @@
     prose-img:mx-auto prose-img:border-2 
     prose-img:border-skin-line prose-hr:!border-skin-line;
   }
-  .prose a { @apply break-words hover:!text-skin-accent; }
-   
+  .prose a {
+    @apply break-words hover:!text-skin-accent;
+  }
+
   .prose thead th:first-child,
   tbody td:first-child,
   tfoot td:first-child {

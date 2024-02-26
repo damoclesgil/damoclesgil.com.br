@@ -1,5 +1,5 @@
 # AstroPaper 📄
 
 ```
-NEXT_PUBLIC_GA_TRACKING=G-0DJ5HNGWYS
+GA_TRACKING=null
 ```
