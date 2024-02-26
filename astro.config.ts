@@ -7,7 +7,8 @@ import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import mdx from "@astrojs/mdx";
 
-import netlify from "@astrojs/netlify";
+// import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
 export default defineConfig({
@@ -41,6 +42,10 @@ export default defineConfig({
     },
   },
   scopedStyleStrategy: "where",
-  output: "server",
-  adapter: netlify(),
+  output: "static",
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
 });
