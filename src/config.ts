@@ -1,4 +1,4 @@
-import type { Site, SocialObjects } from "./types";
+import type { CareerObjects, Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://damoclesgil.com.br", // replace this with your deployed domain
@@ -137,5 +137,15 @@ export const SOCIALS: SocialObjects = [
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Mastodon`,
     active: false,
+  },
+];
+
+export const CAREER: CareerObjects = [
+  {
+    name: "Calculato",
+    href: "https://www.calculato.com.br/",
+    active: false,
+    startDate: "Dec 2022",
+    endDate: "Present",
   },
 ];

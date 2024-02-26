@@ -17,3 +17,11 @@ export type SocialObjects = {
   active: boolean;
   linkTitle: string;
 }[];
+
+export type CareerObjects = {
+  name: string;
+  href: string;
+  active: boolean;
+  startDate: string;
+  endDate: string;
+}[];
