@@ -1,5 +1,3 @@
-# AstroPaper 📄
+# damoclesgil.com.br
 
-```
-GA_TRACKING=null
-```
+Um blog e Portfolio Pessoal
