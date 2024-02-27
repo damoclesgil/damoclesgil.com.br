@@ -4,12 +4,43 @@ import Footer from "@components/Footer.astro";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import { SITE } from "@config";
+import { ALL_PROJECTS } from "./projects";
+// import { format, parseISO } from "date-fns";
 ---
 
 <Layout title={`Projects | ${SITE.title}`}>
   <Header activeNav="projects" />
   <Main pageTitle="Projects" pageDesc="All projects.">
-    <h2>Projetos</h2>
+    <div class="mt-4">
+      {
+        ALL_PROJECTS.map((item, index) => (
+          <>
+            <h3 class="mb-2 font-bold text-lg">{item.year}</h3>
+            <ul class="list-inside list-disc ml-4 mb-6">
+              {item.projects.map((project, pIndex) => {
+                return (
+                  <li class="mb-4">
+                    {project.active ? (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        class="break-words underline decoration-dashed underline-offset-8 hover:text-skin-accent"
+                      >
+                        {project.title}
+                      </a>
+                    ) : (
+                      <span class="break-words underline decoration-dashed underline-offset-8">
+                        {project.title}
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        ))
+      }
+    </div>
   </Main>
   <Footer />
 </Layout>
