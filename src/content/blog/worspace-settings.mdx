@@ -156,7 +156,102 @@ Other piece of software that many people may already know, but which is also wor
 - [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=pt-br&gl=BR).
 - [Hyper](https://hyper.is/) - Performance could be better, but I enjoy using this since it's made with JavaScript.
 - [Oh My ZSH](https://ohmyz.sh/) - A collection of ZSH plugins that you install once and you're ready to go.
+- [Oh My Posh](https://ohmyposh.dev/) Windows Terminal Custom
+- [Custiom prompt setup](https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup)
+- [windowsterminalthemes](https://windowsterminalthemes.dev/)
 - [Fig](http://fig.io/) - Super cool app that adds VSCode-style autocomplete to your existing terminal
+  Open windows terminal in Admin mode.
+
+```cli
+Set-ExecutionPolicy RemoteSigned
+```
+
+Install `npm` after install `node`
+
+```cli
+ npm install -g npm
+ npm install -g npm-check-updates
+```
+
+Update libraries with ncu
+
+```
+ncu -u
+npm i
+```
+
+`settings.json` Windows Terminal
+
+```json
+{
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "language": "pt-BR",
+  "launchMode": "default",
+  "newTabMenu": [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
+  "profiles": {
+    "defaults": {
+      "colorScheme": "Ayu Mirage"
+    },
+    "list": [
+      {
+        "adjustIndistinguishableColors": "always",
+        "font": {
+          "face": "FiraCode Nerd Font Mono",
+          "size": 11.0
+        },
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nologo",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "intenseTextStyle": "all",
+        "name": "damoclesgil",
+        "opacity": 80,
+        "experimental.retroTerminalEffect": false,
+        "suppressApplicationTitle": true,
+        "antialiasingMode": "grayscale",
+        "colorScheme": "Ayu Mirage",
+        "startingDirectory": "D:\\",
+        "tabTitle": "Dâmocles Gil",
+        "useAcrylic": true
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "name": "Ayu Mirage",
+      "background": "#1F2430",
+      "black": "#191E2A",
+      "blue": "#6DCBFA",
+      "brightBlack": "#686868",
+      "brightBlue": "#73D0FF",
+      "brightCyan": "#95E6CB",
+      "brightGreen": "#BAE67E",
+      "brightPurple": "#D4BFFF",
+      "brightRed": "#F28779",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFD580",
+      "cursorColor": "#FFCC66",
+      "cyan": "#90E1C6",
+      "foreground": "#CBCCC6",
+      "green": "#A6CC70",
+      "purple": "#CFBAFA",
+      "red": "#ED8274",
+      "selectionBackground": "#33415E",
+      "white": "#C7C7C7",
+      "yellow": "#FAD07B"
+    }
+  ],
+  "tabWidthMode": "equal",
+  "themes": ["dark"],
+  "useAcrylicInTabRow": true,
+  "windowingBehavior": "useAnyExisting"
+}
+```
 
 ## APPs
 

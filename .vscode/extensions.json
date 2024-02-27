@@ -10,7 +10,9 @@
     "christian-kohler.path-intellisense",
     "davidanson.vscode-markdownlint",
     "akamud.vscode-theme-onedark",
-    "unifiedjs.vscode-mdx"
+    "unifiedjs.vscode-mdx",
+    "ms-vscode.vscode-typescript-next",
+    "vue.vscode-typescript-vue-plugin"
   ],
   "unwantedRecommendations": []
 }
