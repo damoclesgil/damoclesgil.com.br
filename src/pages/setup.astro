@@ -20,7 +20,7 @@ import Main from "@layouts/Main.astro";
     </div>
     <div class="grid grid-cols-2 gap-10 pb-10 text-center">
       {
-        SETUP_ITEMS.map((setup, index) => (
+        SETUP_ITEMS.map(setup => (
           <a
             href={setup.link}
             class="rounded border border-skin-line pt-6 pb-4 px-6 no-underline hover:bg-skin-card"
