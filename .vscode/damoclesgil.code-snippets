@@ -30,5 +30,26 @@
       "## ${3: heading 1}",
     ],
     "description": "Adds the template for the AstroPaper Blog post. You will need to trigger the snippet modal on the 'frontmatter' line to insert the other snipper."
+  },
+  "damoclesgilName": {
+    "prefix": "dg",
+    "body": ["Dâmocles Gil Marçal $1"],
+    "description": "My name"
+  },
+  "ParagraphWithBlockOfCode": {
+    "prefix": "###",
+    "body": [
+      "",
+      "### ${1}",
+      "",
+      "${2}",
+      "",
+      "```javascript",
+      "${3}",
+      "```",
+      ""
+    ],
+    "description": "Item Post with block of code",
+    "scope": "markdown"
   }
 }

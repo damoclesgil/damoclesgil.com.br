@@ -1,13 +1,13 @@
 ---
 author: Dâmocles Gil Marçal
-pubDatetime: 2024-02-23T15:22:00Z
+pubDatetime: 2024-02-23T21:20:00Z
 title: Debounce vs Throttling
 slug: debounce-throttling
 featured: true
 draft: false
 tags:
-  - docs
-description: Throttling ⏱️ vs Debouncing ⏳Boost Performance for your app
+  - javascript
+description: "Throttling ⏱️ vs Debouncing: ⏳Boost Performance for your app"
 ---
 
 Hi everyone! I hope you’re doing good. This article will explore an interesting Javascript topic frequently asked in interviews. In this article, we’ll be covering topics such as throttling and debouncing and learn why and how to implement them. Let's begin.

@@ -8,6 +8,7 @@ import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
 // import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
+import { SITE, CAREER } from "@config";
 
 const posts = await getCollection("blog");
 
@@ -21,17 +22,17 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content">
-    <!-- <section id="hero">
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
-    </section> -->
+    <section id="hero">
+      <h1>{SITE.author}</h1>
+      <p class="!mb-4 font-bold">
+        {CAREER[0].jobTitle} 👩‍💻 at <a
+          href={CAREER[0].href}
+          class="underline decoration-dashed underline-offset-8"
+          target="_blank">{CAREER[0].company}</a
+        >.
+      </p>
+      <p>{SITE.desc}</p>
+    </section>
 
     <Hr />
 

@@ -1,0 +1,45 @@
+---
+import { SITE, SETUP_ITEMS } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Main from "@layouts/Main.astro";
+---
+
+<Layout title={`Setup | ${SITE.title}`}>
+  <Header activeNav="setup" />
+  <Main pageTitle="Setup 🖥️">
+    <div class="mb-6 flex justify-center">
+      <img
+        src="/assets/setup.jpg"
+        width="1920"
+        height="1080"
+        alt="Setup Dâmocles Gil"
+        title="Setup Dâmocles Gil"
+      />
+    </div>
+    <div class="grid grid-cols-2 gap-10 pb-10 text-center">
+      {
+        SETUP_ITEMS.map(setup => (
+          <a
+            href={setup.link}
+            class="rounded border border-skin-line pt-6 pb-4 px-6 no-underline hover:bg-skin-card"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <picture class="m-0 rounded-sm">
+              <img
+                class="mb-1 aspect-video h-auto w-full rounded-md rounded-b-none bg-white object-contain"
+                src={setup.img}
+                alt={setup.alt}
+              />
+              <strong class="mt-4 block text-lg font-bold">{setup.name}</strong>
+            </picture>
+          </a>
+        ))
+      }
+    </div>
+  </Main>
+
+  <Footer />
+</Layout>
