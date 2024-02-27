@@ -1,30 +1,27 @@
 ---
 author: Dâmocles Gil Marçal
 pubDatetime: 2024-02-24T15:22:00Z
+modDatetime: 2024-02-27T12:20:00Z
 title: Worskpace settings
 slug: worskpace-settings
 featured: true
 draft: false
 tags:
-  - use
+  - uses
 description: My configs using windows 11
 ---
 
-While I'm writing this article I'm listening to this <a href="https://open.spotify.com/playlist/3eiBXiaeieNL6Kvqb8nAFM?si=ea64510f612049d3" target="blank">playlist</a> that I think really cool:
+While I'm writing this article I'm listening to this <a href="https://open.spotify.com/playlist/37i9dQZEVXcO5uK13GHDon?si=53cc416a7e364bd6" target="blank">playlist</a> that I think really cool:
 
 I'm currently using Windows 11, because I like playing games on my computer, so I invested in a Windows computer to have more support for games.
 
-## Software List
+If you don't see my setup you can see in [this page.](/setup)
 
 The first software I'm enjoying using is [PowerToys](https://github.com/microsoft/PowerToys/releases), this software has several shortcut commands and features that help me a lot.
 
 Another software that I use to solve the noise problem with my microphone is [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/), if you have NVIDIA® video cards, I highly recommend it.
 
 Other piece of software that many people may already know, but which is also worth recommending here, is [LightShot](https://app.prntscr.com/pt-br/download.html) which is used to take prints.
-
-## Browser
-
-- [ARC](https://arc.net/)
 
 ## Coding
 
@@ -40,6 +37,119 @@ Other piece of software that many people may already know, but which is also wor
 - [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
 - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
+
+## VSCODE Configs
+
+`settings.json`
+
+```json
+{
+  // "typescript.tsdk": "node_modules/.pnpm/typescript@5.0.4/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+  },
+  "[snippets]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.exclude": {
+    ".next": false
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": ["Dâmocles", "Marçal"]
+}
+```
+
+`keybindings.json`
+
+```json
+[
+  {
+    "key": "ctrl+shift+s",
+    "command": "saveAll"
+  },
+  {
+    "key": "ctrl+k s",
+    "command": "-saveAll"
+  }
+]
+```
+
+`damoclesgil.code-snippets`
+
+````json
+{
+  "Frontmatter": {
+    "scope": "markdown",
+    "prefix": "frontmatter",
+    "body": [
+      "---",
+      "author: $1",
+      "pubDatetime: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND.000$CURRENT_TIMEZONE_OFFSET",
+      "modDatetime: $3",
+      "title: $4",
+      "featured: ${5|false,true|}",
+      "draft: ${6|true,false|}",
+      "tags:",
+      "  - $7",
+      "description: $8",
+      "---"
+    ],
+    "description": "Adds the frontmatter block for the AstroPaper Blog post"
+  },
+  "Blog Template": {
+    "scope": "markdown",
+    "prefix": "template",
+    "body": [
+      "${1:frontmatter}",
+      "",
+      "${2: Introductory Sentence}",
+      "",
+      "## Table of contents",
+      "",
+      "## ${3: heading 1}"
+    ],
+    "description": "Adds the template for the AstroPaper Blog post. You will need to trigger the snippet modal on the 'frontmatter' line to insert the other snipper."
+  },
+  "damoclesgilName": {
+    "prefix": "dg",
+    "body": ["Dâmocles Gil Marçal $1"],
+    "description": "My name"
+  },
+  "ParagraphWithBlockOfCode": {
+    "prefix": "###",
+    "body": [
+      "",
+      "### ${1}",
+      "",
+      "${2}",
+      "",
+      "```javascript",
+      "${3}",
+      "```",
+      ""
+    ],
+    "description": "Item Post with block of code",
+    "scope": "markdown"
+  }
+}
+````
 
 ## Terminal
 
@@ -57,3 +167,7 @@ Other piece of software that many people may already know, but which is also wor
 ## Audio
 
 - [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/)
+
+## Browser
+
+- [ARC](https://arc.net/)

@@ -26,3 +26,9 @@ export type CareerObjects = {
   startDate: string;
   endDate?: string;
 }[];
+
+export type TechnologiesObjects = {
+  stackName: string;
+  href: string;
+  imgSrc: string;
+}[];

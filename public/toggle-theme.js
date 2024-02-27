@@ -38,9 +38,7 @@ function reflectPreference() {
     const computedStyles = window.getComputedStyle(body);
 
     document.querySelector("#logo").src =
-      themeValue === "light"
-        ? "/assets/logo.svg"
-        : "/assets/damocles-gil-white.svg";
+      themeValue === "light" ? "/assets/dg-logo.svg" : "/assets/dg-logo.svg";
 
     // Get the background color property
     const bgColor = computedStyles.backgroundColor;

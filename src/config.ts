@@ -1,9 +1,14 @@
-import type { CareerObjects, Site, SocialObjects } from "./types";
+import type {
+  CareerObjects,
+  Site,
+  SocialObjects,
+  TechnologiesObjects,
+} from "./types";
 
 export const SITE: Site = {
   website: "https://damoclesgil.com.br", // replace this with your deployed domain
   author: "Dâmocles Gil Marçal",
-  desc: "A blog by a front-end engineer who likes anime, games, vuejs and nextjs.",
+  desc: "This a blog by a front-end engineer who likes anime, games, technologies, and travel around the world.",
   title: "Dâmocles Gil",
   ogImage: "damoclesgil-og.png",
   lightAndDarkMode: true,
@@ -168,7 +173,7 @@ export const CAREER: CareerObjects = [
     company: "Conexão Soluções Corporativas",
     href: "https://conexaopro.com.br/site/",
     active: false,
-    jobTitle: "Front-end Engineer",
+    jobTitle: "Web Designer",
     startDate: "2018-01-01",
     endDate: "2018-04-20",
   },
@@ -280,5 +285,76 @@ export const SETUP_ITEMS = [
     img: "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/o/corereactor750g-bkcbr.jpg",
     alt: "Fonte",
     name: "Fonte: XPG Core Reactor, 850W, 80 Plus Gold Modular",
+  },
+  {
+    link: "https://www.amazon.com.br/dp/B0BGT56NDQ?ref=ppx_yo2ov_dt_b_product_details&th=1",
+    img: "https://m.media-amazon.com/images/I/511Y7Yr9EEL._AC_SX679_.jpg",
+    alt: "Webcam Full HD Logitech BRIO 500 Branco",
+    name: "Webcam Full HD Logitech BRIO 500 Branco",
+  },
+];
+
+export const TECHNOLOGIES: TechnologiesObjects = [
+  {
+    stackName: "Vue",
+    href: "https://vuejs.org/",
+    imgSrc: "https://router.vuejs.org/logo.svg",
+  },
+  {
+    stackName: "Typescript",
+    href: "https://www.typescriptlang.org/",
+    imgSrc:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png?20210506173343",
+  },
+  {
+    stackName: "Vite",
+    href: "https://vitejs.dev/",
+    imgSrc: "https://vitejs.dev/logo.svg",
+  },
+  {
+    stackName: "Pinia",
+    href: "https://pinia.vuejs.org",
+    imgSrc: "https://pinia.vuejs.org/logo.svg",
+  },
+  {
+    stackName: "NEXTJS",
+    href: "https://nextjs.org/",
+    imgSrc:
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    stackName: "Tailwindcss",
+    href: "https://tailwindcss.com/",
+    imgSrc:
+      "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    stackName: "GRAPHQL",
+    href: "https://graphql.org/",
+    imgSrc:
+      "https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/graphql/graphql-plain.svg",
+  },
+  {
+    stackName: "Apollo",
+    href: "https://www.apollographql.com/",
+    imgSrc:
+      "https://static-00.iconduck.com/assets.00/apollo-icon-512x512-xs5t5onq.png",
+  },
+  {
+    stackName: "Astro Build",
+    href: "https://docs.astro.build/en/getting-started/",
+    imgSrc:
+      "https://raw.githubusercontent.com/devicons/devicon/master/icons/astro/astro-original.svg",
+  },
+  {
+    stackName: "Strapi.io",
+    href: "https://strapi.io/",
+    imgSrc:
+      "https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/f154aaf7-96dd-4d9e-8ef6-05259f5a2b31/Strapi-Monogram/w=1920,quality=80",
+  },
+  {
+    stackName: "MDX",
+    href: "https://mdxjs.com//",
+    imgSrc: "https://www.svgrepo.com/show/373833/mdx.svg",
   },
 ];
