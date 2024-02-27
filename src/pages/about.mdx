@@ -3,6 +3,10 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
+import { CAREER } from "@config";
+import { format, parseISO } from "date-fns";
+import { getDuration } from "@utils/getDuration";
+
 <div className="flex flex-col items-center justify-center">
   <img
     className="m-0 rounded-full"
@@ -15,9 +19,11 @@ title: "About"
   <h3 className="m-0 mt-2">@damoclesgil</h3>
 </div>
 
-Hello, I'm Dâmocles Gil Marçal.
+<p>
+  Hello, <strong>I'm Dâmocles Gil Marçal</strong>.
+</p>
 
-I'm 27 years old, I'm live in Brazil, I'm a senior frontend developer. I've been working in the area for 8 years.
+I'm 27 years old, I'm live in <strong>Goiânia, Brazil</strong>, I'm a <strong>senior front-end engineer</strong>. I've been working in the area for 8 years.
 
 I have a strong background in web design, user interface, and user experience. I am passionate about creating engaging, responsive, and accessible web pages.
 
@@ -98,3 +104,25 @@ I've worked on various types of projects, such as gyms systems, CRM app, educati
 If you want to get in touch just send an email to: [damoclesgil@gmail.com](mailto:damoclesgil@gmail.com).
 
 ### Career
+
+<div>
+  {CAREER.map((item, index) => (
+    <div key={index}>
+      <h3> {item.jobTitle} </h3>
+      <a href={item.href} target="blank">
+        {item.company}
+      </a>
+      <div className="mb-0 flex items-center text-skin-accent">
+        <p>{format(parseISO(item.startDate), "LLL yyyy")}</p>
+        <p className="mx-2 block">–</p>
+        <p>
+          {item.endDate
+            ? format(parseISO(item.endDate), "LLL yyyy")
+            : "Present"}
+        </p>
+        <p className="mx-2">•</p>
+        <p>{getDuration(item.startDate, item.endDate)}</p>
+      </div>
+    </div>
+  ))}
+</div>

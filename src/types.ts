@@ -19,9 +19,10 @@ export type SocialObjects = {
 }[];
 
 export type CareerObjects = {
-  name: string;
+  company: string;
   href: string;
+  jobTitle: string;
   active: boolean;
   startDate: string;
-  endDate: string;
+  endDate?: string;
 }[];

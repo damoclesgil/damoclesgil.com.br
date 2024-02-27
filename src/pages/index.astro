@@ -25,10 +25,10 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     <section id="hero">
       <h1>{SITE.author}</h1>
       <p class="!mb-4 font-bold">
-        Front-end Engineer 👩‍💻 at <a
+        {CAREER[0].jobTitle} 👩‍💻 at <a
           href={CAREER[0].href}
           class="underline decoration-dashed underline-offset-8"
-          target="_blank">{CAREER[0].name}</a
+          target="_blank">{CAREER[0].company}</a
         >.
       </p>
       <p>{SITE.desc}</p>
