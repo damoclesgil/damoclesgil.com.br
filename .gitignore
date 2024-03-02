@@ -36,3 +36,4 @@ pnpm-debug.log*
 !.yarn/versions
 .pnp.*
 .env.local
+desktop.ini

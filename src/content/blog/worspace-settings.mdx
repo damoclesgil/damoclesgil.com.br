@@ -1,14 +1,14 @@
 ---
 author: Dâmocles Gil Marçal
 pubDatetime: 2024-02-24T15:22:00Z
-modDatetime: 2024-02-27T12:20:00Z
-title: Worskpace settings
-slug: worskpace-settings
+modDatetime: 2024-03-02T12:16:00Z
+title: Developer uses
+slug: developer-uses
 featured: true
 draft: false
 tags:
   - uses
-description: My configs using windows 11
+description: My configs and uses
 ---
 
 While I'm writing this article I'm listening to this <a href="https://open.spotify.com/playlist/37i9dQZEVXcO5uK13GHDon?si=53cc416a7e364bd6" target="blank">playlist</a> that I think really cool:
@@ -16,8 +16,6 @@ While I'm writing this article I'm listening to this <a href="https://open.spoti
 I'm currently using Windows 11, because I like playing games on my computer, so I invested in a Windows computer to have more support for games.
 
 If you don't see my setup you can see in [this page.](/setup)
-
-The first software I'm enjoying using is [PowerToys](https://github.com/microsoft/PowerToys/releases), this software has several shortcut commands and features that help me a lot.
 
 Another software that I use to solve the noise problem with my microphone is [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/), if you have NVIDIA® video cards, I highly recommend it.
 
@@ -162,8 +160,93 @@ Other piece of software that many people may already know, but which is also wor
 - [Fig](http://fig.io/) - Super cool app that adds VSCode-style autocomplete to your existing terminal
   Open windows terminal in Admin mode.
 
-```cli
+![Theme Windows VSCODE](/src/assets//images/theme-windows-terminal.png)
+
+### How to install oh my posh
+
+```sh
 Set-ExecutionPolicy RemoteSigned
+```
+
+```sh
+winget install JanDeDobbeleer.OhMyPosh -s winget
+
+oh-my-posh init pwsh --config ~/jandedobbeleer.omp.json | Invoke-Expression
+
+New-Item -Path $PROFILE -Type File -Force
+```
+
+After that it will create a file in the folder `C:\Users\usuario\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+
+Then just open this file and add the theme you want:
+
+```
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "C:\Users\usuario\Documents\WindowsPowerShell\damocles-gil.omp.json" --print) -join "`n"))
+```
+
+Then install the font to make the icons work with the terminal in administrator mode.
+
+```sh
+oh-my-posh font install
+
+```
+
+My custom theme oh-my-posh `damocles-gil.omp.json`
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#005CFF",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "#F141A8",
+          "properties": {
+            "branch_icon": "\ue0a0 "
+          },
+          "style": "plain",
+          "template": "<#F3EFF5>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "type": "git"
+        },
+
+        {
+          "foreground": "#44FFD2",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "plain",
+          "template": "<#F3EFF5>via</> \ue718 {{ .Full }} ",
+          "type": "node"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#FFE45E",
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}
 ```
 
 Install `npm` after install `node`
@@ -253,16 +336,25 @@ npm i
 }
 ```
 
-## APPs
+## Other APPs
 
 - [Figma](https://figma.com/) - I never thought something would replace the Adobe suite for me. Figma did.
 - [LightShot](https://app.prntscr.com/pt-br/download.html)
-- [PowerToys](https://github.com/microsoft/PowerToys/releases)
+- [PowerToys](https://github.com/microsoft/PowerToys/releases) - This software has several shortcut commands and features that help me a lot.
 
 ## Audio
 
-- [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/)
+- [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/) software that I use to solve the noise problem with my microphone is
 
 ## Browser
 
 - [ARC](https://arc.net/)
+
+## Git Config list
+
+```
+git config --global --edit
+git config --global core.editor "code"
+git config --global user.name damoclesgil
+git config --global user.email damoclesgil@gmail.com
+```
