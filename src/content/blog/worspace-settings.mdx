@@ -1,7 +1,7 @@
 ---
 author: Dâmocles Gil Marçal
 pubDatetime: 2024-02-24T15:22:00Z
-modDatetime: 2024-02-27T12:20:00Z
+modDatetime: 2024-03-02T12:16:00Z
 title: Developer uses
 slug: developer-uses
 featured: true
@@ -16,8 +16,6 @@ While I'm writing this article I'm listening to this <a href="https://open.spoti
 I'm currently using Windows 11, because I like playing games on my computer, so I invested in a Windows computer to have more support for games.
 
 If you don't see my setup you can see in [this page.](/setup)
-
-The first software I'm enjoying using is [PowerToys](https://github.com/microsoft/PowerToys/releases), this software has several shortcut commands and features that help me a lot.
 
 Another software that I use to solve the noise problem with my microphone is [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/), if you have NVIDIA® video cards, I highly recommend it.
 
@@ -180,13 +178,13 @@ New-Item -Path $PROFILE -Type File -Force
 
 After that it will create a file in the folder `C:\Users\usuario\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
 
-Daí é so abrir este arquivo e colocar o tema que vc quer:
+Then just open this file and add the theme you want:
 
 ```
-& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "C:\Users\usuario\Documents\WindowsPowerShell\my-themes\the-unnamed.omp.json" --print) -join "`n"))
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "C:\Users\usuario\Documents\WindowsPowerShell\damocles-gil.omp.json" --print) -join "`n"))
 ```
 
-Depois instale a fonte para funcionar os icones com o terminal no modo administrador.
+Then install the font to make the icons work with the terminal in administrator mode.
 
 ```sh
 oh-my-posh font install
@@ -338,15 +336,15 @@ npm i
 }
 ```
 
-## APPs
+## Other APPs
 
 - [Figma](https://figma.com/) - I never thought something would replace the Adobe suite for me. Figma did.
 - [LightShot](https://app.prntscr.com/pt-br/download.html)
-- [PowerToys](https://github.com/microsoft/PowerToys/releases)
+- [PowerToys](https://github.com/microsoft/PowerToys/releases) - This software has several shortcut commands and features that help me a lot.
 
 ## Audio
 
-- [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/)
+- [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/) software that I use to solve the noise problem with my microphone is
 
 ## Browser
 
