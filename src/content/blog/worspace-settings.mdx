@@ -162,8 +162,93 @@ Other piece of software that many people may already know, but which is also wor
 - [Fig](http://fig.io/) - Super cool app that adds VSCode-style autocomplete to your existing terminal
   Open windows terminal in Admin mode.
 
-```cli
+![Theme Windows VSCODE](/src/assets//images/theme-windows-terminal.png)
+
+### How to install oh my posh
+
+```sh
 Set-ExecutionPolicy RemoteSigned
+```
+
+```sh
+winget install JanDeDobbeleer.OhMyPosh -s winget
+
+oh-my-posh init pwsh --config ~/jandedobbeleer.omp.json | Invoke-Expression
+
+New-Item -Path $PROFILE -Type File -Force
+```
+
+After that it will create a file in the folder `C:\Users\usuario\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+
+Daí é so abrir este arquivo e colocar o tema que vc quer:
+
+```
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "C:\Users\usuario\Documents\WindowsPowerShell\my-themes\the-unnamed.omp.json" --print) -join "`n"))
+```
+
+Depois instale a fonte para funcionar os icones com o terminal no modo administrador.
+
+```sh
+oh-my-posh font install
+
+```
+
+My custom theme oh-my-posh `damocles-gil.omp.json`
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#005CFF",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "#F141A8",
+          "properties": {
+            "branch_icon": "\ue0a0 "
+          },
+          "style": "plain",
+          "template": "<#F3EFF5>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "type": "git"
+        },
+
+        {
+          "foreground": "#44FFD2",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "plain",
+          "template": "<#F3EFF5>via</> \ue718 {{ .Full }} ",
+          "type": "node"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#FFE45E",
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}
 ```
 
 Install `npm` after install `node`
