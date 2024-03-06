@@ -20,7 +20,7 @@ A single line of Javascript can accomplish what used to take multiple lines, tha
 
 This is perfect for when you need a unique ID or a nonce for a session token. This one-liner shows just how expressive Javascript can be.
 
-```Javascript
+```javascript
 const randomString = () => Math.random().toString(36).slice(2);
 ```
 
@@ -28,23 +28,23 @@ const randomString = () => Math.random().toString(36).slice(2);
 
 Something so useful yet so simple. It’s quick checks like these that can save you a ton of time.
 
-```Javascript
-const isWeekday = (date) => date.getDay() % 6 !== 0;
+```javascript
+const isWeekday = date => date.getDay() % 6 !== 0;
 ```
 
 ### Copying Content to Clipboard
 
 It’s all about enhancing user experience with minimal code.
 
-```Javascript
-const copyToClipboard = (content) => navigator.clipboard.writeText(content);
+```js
+const copyToClipboard = content => navigator.clipboard.writeText(content);
 ```
 
 ### Shuffle an Array
 
 Great for randomising elements such as when you’re making a quiz or a game.
 
-```Javascript
+```js
 const shuffleArray = array => array.sort(() => Math.random() - 0.5);
 ```
 
