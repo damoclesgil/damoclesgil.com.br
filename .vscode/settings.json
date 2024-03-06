@@ -26,6 +26,10 @@
     "files.exclude": {
       ".next": false
     },
+    "editor.fontFamily": "FiraMono Nerd Font",
+    // "editor.fontFamily": "FiraCode Nerd Font",
+    // "editor.fontFamily": "AnonymicePro Nerd Font",
+    // "editor.fontFamily": "Inconsolata Nerd Font Mono",
     "typescript.tsdk": "node_modules/typescript/lib",
     "cSpell.words": [
       "Dâmocles",

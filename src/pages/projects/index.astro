@@ -13,13 +13,13 @@ import { ALL_PROJECTS } from "./projects";
   <Main pageTitle="Projects" pageDesc="All projects.">
     <div class="mt-4">
       {
-        ALL_PROJECTS.map((item, index) => (
+        ALL_PROJECTS.map(item => (
           <>
             <h3 class="mb-2 font-bold text-lg">{item.year}</h3>
             <ul class="list-inside list-disc ml-4 mb-6">
               {item.projects.map((project, pIndex) => {
                 return (
-                  <li class="mb-4">
+                  <li class="mb-4" id={`${pIndex}`}>
                     {project.active ? (
                       <a
                         href={project.url}
