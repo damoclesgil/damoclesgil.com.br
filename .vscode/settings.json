@@ -26,7 +26,8 @@
     "files.exclude": {
       ".next": false
     },
-    "editor.fontFamily": "FiraMono Nerd Font",
+    // "editor.fontFamily": "FiraMono Nerd Font",
+    "editor.fontFamily": "SpaceMono Nerd Font",
     // "editor.fontFamily": "FiraCode Nerd Font",
     // "editor.fontFamily": "AnonymicePro Nerd Font",
     // "editor.fontFamily": "Inconsolata Nerd Font Mono",

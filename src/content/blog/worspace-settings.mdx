@@ -215,17 +215,17 @@ My custom theme oh-my-posh `damocles-gil.omp.json`
             "branch_icon": "\ue0a0 "
           },
           "style": "plain",
-          "template": "<#F3EFF5>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "template": "<#F3EFF5>|</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
           "type": "git"
         },
 
         {
-          "foreground": "#44FFD2",
+          "foreground": "#026e00",
           "properties": {
             "fetch_version": true
           },
           "style": "plain",
-          "template": "<#F3EFF5>via</> \ue718 {{ .Full }} ",
+          "template": "<#F3EFF5>|</> \ue718 {{ .Full }} ",
           "type": "node"
         }
       ],
