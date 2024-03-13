@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#005CFF",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "#F141A8",
+          "properties": {
+            "branch_icon": "\ue0a0 "
+          },
+          "style": "plain",
+          "template": "<#F3EFF5>|</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "type": "git"
+        },
+
+        {
+          "foreground": "#026e00",
+          "properties": {
+            "fetch_version": true
+          },
+          "style": "plain",
+          "template": "<#F3EFF5>|</> \ue718 {{ .Full }} ",
+          "type": "node"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#FFE45E",
+          "style": "plain",
+          "template": "\u276f ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 2
+}
