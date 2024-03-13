@@ -1,34 +1,37 @@
 {
-    // "typescript.tsdk": "node_modules/.pnpm/typescript@5.0.4/node_modules/typescript/lib",
-    "typescript.enablePromptUseWorkspaceTsdk": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[mdx]": {
-      "editor.defaultFormatter": "unifiedjs.vscode-mdx"
-    },
-    "[snippets]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[astro]": {
-      "editor.defaultFormatter": "astro-build.astro-vscode"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-    },
-    "files.exclude": {
-      ".next": false
-    },
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "cSpell.words": [
-      "Dâmocles",
-      "Marçal"
-    ],
-  }
+  // "typescript.tsdk": "node_modules/.pnpm/typescript@5.0.4/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+  },
+  "[snippets]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.exclude": {
+    ".next": false
+  },
+  "editor.minimap.enabled": false,
+  // "editor.fontFamily": "FiraMono Nerd Font",
+  "editor.fontFamily": "SpaceMono Nerd Font",
+  // "editor.fontFamily": "FiraCode Nerd Font",
+  // "editor.fontFamily": "AnonymicePro Nerd Font",
+  // "editor.fontFamily": "Inconsolata Nerd Font Mono",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": ["Dâmocles", "damoclesgil", "Marçal"]
+}

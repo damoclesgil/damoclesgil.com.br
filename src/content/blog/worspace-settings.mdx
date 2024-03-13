@@ -1,7 +1,7 @@
 ---
 author: Dâmocles Gil Marçal
 pubDatetime: 2024-02-24T15:22:00Z
-modDatetime: 2024-03-02T12:16:00Z
+modDatetime: 2024-03-13T12:16:00Z
 title: Developer uses
 slug: developer-uses
 featured: true
@@ -29,21 +29,25 @@ Other piece of software that many people may already know, but which is also wor
 - [Runjs](https://runjs.app/)
 - [NVM](https://github.com/coreybutler/nvm-windows/releases)
 
-## VSCODE Extensions
+<details>
+  <summary>My vscode configs</summary>
 
-- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
-- [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
-- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-- [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
-
-## VSCODE Configs
-
-`settings.json`
+1. `settings.json`
 
 ```json
 {
   // "typescript.tsdk": "node_modules/.pnpm/typescript@5.0.4/node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never",
+    "source.fixAll": "explicit"
+  },
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "SpaceMono Nerd Font",
+  "json.format.enable": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -63,8 +67,8 @@ Other piece of software that many people may already know, but which is also wor
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.exclude": {
     ".next": false
@@ -74,7 +78,7 @@ Other piece of software that many people may already know, but which is also wor
 }
 ```
 
-`keybindings.json`
+2. `keybindings.json`
 
 ```json
 [
@@ -89,7 +93,7 @@ Other piece of software that many people may already know, but which is also wor
 ]
 ```
 
-`damoclesgil.code-snippets`
+3. `damoclesgil.code-snippets`
 
 ````json
 {
@@ -149,6 +153,16 @@ Other piece of software that many people may already know, but which is also wor
 }
 ````
 
+<br />
+## VSCODE Extensions
+
+- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+- [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
+- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
+
+</details>
+
 ## Terminal
 
 - [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=pt-br&gl=BR).
@@ -160,7 +174,14 @@ Other piece of software that many people may already know, but which is also wor
 - [Fig](http://fig.io/) - Super cool app that adds VSCode-style autocomplete to your existing terminal
   Open windows terminal in Admin mode.
 
-![Theme Windows VSCODE](/src/assets//images/theme-windows-terminal.png)
+<details>
+  <summary>My terminal Configs</summary>
+  <img
+    className="m-0"
+    width="750"
+    src="/assets/images/theme-windows-terminal.png"
+    alt="Theme Windows VSCODE"
+  />
 
 ### How to install oh my posh
 
@@ -191,7 +212,7 @@ oh-my-posh font install
 
 ```
 
-My custom theme oh-my-posh `damocles-gil.omp.json`
+My custom theme oh-my-posh <a href="/assets/files/damocles-gil.omp.json" download="damocles-gil.omp.json">damocles-gil.omp.json</a>
 
 ```json
 {
@@ -215,17 +236,17 @@ My custom theme oh-my-posh `damocles-gil.omp.json`
             "branch_icon": "\ue0a0 "
           },
           "style": "plain",
-          "template": "<#F3EFF5>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "template": "<#F3EFF5>|</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
           "type": "git"
         },
 
         {
-          "foreground": "#44FFD2",
+          "foreground": "#026e00",
           "properties": {
             "fetch_version": true
           },
           "style": "plain",
-          "template": "<#F3EFF5>via</> \ue718 {{ .Full }} ",
+          "template": "<#F3EFF5>|</> \ue718 {{ .Full }} ",
           "type": "node"
         }
       ],
@@ -247,20 +268,6 @@ My custom theme oh-my-posh `damocles-gil.omp.json`
   ],
   "version": 2
 }
-```
-
-Install `npm` after install `node`
-
-```cli
- npm install -g npm
- npm install -g npm-check-updates
-```
-
-Update libraries with ncu
-
-```
-ncu -u
-npm i
 ```
 
 `settings.json` Windows Terminal
@@ -336,11 +343,13 @@ npm i
 }
 ```
 
+</details>
+
 ## Other APPs
 
 - [Figma](https://figma.com/) - I never thought something would replace the Adobe suite for me. Figma did.
 - [LightShot](https://app.prntscr.com/pt-br/download.html)
-- [PowerToys](https://github.com/microsoft/PowerToys/releases) - This software has several shortcut commands and features that help me a lot.
+- [PowerToys](https://github.com/microsoft/PowerToys/releases) - This software has several shortcut commands and features that help me a lot. You can download <a href="/assets/files/dg_settings_PowerToys.zip" download="dg_settings_PowerToys.zip">My Power Toys Config Here</a>
 
 ## Audio
 
@@ -350,6 +359,24 @@ npm i
 
 - [ARC](https://arc.net/)
 
+<details>
+
+<summary> Other Tips</summary>
+
+> Install `npm` after install `node`
+
+```cli
+ npm install -g npm
+ npm install -g npm-check-updates
+```
+
+> Update libraries with ncu
+
+```
+ncu -u
+npm i
+```
+
 ## Git Config list
 
 ```
@@ -358,3 +385,5 @@ git config --global core.editor "code"
 git config --global user.name damoclesgil
 git config --global user.email damoclesgil@gmail.com
 ```
+
+</details>

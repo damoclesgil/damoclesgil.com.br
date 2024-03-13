@@ -15,7 +15,7 @@
       "description: $8",
       "---",
     ],
-    "description": "Adds the frontmatter block for the AstroPaper Blog post"
+    "description": "Adds the frontmatter block for the AstroPaper Blog post",
   },
   "Blog Template": {
     "scope": "markdown",
@@ -29,12 +29,12 @@
       "",
       "## ${3: heading 1}",
     ],
-    "description": "Adds the template for the AstroPaper Blog post. You will need to trigger the snippet modal on the 'frontmatter' line to insert the other snipper."
+    "description": "Adds the template for the AstroPaper Blog post. You will need to trigger the snippet modal on the 'frontmatter' line to insert the other snipper.",
   },
   "damoclesgilName": {
     "prefix": "dg",
     "body": ["Dâmocles Gil Marçal $1"],
-    "description": "My name"
+    "description": "My name",
   },
   "ParagraphWithBlockOfCode": {
     "prefix": "###",
@@ -47,9 +47,14 @@
       "```javascript",
       "${3}",
       "```",
-      ""
+      "",
     ],
     "description": "Item Post with block of code",
-    "scope": "markdown"
-  }
+    "scope": "markdown",
+  },
+  "websitelink": {
+    "prefix": "dmc.com.br",
+    "body": ["https://damoclesgil.com.br"],
+    "description": "Website meu",
+  },
 }
