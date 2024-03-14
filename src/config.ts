@@ -259,7 +259,7 @@ export const SETUP_ITEMS = [
     link: "https://m.dxracer.com.br/cadeira-dxracer-f-series-p08nw-p2426355",
     img: "https://ds92okzpvwldu.cloudfront.net/Custom/Content/Products/24/26/2426355_cadeira-dxracer-f-series-p08nw_m3_637878076946363675.png",
     alt: "Cadeira",
-    name: "Cadeira DXRacer Gaming f-series",
+    name: "Cadeira Gamer DXRacer NEX MAX (PC188-NW)",
   },
   {
     link: "https://www.mercadolivre.com.br/disco-solido-interno-netac-nt01nv7000-2t0-e4x-2tb/p/MLB20673209?pdp_filters=category:MLB1672#searchVariation=MLB20673209&position=1&search_layout=grid&type=product&tracking_id=4d78ceb4-741a-4c5a-b419-81332ef26d79",
