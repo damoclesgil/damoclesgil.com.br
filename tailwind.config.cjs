@@ -16,7 +16,7 @@ module.exports = {
     // screens: {
     //   sm: "640px",
     // },
-   
+
     extend: {
       textColor: {
         skin: {

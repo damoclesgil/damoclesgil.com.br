@@ -1,6 +1,6 @@
 {
   "name": "damoclesgil.com.br",
-  "version": "4.4.5",
+  "version": "4.5.8",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -14,6 +14,7 @@
     "cz": "cz",
     "prepare": "husky install",
     "lint": "eslint .",
+    "out": "pnpm outdated",
     "att:libs": "pnpm up --latest"
   },
   "dependencies": {
@@ -42,7 +43,6 @@
     "@types/react": "^18.2.67",
     "@typescript-eslint/parser": "^7.3.1",
     "astro-eslint-parser": "^0.16.3",
-    "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-plugin-astro": "^0.32.0",
@@ -53,11 +53,6 @@
     "prettier-plugin-tailwindcss": "^0.5.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,mdx,json,astro}": [
