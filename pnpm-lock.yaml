@@ -76,9 +76,6 @@ devDependencies:
   astro-eslint-parser:
     specifier: ^0.16.3
     version: 0.16.3
-  commitizen:
-    specifier: ^4.3.0
-    version: 4.3.0(@types/node@20.11.30)(typescript@5.4.3)
   cz-conventional-changelog:
     specifier: ^3.3.0
     version: 3.3.0(@types/node@20.11.30)(typescript@5.4.3)
@@ -109,6 +106,9 @@ devDependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  sharp:
+    specifier: ^0.33.2
+    version: 0.33.2
 
 packages:
 
@@ -1883,13 +1883,6 @@ packages:
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
-  /@types/github-slugger@2.0.0:
-    resolution: {integrity: sha512-z/FaJhjFPk5mtrsZWeqyvaJdcZKw6CVCTuynEMrcXtgyozN3yMrtL13xWv8uQV2bWtwSXkdiNM37HEKkEj9x1Q==}
-    deprecated: This is a stub types definition. github-slugger provides its own type definitions, so you do not need this installed.
-    dependencies:
-      github-slugger: 2.0.0
-    dev: true
-
   /@types/hast@3.0.4:
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
     dependencies:
@@ -2593,6 +2586,7 @@ packages:
 
   /buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
+    requiresBuild: true
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
