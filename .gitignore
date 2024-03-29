@@ -38,3 +38,4 @@ pnpm-debug.log*
 .env.local
 desktop.ini
 desktop.ini
+pnpm-lock.yaml
