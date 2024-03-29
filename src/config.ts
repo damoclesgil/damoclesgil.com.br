@@ -226,6 +226,12 @@ export const SETUP_ITEMS = [
     name: "Placa Mãe z690 Aorus Elite DDR5 | PCLe5",
   },
   {
+    link: "https://www.pichau.com.br/water-cooler-cougar-aqua-240-rgb-cgr-aqua-240",
+    img: "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/g/cgr-aqua-2403.jpg",
+    alt: "Cooler Cougar Aqua",
+    name: "Cooler Cougar Aqua",
+  },
+  {
     link: "https://www.kabum.com.br/produto/111161/monitor-gamer-aoc-hero-27-full-hd-wide-144-hz-1ms-ips-hdmi-e-vga-g-sync-ajuste-de-angulo-27g2-bk?gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqt6x3h6QWDXQfCvbMnYCT4n-8R01QKPPj3VklQNNC3FazUD4ZTzevhoCXwIQAvD_BwE",
     img: "https://images.kabum.com.br/produtos/fotos/111161/monitor-gamer-aoc-hero-w-led-27-widescreen-fhd-ips-hdmi-displayport-g-sync-compatible-144hz-1ms-altura-ajustavel-27g2-bk_1584370236_gg.jpg",
     alt: "Monitor Gamer AOC",
