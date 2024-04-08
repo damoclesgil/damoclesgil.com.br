@@ -225,6 +225,8 @@ Function empregadorPath {Set-Location -Path C:\Users\usuario\Documents\Calculato
 Function damoclesgilwebsitePath {Set-Location -Path C:\Users\usuario\Documents\Desenvolvimento\damoclesgil.com.br}
 Function ohMyPoshThemesPath {Set-Location -Path C:\Users\usuario\AppData\Local\Programs\oh-my-posh\themes}
 Function removeNodeModulesFolder {Remove-Item .\node_modules\}
+Function openExplorerFolder {explorer.exe .}
+Function devPath {npm run dev}
 
 Set-Alias -Name lory -Value loryPath
 Set-Alias -Name loryapi -Value loryApiPath
@@ -232,6 +234,8 @@ Set-Alias -Name damoclesgil.com.br -Value damoclesgilwebsitePath
 Set-Alias -Name folha -Value folhaPath
 Set-Alias -Name empregador -Value empregadorPath
 Set-Alias -Name rmNodeModules -Value removeNodeModulesFolder
+Set-Alias -Name open -Value openExplorerFolder
+Set-Alias -Name dev -Value devPath
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 ```
