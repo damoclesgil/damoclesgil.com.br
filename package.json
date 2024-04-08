@@ -19,11 +19,11 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
-    "@astrojs/mdx": "^2.2.2",
+    "@astrojs/mdx": "^2.2.4",
     "@astrojs/rss": "^4.0.5",
-    "@astrojs/vercel": "^7.5.0",
+    "@astrojs/vercel": "^7.5.2",
     "@resvg/resvg-js": "^2.6.2",
-    "astro": "^4.5.12",
+    "astro": "^4.5.16",
     "date-fns": "^3.6.0",
     "fuse.js": "^7.0.0",
     "github-slugger": "^2.0.0",
@@ -31,21 +31,21 @@
     "remark-toc": "^9.0.0",
     "satori": "^0.10.13",
     "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4"
   },
   "devDependencies": {
-    "@astrojs/react": "^3.1.0",
+    "@astrojs/react": "^3.1.1",
     "@astrojs/sitemap": "^3.1.2",
     "@astrojs/tailwind": "^5.1.0",
     "@divriots/jampack": "^0.23.4",
     "@tailwindcss/typography": "^0.5.12",
     "@types/github-slugger": "^2.0.0",
-    "@types/react": "^18.2.73",
-    "@typescript-eslint/parser": "^7.4.0",
-    "astro-eslint-parser": "^0.16.3",
+    "@types/react": "^18.2.74",
+    "@typescript-eslint/parser": "^7.5.0",
+    "astro-eslint-parser": "^0.17.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^0.33.1",
+    "eslint": "^9.0.0",
+    "eslint-plugin-astro": "^0.34.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
@@ -53,7 +53,7 @@
     "prettier-plugin-tailwindcss": "^0.5.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.33.2"
+    "sharp": "^0.33.3"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,mdx,json,astro}": [

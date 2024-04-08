@@ -202,14 +202,38 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 oh-my-posh init pwsh --config ~/jandedobbeleer.omp.json | Invoke-Expression
 
 New-Item -Path $PROFILE -Type File -Force
+
+Install-Module PSReadLine -Force
+
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
 ```
 
 After that it will create a file in the folder `C:\Users\usuario\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
 
 Then just open this file and add the theme you want:
 
-```
-& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "C:\Users\usuario\Documents\WindowsPowerShell\damocles-gil.omp.json" --print) -join "`n"))
+> My Custom file Microsoft.PowerShell_profile.ps1
+
+```sh
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "C:\Users\usuario\Documents\WindowsPowerShell\my-themes\damocles-gil.omp.json" --print) -join "`n"))
+
+Function loryPath {Set-Location -Path C:\Users\usuario\Documents\Desenvolvimento\front-loryartcroche}
+Function loryApiPath {Set-Location -Path C:\Users\usuario\Documents\Desenvolvimento\api-loryartcroche}
+Function folhaPath {Set-Location -Path C:\Users\usuario\Documents\Calculato\folha-frontend}
+Function empregadorPath {Set-Location -Path C:\Users\usuario\Documents\Calculato\empregador-frontend}
+Function damoclesgilwebsitePath {Set-Location -Path C:\Users\usuario\Documents\Desenvolvimento\damoclesgil.com.br}
+Function ohMyPoshThemesPath {Set-Location -Path C:\Users\usuario\AppData\Local\Programs\oh-my-posh\themes}
+Function removeNodeModulesFolder {Remove-Item .\node_modules\}
+
+Set-Alias -Name lory -Value loryPath
+Set-Alias -Name loryapi -Value loryApiPath
+Set-Alias -Name damoclesgil.com.br -Value damoclesgilwebsitePath
+Set-Alias -Name folha -Value folhaPath
+Set-Alias -Name empregador -Value empregadorPath
+Set-Alias -Name rmNodeModules -Value removeNodeModulesFolder
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
 ```
 
 Then install the font to make the icons work with the terminal in administrator mode.
