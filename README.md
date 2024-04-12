@@ -46,4 +46,8 @@ All commands are run from the root of the project, from a terminal:
 
 ---
 
+## 📋 Todo
+
+- [] Post with my boilerplates using next, vue and astro.
+
 Made with 💚 by [Dâmocles Gil Marçal](https://damoclesgil.com.br) 👨🏻‍💻
