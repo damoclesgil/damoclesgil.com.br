@@ -156,15 +156,53 @@ Other piece of software that many people may already know, but which is also wor
 }
 ````
 
+## Fonts I like
+
+```json
+  "editor.fontFamily": "FiraMono Nerd Font",
+  "editor.fontFamily": "SpaceMono Nerd Font",
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontFamily": "Operator Mono Lig", // Corrent i used this font with this theme => Palenight Theme
+  "editor.fontFamily": "AnonymicePro Nerd Font",
+  "editor.fontFamily": "Inconsolata Nerd Font Mono",
+  "workbench.colorTheme": "Palenight Operator",
+```
+
+[Operator Mono Font](https://github.com/damoclesgil/damoclesgil.com.br/blob/main/src/assets/fonts/Operator_Mono)
+
+## Setup VSCode
+
+1. First you need to install the extension vscode-custom-css: https://github.com/be5invis/vscode-custom-css.
+2. Enable the extension
+3. Open your settings.json file and add the following:
+
+```json
+ ...
+   "editor.fontFamily": "Fira Code", \\ You can specify a different base font here
+   "editor.fontSize": 14,
+   "editor.fontLigatures": true,
+   "vscode_custom_css.imports": [
+       "file:///<file_location>/vscode_style.css"
+   ],
+   "vscode_custom_css.policy": true
+```
+
+4. Open Command Pallet and run "Reload Custom CSS and JS"
+5. Reload VSCode
+6. Enjoy!
+
 </div>
 </details>
 
 ## VSCODE Extensions
 
+- [Operator Mono Font](https://www.cufonfonts.com/font/operator-mono)
+- [Palenight Theme](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme)
 - [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
 - [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
 - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
+- [Se All My Extensions in this file](https://github.com/damoclesgil/damoclesgil.com.br/blob/main/.vscode/extensions.json)
 
 ## Terminal
 

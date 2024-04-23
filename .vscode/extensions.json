@@ -12,7 +12,21 @@
     "akamud.vscode-theme-onedark",
     "unifiedjs.vscode-mdx",
     "ms-vscode.vscode-typescript-next",
-    "vue.vscode-typescript-vue-plugin"
+    "vue.vscode-typescript-vue-plugin",
+    "whizkydee.material-palenight-theme",
+    "be5invis.vscode-custom-css",
+    "tabnine.tabnine-vscode",
+    "xabikos.javascriptsnippets",
+    "ecmel.vscode-html-css",
+    "waderyan.gitblame",
+    "vue.volar",
+    "sdras.vue-vscode-snippets",
+    "formulahendry.auto-rename-tag",
+    "apollographql.vscode-apollo",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "streetsidesoftware.code-spell-checker",
+    "alefragnani.bookmarks",
+    "dsznajder.es7-react-js-snippets"
   ],
   "unwantedRecommendations": []
 }
