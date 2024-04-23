@@ -244,6 +244,12 @@ export const SETUP_ITEMS = [
     name: "Teclado ROYAL KLUDGE RK919",
   },
   {
+    link: "https://www.google.com/search?q=k68+teclado&oq=k68+teclado",
+    img: "https://lojabrmetaverso.com.br/cdn/shop/files/TecladoMecanicoK68SemFios26_1200x.png?v=1711558413",
+    alt: "Teclado Mecânico K68",
+    name: "Teclado Mecânico K68",
+  },
+  {
     link: "https://http2.mlstatic.com/D_NQ_NP_832123-MLU74074433476_012024-O.webp",
     img: "https://http2.mlstatic.com/D_NQ_NP_832123-MLU74074433476_012024-O.webp",
     alt: "Mouse",
@@ -297,6 +303,12 @@ export const SETUP_ITEMS = [
     img: "https://m.media-amazon.com/images/I/511Y7Yr9EEL._AC_SX679_.jpg",
     alt: "Webcam Full HD Logitech BRIO 500 Branco",
     name: "Webcam Full HD Logitech BRIO 500 Branco",
+  },
+  {
+    link: "https://produto.mercadolivre.com.br/MLB-1919131534-oculos-anti-raios-azuis-gamerleituranoturnotv-_JM?attributes=COLOR_SECONDARY_COLOR%3ASDEgLSBQcmV0byBjb20gTGVudGVzIEFtYXJlbGFz&quantity=1",
+    img: "https://http2.mlstatic.com/D_NQ_NP_667340-MLB75231032481_032024-O.webp",
+    alt: "Óculos anti luz lente amarela",
+    name: "Óculos anti luz lente amarela",
   },
 ];
 
