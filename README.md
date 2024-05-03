@@ -43,6 +43,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run lint`                       | Lint with ESLint                                                                                                                 |
 | `docker compose up -d`               | Run AstroPaper on docker, You can access with the same hostname and port informed on `dev` command.                              |
 | `docker compose run app npm install` | You can run any command above into the docker container.                                                                         |
+| `pnpm add -g pnpm`                   | Update PNPM Version                                                                                                              |
 
 ---
 
