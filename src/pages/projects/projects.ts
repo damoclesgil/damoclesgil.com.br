@@ -3,9 +3,14 @@ export const ALL_PROJECTS = [
     year: "2024",
     projects: [
       {
+        title: "damoclesgil.com.br",
+        url: "https://github.com/damoclesgil/damoclesgil.com.br",
+        active: true,
+      },
+      {
         title: "Empregador App",
-        url: "https://nectarcrm.com.br/inicio/",
-        active: false,
+        url: "https://empregador.app",
+        active: true,
       },
     ],
   },
@@ -29,9 +34,15 @@ export const ALL_PROJECTS = [
         active: true,
       },
       {
+        title: "Calculato Folha",
+        description: "Payroll system",
+        url: "https://folha.calculato.com.br/",
+        active: true,
+      },
+      {
         title: "Trabalhador App",
-        url: "https://nectarcrm.com.br/inicio/",
-        active: false,
+        url: "https://trabalhador.app/trabalhador",
+        active: true,
       },
     ],
   },
@@ -58,6 +69,11 @@ export const ALL_PROJECTS = [
         url: "https://github.com/damoclesgil/damoclesgil.github.io",
         active: true,
       },
+      {
+        title: "Personal Website Using VuePress",
+        url: "https://github.com/damoclesgil/portfolio-vuepress",
+        active: true,
+      },
     ],
   },
   {
@@ -66,6 +82,11 @@ export const ALL_PROJECTS = [
       {
         title: "Daxplace",
         url: "https://google.com.br",
+        active: false,
+      },
+      {
+        title: "Realtrade",
+        url: "https://realtradeclub.com.br",
         active: false,
       },
       {
