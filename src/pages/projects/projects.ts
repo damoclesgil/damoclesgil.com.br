@@ -1,3 +1,5 @@
+import { getDuration } from "@utils/getDuration";
+
 export const ALL_PROJECTS = [
   {
     year: "2024",
@@ -29,7 +31,8 @@ export const ALL_PROJECTS = [
     projects: [
       {
         title: "Calculato",
-        description: "Payroll system",
+        description:
+          "- I Worked in the development team as Lead Front-end in web projects. I use all my software architecture knowledge to improve performance, maintainability, scalability and readability. I also use my development skills with the best customer experience in mind, with disruptive and value-generating solutions.",
         url: "https://www.calculato.com.br/",
         active: true,
       },
@@ -42,6 +45,7 @@ export const ALL_PROJECTS = [
       {
         title: "Trabalhador App",
         url: "https://trabalhador.app/trabalhador",
+        description: "An App for communication worker app with payroll system",
         active: true,
       },
     ],
@@ -113,26 +117,31 @@ export const ALL_PROJECTS = [
         title: "Believe Escola de Idiomas",
         url: "http://believeescola.com.br/",
         active: true,
+        description: `This a an website of school languages, I create using wordpress.`,
       },
       {
         title: "Favorites Link",
         url: "https://github.com/damoclesgil/favorites-links",
         active: true,
+        description: `This a an repo with my favorites that contain links that I find useful in my daily life for development`,
       },
       {
         title: "Boilerplate website",
         url: "https://github.com/damoclesgil/boilerplate-website",
         active: true,
+        description: `This is a an repo with my boilerplate for constructing an website static`,
       },
       {
         title: "Actuar Sistemas",
         url: "https://actuar.com/",
         active: true,
+        description: `This is a website if i developed for the system of gyms`,
       },
       {
         title: "Trei.no",
         url: "https://trei.no/",
         active: true,
+        description: `An app for helping students training in gyms`,
       },
       {
         title: "Afig",
@@ -148,6 +157,22 @@ export const ALL_PROJECTS = [
         title: "Sage",
         url: "https://www.sage.com/pt-pt/",
         active: true,
+        description: `
+        - Conduct training and qualification of users to use the software.
+        <br>
+        - Responsible for installing, maintaining and configuring software on users' machines.
+        `,
+      },
+    ],
+  },
+  {
+    year: "1997",
+    projects: [
+      {
+        title: "Born",
+        url: "https://google.com.br",
+        active: false,
+        description: `- I was born in 1997. I was ${getDuration("1997-05-06", null).slice(0, 2)} years old.`,
       },
     ],
   },

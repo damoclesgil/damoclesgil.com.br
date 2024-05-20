@@ -50,5 +50,7 @@ All commands are run from the root of the project, from a terminal:
 ## 📋 Todo
 
 - [] Post with my boilerplates using next, vue and astro.
+- [] Adicionar descrição nos projetos.
+- [] Criar uma página chamada `workspace` e colocar todas as minhas configurações lá.
 
 Made with 💚 by [Dâmocles Gil Marçal](https://damoclesgil.com.br) 👨🏻‍💻

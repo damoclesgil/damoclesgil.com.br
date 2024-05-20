@@ -5,6 +5,7 @@ export default function Logo() {
     <>
       {LOGO_IMAGE.enable ? (
         <img
+          className="w-full"
           id="logo"
           alt={SITE.title}
           width={LOGO_IMAGE.width}

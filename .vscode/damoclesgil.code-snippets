@@ -57,4 +57,10 @@
     "body": ["https://damoclesgil.com.br"],
     "description": "Website meu",
   },
+  "DescriptionObjectItem":{
+    "scope": "typescript",
+    "prefix": "des",
+    "body": ["description: `${1}`,"],
+    "description": "Object Item Description for projects array",
+  }
 }

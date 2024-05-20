@@ -6,6 +6,11 @@ import siteOgImage from "./og-templates/site";
 
 const fetchFonts = async () => {
   // Regular Font
+  const fontFileLight = await fetch(
+    "https://www.1001fonts.com/download/font/ibm-plex-mono.thin.ttf"
+  );
+  const fontLight: ArrayBuffer = await fontFileLight.arrayBuffer();
+
   const fontFileRegular = await fetch(
     "https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf"
   );
@@ -17,16 +22,22 @@ const fetchFonts = async () => {
   );
   const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
 
-  return { fontRegular, fontBold };
+  return { fontRegular, fontBold, fontLight };
 };
 
-const { fontRegular, fontBold } = await fetchFonts();
+const { fontRegular, fontBold, fontLight } = await fetchFonts();
 
 const options: SatoriOptions = {
   width: 1200,
   height: 630,
   embedFont: true,
   fonts: [
+    {
+      name: "IBM Plex Mono",
+      data: fontLight,
+      weight: 100,
+      style: "normal",
+    },
     {
       name: "IBM Plex Mono",
       data: fontRegular,

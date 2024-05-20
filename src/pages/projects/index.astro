@@ -34,6 +34,13 @@ import { ALL_PROJECTS } from "./projects";
                         {project.title}
                       </span>
                     )}
+
+                    {project.description && (
+                      <div
+                        class="mt-4 block mb-2 ml-4 font-thin"
+                        set:html={project.description}
+                      />
+                    )}
                   </li>
                 );
               })}
