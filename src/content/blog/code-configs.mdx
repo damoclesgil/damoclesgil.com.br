@@ -1,0 +1,206 @@
+---
+author: Dâmocles Gil Marçal
+pubDatetime: 2024-02-24T15:22:00Z
+modDatetime: 2024-03-13T12:16:00Z
+title: VSCODE configs
+slug: vscode-configs
+featured: true
+draft: false
+tags:
+  - settings
+description: My VSCODE Configurations
+---
+
+## User settings: `settings.json`
+
+```json
+{
+  // ========== Visuals ==========
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "Input Mono, monospace",
+  "editor.guides.bracketPairs": "active",
+  "editor.lineNumbers": "interval",
+  "editor.renderWhitespace": "boundary",
+  "window.autoDetectColorScheme": true,
+  "workbench.colorTheme": "Vitesse Dark",
+  "workbench.editor.tabActionLocation": "right",
+  "workbench.fontAliasing": "antialiased",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.list.smoothScrolling": true,
+  "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  "workbench.preferredLightColorTheme": "Vitesse Light",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10
+  // ========== END Visuals ==========
+}
+```
+
+## `keybindings.json`
+
+```json
+[
+  {
+    "key": "ctrl+shift+s",
+    "command": "saveAll"
+  },
+  {
+    "key": "ctrl+k s",
+    "command": "-saveAll"
+  }
+]
+```
+
+## Snippets: `damoclesgil.code-snippets`
+
+````json
+{
+  "Frontmatter": {
+    "scope": "markdown",
+    "prefix": "frontmatter",
+    "body": [
+      "---",
+      "author: $1",
+      "pubDatetime: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND.000$CURRENT_TIMEZONE_OFFSET",
+      "modDatetime: $3",
+      "title: $4",
+      "featured: ${5|false,true|}",
+      "draft: ${6|true,false|}",
+      "tags:",
+      "  - $7",
+      "description: $8",
+      "---"
+    ],
+    "description": "Adds the frontmatter block for the AstroPaper Blog post"
+  },
+  "Blog Template": {
+    "scope": "markdown",
+    "prefix": "template",
+    "body": [
+      "${1:frontmatter}",
+      "",
+      "${2: Introductory Sentence}",
+      "",
+      "## Table of contents",
+      "",
+      "## ${3: heading 1}"
+    ],
+    "description": "Adds the template for the AstroPaper Blog post. You will need to trigger the snippet modal on the 'frontmatter' line to insert the other snipper."
+  },
+  "damoclesgilName": {
+    "prefix": "dg",
+    "body": ["Dâmocles Gil Marçal $1"],
+    "description": "My name"
+  },
+  "ParagraphWithBlockOfCode": {
+    "prefix": "###",
+    "body": [
+      "",
+      "### ${1}",
+      "",
+      "${2}",
+      "",
+      "```javascript",
+      "${3}",
+      "```",
+      ""
+    ],
+    "description": "Item Post with block of code",
+    "scope": "markdown"
+  }
+}
+````
+
+## Fonts Family
+
+```json
+  "editor.fontFamily": "FiraMono Nerd Font",
+  "editor.fontFamily": "SpaceMono Nerd Font",
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontFamily": "Operator Mono Lig", // Corrent i used this font with this theme => Palenight Theme
+  "editor.fontFamily": "AnonymicePro Nerd Font",
+  "editor.fontFamily": "Operator_Mono",
+  "editor.fontFamily": "Input Mono, monospace",
+  "editor.fontFamily": "Inconsolata Nerd Font Mono",
+```
+
+## VSCODE Extensions: `extensions.json`
+
+```json
+{
+  "recommendations": [
+    // my extensions, ofc :P
+    "antfu.browse-lite",
+    "antfu.iconify",
+    "antfu.slidev",
+    "antfu.unocss",
+    "antfu.vite",
+    "antfu.where-am-i",
+    "antfu.open-in-github-button",
+    "lokalise.i18n-ally",
+
+    // themes & icons
+    "antfu.icons-carbon",
+    "antfu.theme-vitesse",
+    "file-icons.file-icons",
+    "sainnhe.gruvbox-material",
+
+    // life savers!
+    "dbaeumer.vscode-eslint",
+    "Vue.volar",
+    "GitHub.copilot",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker",
+
+    // up to you
+    "eamodio.gitlens",
+    "EditorConfig.EditorConfig",
+    "github.vscode-github-actions",
+    "GitHub.vscode-pull-request-github",
+    "johnsoncodehk.vscode-tsconfig-helper",
+    "mpontus.tab-cycle",
+    "naumovs.color-highlight",
+    "WakaTime.vscode-wakatime",
+    "znck.grammarly",
+    "catppuccin.catppuccin-vsc-icons"
+  ]
+}
+```
+
+> VISUALS
+
+- [Operator Mono Font](https://www.cufonfonts.com/font/operator-mono)
+- [Palenight Theme](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme)
+- [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
+- [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)
+- [vitesse Theme](https://marketplace.visualstudio.com/items?itemName=antfu.theme-vitesse)
+- [Gruvbox Theme](https://marketplace.cursorapi.com/items?itemName=jdinhlife.gruvbo)
+- [Catppuccin Icons for VSCode](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
+- [Carbon Product Icons](https://marketplace.visualstudio.com/items?itemName=antfu.icons-carbon)
+
+> UTILS
+
+- [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
+- [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
+- [Se All My Extensions in this file](https://github.com/damoclesgil/damoclesgil.com.br/blob/main/.vscode/extensions.json)
+- [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+- [Code Spell Checker - Português Brasil](https://marketplace.cursorapi.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian)
+- [Code Spell Checker](https://marketplace.cursorapi.com/items?itemName=streetsidesoftware.code-spell-checker)
+- [Nextjs](https://marketplace.cursorapi.com/items?itemName=PulkitGangwar.nextjs-snippets)
+- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+- [Pieces for VS Code](https://pieces.app)
+- [ Auto Rename Tag]
+- [Eslint]
+- [ES7+React]
+- [EditorConfig for VS Code]
+- [markdownlint]
+- [MDX]
+- [Vue - Official](https://marketplace.cursorapi.com/items?itemName=Vue.volar)
+
+## References
+
+- [ESLINT CONFIG](https://github.com/antfu/eslint-config) @antfu
+- [VSCODE CONFIGS](https://github.com/antfu/vscode-settings/tree/main) @antfu
