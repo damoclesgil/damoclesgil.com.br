@@ -12,7 +12,23 @@ export const ALL_PROJECTS = [
       {
         title: "Empregador App",
         url: "https://empregador.app",
+        description:
+          "An app for empregador acessing the company to send and give requests",
         active: true,
+      },
+      {
+        title: "Api ecommerce - loryartcroche",
+        url: "https://github.com/damoclesgil/api-loryartcroche",
+        active: true,
+        description:
+          "Api made for an ecommerce of handmade bags made by Mrs. Lory, this api helps her register her products and track payment orders using stripe.js",
+      },
+      {
+        title: "Front-end ecommerce - loryartcroche",
+        url: "https://github.com/damoclesgil/front-loryartcroche",
+        active: true,
+        description:
+          "Frontend app using next.js for an ecommerce of handmade bags made by Mrs. Lory, this a website is a ecommerce to disclose the handmade bags.",
       },
     ],
   },
@@ -102,11 +118,16 @@ export const ALL_PROJECTS = [
         title: "APCAM",
         url: "https://apcam.org.br/home/institucional",
         active: true,
+        descriotion: `
+        The Association of Breast Cancer Patients - APCAM is a philanthropic, non-profit entity that survives on donations, activities to raise financial resources carried out by the Association's patients and collaborators, as well as research projects developed by researchers from the Network Brazilian Research Institute in Mastology, belonging to the Mastology Program - HC/UFG.
+        `,
       },
       {
         title: "Infotech Goianésia",
         url: "https://infotechgoianesia.com.br/",
         active: true,
+        description:
+          "A website using nuxt.js to promote an internet provider in Goianésia and nearby regions.",
       },
     ],
   },

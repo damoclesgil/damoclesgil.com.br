@@ -262,6 +262,12 @@ export const SETUP_ITEMS = [
     name: "Headset Logitech G435 LIGHTSPEED",
   },
   {
+    link: "https://www.redragon.store/caixa-de-som-redragon-anvil-gs520",
+    img: "https://cdn.awsli.com.br/600x450/1318/1318167/produto/72688259/b1f706907d.jpg",
+    alt: "Caixa de Som Redragon Anvil GS520",
+    name: "Caixa de Som Redragon Anvil GS520",
+  },
+  {
     link: "https://www.geniodesks.com.br/mesa-regulagem-eletrica/mesa-com-regulagem-de-altura-geniodesk-pro/produto-mesa-com-regulagem-de-altura-geniodesk-pro?fee=4&fep=337&gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqlZ51lCSNFHxqioZOuTvvAlrzwpBXUA3jTSiq4Pfoyvdfxu2_LdQTRoCsm0QAvD_BwE",
     img: "https://www.geniodesks.com.br/media/catalog/product/cache/1/image/1200x/af097278c5db4767b0fe9bb92fe21690/a/c/acionador-_web_-_geniodesk_8.jpg",
     alt: "Mesa GenioDesk PRO ",
