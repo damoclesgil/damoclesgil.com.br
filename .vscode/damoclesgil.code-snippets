@@ -57,6 +57,12 @@
     "body": ["https://damoclesgil.com.br"],
     "description": "Website meu",
   },
+  "assetsFolder": {
+    "scope": "typescript",
+    "prefix": "ass",
+    "body": ["assets/images/projects/${0}"],
+    "description": "Assstes / Projects",
+  },
   "DescriptionObjectItem":{
     "scope": "typescript",
     "prefix": "des",

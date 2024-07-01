@@ -1,6 +1,6 @@
 ---
 author: Dâmocles Gil Marçal
-pubDatetime: 2024-02-23T21:20:00Z
+pubDatetime: 2024-07-02T14:40:00Z
 title: Debounce vs Throttling
 slug: debounce-throttling
 featured: true

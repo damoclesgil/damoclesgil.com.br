@@ -97,6 +97,7 @@ export const ALL_PROJECTS = [
         title: "NectarCRM",
         url: "https://nectarcrm.com.br/inicio/",
         active: true,
+        img: "assets/images/projects/nectarcrm.com.br.jpg",
       },
       {
         title: "damoclesgil.github.io",
@@ -132,6 +133,7 @@ export const ALL_PROJECTS = [
         title: "APCAM",
         url: "https://apcam.org.br/home/institucional",
         active: true,
+        img: "assets/images/projects/apcam.org.br.jpg",
         descriotion: `
         The Association of Breast Cancer Patients - APCAM is a philanthropic, non-profit entity that survives on donations, activities to raise financial resources carried out by the Association's patients and collaborators, as well as research projects developed by researchers from the Network Brazilian Research Institute in Mastology, belonging to the Mastology Program - HC/UFG.
         `,
@@ -140,6 +142,7 @@ export const ALL_PROJECTS = [
         title: "Infotech Goianésia",
         url: "https://infotechgoianesia.com.br/",
         active: true,
+        img: "assets/images/projects/www.infotechgoianesia.com.br.jpg",
         description:
           "A website using nuxt.js to promote an internet provider in Goianésia and nearby regions.",
       },

@@ -2,8 +2,8 @@
 author: Dâmocles Gil Marçal
 pubDatetime: 2024-06-14T15:22:00Z
 modDatetime: 2024-06-16T12:16:00Z
-title: VSCODE configs
-slug: vscode-configs
+title: My VSCode Configs
+slug: code-configs
 featured: true
 draft: false
 tags:
@@ -11,7 +11,23 @@ tags:
 description: My VSCODE Configurations
 ---
 
-## User settings: `settings.json`
+# My VSCode Configurations
+
+I will leave all the settings I use in my VSCode below:
+
+## Summary
+
+- [👨🏻‍💻 VS Code User Settings](#user-settings)
+- [⌨️ VS Code User keybindings](#keybindings)
+- [🚀 VS Code Snippets](#snippets)
+- [🔡 VS Code Fonts](#fonts-family)
+- [🔌 VS Code Extensions](#extensions)
+
+## User settings
+
+Inside the folder: 📁 `.vscode/`
+
+📄 vscode file: `settings.json`
 
 ```json
 {
@@ -33,12 +49,58 @@ description: My VSCODE Configurations
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
-  "workbench.tree.indent": 10
+  "workbench.tree.indent": 10,
   // ========== END Visuals ==========
+
+  // ========== CODE FORMAT - I Like use ESLINT ==========
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+
+  "eslint.runtime": "node",
+
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off" },
+    { "rule": "*-indent", "severity": "off" },
+    { "rule": "*-spacing", "severity": "off" },
+    { "rule": "*-spaces", "severity": "off" },
+    { "rule": "*-order", "severity": "off" },
+    { "rule": "*-dangle", "severity": "off" },
+    { "rule": "*-newline", "severity": "off" },
+    { "rule": "*quotes", "severity": "off" },
+    { "rule": "*semi", "severity": "off" }
+  ],
+
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "xml"
+  ]
+
+  // ========== END CODE FORMAT ==========
 }
 ```
 
-## `keybindings.json`
+## Keybindings
+
+📄 vscode file: `keybindings.json`
 
 ```json
 [
@@ -53,7 +115,11 @@ description: My VSCODE Configurations
 ]
 ```
 
-## Snippets: `damoclesgil.code-snippets`
+## Snippets
+
+I like use snippets for help on type code and for more agility in my day, so i have as an examples here:
+
+📄 vscode file: `damoclesgil.code-snippets`
 
 ````json
 {
@@ -115,44 +181,52 @@ description: My VSCODE Configurations
 
 ## Fonts Family
 
+Actually, I'm using '_Input Mono_', but I'm like too the other fonts.
+
+📄 vscode file: `settings.json`
+
 ```json
-  "editor.fontFamily": "FiraMono Nerd Font",
-  "editor.fontFamily": "SpaceMono Nerd Font",
-  "editor.fontFamily": "FiraCode Nerd Font",
-  "editor.fontFamily": "Operator Mono Lig", // Corrent i used this font with this theme => Palenight Theme
-  "editor.fontFamily": "AnonymicePro Nerd Font",
-  "editor.fontFamily": "Operator_Mono",
   "editor.fontFamily": "Input Mono, monospace",
-  "editor.fontFamily": "Inconsolata Nerd Font Mono",
+  // "editor.fontFamily": "FiraMono Nerd Font",
+  // "editor.fontFamily": "SpaceMono Nerd Font",
+  // "editor.fontFamily": "FiraCode Nerd Font",
+  // "editor.fontFamily": "Operator Mono Lig",
+  // "editor.fontFamily": "AnonymicePro Nerd Font",
+  // "editor.fontFamily": "Operator_Mono",
+  // "editor.fontFamily": "Inconsolata Nerd Font Mono",
 ```
 
-## VSCODE Extensions: `extensions.json`
+## Extensions
+
+📄 vscode file: `extensions.json`
 
 ```json
 {
   "recommendations": [
-    // my extensions, ofc :P
-    "antfu.browse-lite",
-    "antfu.iconify",
-    "antfu.slidev",
-    "antfu.unocss",
-    "antfu.vite",
-    "antfu.where-am-i",
-    "antfu.open-in-github-button",
-    "lokalise.i18n-ally",
-
-    // themes & icons
+    // themes & icons and vsCode Visuals
     "antfu.icons-carbon",
     "antfu.theme-vitesse",
+    "akamud.vscode-theme-onedark",
     "file-icons.file-icons",
+    "antfu.vite",
+    "antfu.where-am-i",
+    "antfu.open-in-github-button"
     "sainnhe.gruvbox-material",
 
     // life savers!
     "dbaeumer.vscode-eslint",
-    "Vue.volar",
     "GitHub.copilot",
     "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
     "streetsidesoftware.code-spell-checker",
+
+    // if you using a libdrary
+    "antfu.iconify", // if you use the libray iconify
+    "bradlc.vscode-tailwindcss", // if you using tailwindcss
+    "apollographql.vscode-apollo", // if you using apollo
+    "vue.vscode-typescript-vue-plugin", // if you using vue
+    "astro-build.astro-vscode", // if you using astro
+    "dsznajder.es7-react-js-snippets", // if you using react
 
     // up to you
     "eamodio.gitlens",
@@ -165,11 +239,32 @@ description: My VSCODE Configurations
     "WakaTime.vscode-wakatime",
     "znck.grammarly",
     "catppuccin.catppuccin-vsc-icons"
+
+    // other extensions
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "esbenp.prettier-vscode",
+    "vscode-icons-team.vscode-icons",
+    "christian-kohler.path-intellisense",
+    "davidanson.vscode-markdownlint",
+    "ms-vscode.vscode-typescript-next",
+    "whizkydee.material-palenight-theme",
+    "be5invis.vscode-custom-css",
+    "tabnine.tabnine-vscode",
+    "xabikos.javascriptsnippets",
+    "waderyan.gitblame",
+    "sdras.vue-vscode-snippets",
+    "formulahendry.auto-rename-tag",
+    "alefragnani.bookmarks",
+    "jdinhlife.gruvbox",
+    "unifiedjs.vscode-mdx",
+    "pulkitgangwar.nextjs-snippets",
+    "styled-components.vscode-styled-components",
   ]
 }
 ```
 
-> VISUALS
+🎨 Links VSCode Extensions: Themes and Icons
 
 - [Operator Mono Font](https://www.cufonfonts.com/font/operator-mono)
 - [Palenight Theme](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme)
@@ -180,7 +275,7 @@ description: My VSCODE Configurations
 - [Catppuccin Icons for VSCode](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons)
 - [Carbon Product Icons](https://marketplace.visualstudio.com/items?itemName=antfu.icons-carbon)
 
-> UTILS
+⚙️ Links VSCode Extensions
 
 - [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 - [IntelliCode API Usage Examples](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
@@ -200,7 +295,7 @@ description: My VSCODE Configurations
 - [MDX]
 - [Vue - Official](https://marketplace.cursorapi.com/items?itemName=Vue.volar)
 
-## References
+⭐ References that I based on
 
 - [ESLINT CONFIG](https://github.com/antfu/eslint-config) @antfu
 - [VSCODE CONFIGS](https://github.com/antfu/vscode-settings/tree/main) @antfu

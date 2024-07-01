@@ -2,13 +2,13 @@
 author: Dâmocles Gil Marçal
 pubDatetime: 2024-02-24T15:22:00Z
 modDatetime: 2024-03-13T12:16:00Z
-title: Developer uses
-slug: developer-uses
+title: My Development Settings
+slug: my-development-settings
 featured: true
 draft: false
 tags:
   - settings
-description: My configs and uses
+description: My configs and tools using to help my daily's developing.
 ---
 
 While I'm writing this article I'm listening to this <a href="https://open.spotify.com/playlist/37i9dQZEVXcO5uK13GHDon?si=53cc416a7e364bd6" target="blank">playlist</a> that I think really cool:
@@ -25,31 +25,10 @@ Other piece of software that many people may already know, but which is also wor
 
 ## Coding
 
-If you want to know my personal settings I use in the VSCode / Cursir.sh, read this [article](/posts/vscode-configs/)
-
-- [VScode](https://code.visualstudio.com/) - Editor text
-- [Cursor](https://cursor.sh) - Editor text with AI
-- [Fira Code](https://github.com/tonsky/FiraCode) - I absolutely love this monospaced font because of all the ligatures.
-- [Runjs](https://runjs.app/) - Execute a javascript in real time, but it's nood necessary with node in latest versions.
-- [NVM](https://github.com/coreybutler/nvm-windows/releases) - Change the Node Version.
+If you want to know my personal settings I use in the [VScode](https://code.visualstudio.com/) and sometimes I testing [Cursor.sh](https://cursor.sh), read this [article](/posts/code-configs/) to see more about my settings in vscode.
 
 ## Terminal
 
-- [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=pt-br&gl=BR).
-- [Hyper](https://hyper.is/) - Performance could be better, but I enjoy using this since it's made with JavaScript.
-- [Oh My ZSH](https://ohmyz.sh/) - A collection of ZSH plugins that you install once and you're ready to go.
-- [Oh My Posh](https://ohmyposh.dev/) Windows Terminal Custom
-- [Custiom prompt setup](https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup)
-- [windowsterminalthemes](https://windowsterminalthemes.dev/)
-- [Fig](http://fig.io/) - Super cool app that adds VSCode-style autocomplete to your existing terminal
-  Open windows terminal in Admin mode.
-
-<details class="!cursor-default !select-auto">
-<div className="w-full max-w-4xl">
-
-{" "}
-
-<summary>My terminal Configs</summary>
 <img
   className="m-0"
   width="750"
@@ -57,7 +36,19 @@ If you want to know my personal settings I use in the VSCode / Cursir.sh, read t
   alt="Theme Windows VSCODE"
 />
 
+The Terminal I currently use is this [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=pt-br&gl=BR), in windows i use the powershell with [Oh My Posh](https://ohmyposh.dev/) configurations.
+
+## Current Terminal Configuration
+
+<details class="!cursor-default !select-auto">
+<div className="w-full max-w-4xl">
+{" "}
+{" "}
+{/* <summary>My terminal Configs</summary> */}
+
 ### How to install oh my posh
+
+- Open windows terminal in Admin mode.
 
 ```sh
 Set-ExecutionPolicy RemoteSigned
@@ -76,13 +67,9 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 ```
 
-After that it will create a file in the folder `C:\Users\usuario\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+After that it will create a file in the folder `C:\Users\usuario\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`. Then just open this file and add the theme you want. My Custom file Microsoft.PowerShell_profile.ps1
 
-Then just open this file and add the theme you want:
-
-> My Custom file Microsoft.PowerShell_profile.ps1
-
-```sh
+```ps
 & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "C:\Users\usuario\Documents\WindowsPowerShell\my-themes\damocles-gil.omp.json" --print) -join "`n"))
 
 Function loryPath {Set-Location -Path C:\Users\usuario\Documents\Desenvolvimento\front-loryartcroche}
@@ -114,7 +101,7 @@ oh-my-posh font install
 
 ```
 
-My custom theme oh-my-posh <a href="/assets/files/damocles-gil.omp.json" download="damocles-gil.omp.json">damocles-gil.omp.json</a>
+My custom theme oh-my-posh donwload here ⬇️: <a href="/assets/files/damocles-gil.omp.json" download="damocles-gil.omp.json">damocles-gil.omp.json</a>
 
 ```json
 {
@@ -248,30 +235,54 @@ My custom theme oh-my-posh <a href="/assets/files/damocles-gil.omp.json" downloa
 </div>
 </details>
 
-## Other APPs
+## List of other things that I use or have used:
 
-- [Figma](https://figma.com/) - I never thought something would replace the Adobe suite for me. Figma did.
-- [LightShot](https://app.prntscr.com/pt-br/download.html)
-- [PowerToys](https://github.com/microsoft/PowerToys/releases) - This software has several shortcut commands and features that help me a lot. You can download <a href="/assets/files/dg_settings_PowerToys.zip" download="dg_settings_PowerToys.zip">My Power Toys Config Here</a>
-- [Winpilot](https://github.com/builtbybel/Winpilot/releases)
+- **Code**
 
-## Audio
+1. [VScode](https://code.visualstudio.com/) - Editor text
+1. [Cursor](https://cursor.sh) - Editor text with AI
+1. [Runjs](https://runjs.app/) - Execute a javascript in real time, but it's nood necessary with node in latest versions.
+1. [NVM](https://github.com/coreybutler/nvm-windows/releases) - Change the Node Version.
 
-- [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/) software that I use to solve the noise problem with my microphone is
+- Terminal / Cli
 
-## Browser
+1. [Hyper](https://hyper.is/) - Performance could be better, but I enjoy using this since it's made with JavaScript.
+1. [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=pt-br&gl=BR).
+1. [Oh My ZSH](https://ohmyz.sh/) - A collection of ZSH plugins that you install once and you're ready to go.
+1. [Oh My Posh](https://ohmyposh.dev/) Windows Terminal Custom
+1. [Custiom prompt setup](https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup)
+1. [windowsterminalthemes](https://windowsterminalthemes.dev/)
+1. [Fig](http://fig.io/) - Super cool app that adds VSCode-style autocomplete to your existing terminal
 
-- [ARC](https://arc.net/)
+- Design
 
-My configs shortcuts with keyboard: [K68 2.4G Bluetooth/Wireless Ziyoulang](https://pt.aliexpress.com/item/1005005738622480.html?spm=a2g0o.order_list.order_list_main.36.62b2caa4VJHZsG&gatewayAdapt=glo2bra)
+1. [Figma](https://figma.com/) - I never thought something would replace the Adobe suite for me. Figma did.
+
+- Others Tools
+
+1. [LightShot](https://app.prntscr.com/pt-br/download.html) - An a Awesome Printscreen tool
+1. [PowerToys](https://github.com/microsoft/PowerToys/releases) - This software has several shortcut commands and features that help me a lot. You can download <a href="/assets/files/dg_settings_PowerToys.zip" download="dg_settings_PowerToys.zip">My Power Toys Config Here</a>
+1. [Winpilot](https://github.com/builtbybel/Winpilot/releases) - This software is a open source library remove programas from windows for more performance.
+
+- Audio
+
+1. [NVIDIA® Broadcast](https://www.nvidia.com/pt-br/geforce/broadcasting/broadcast-app/) software that I use to solve the noise problem with my microphone. This is very nice if you have a NVIDIA RTX Graphic Card.
+
+- Browser
+
+1. [ARC](https://arc.net/) - Clean browser modern and beautiful.
+
+### Other tips to help me remember when to come back here
+
+- Power Toys Configs
+
+Remaped Keys: configs shortcuts with keyboard: [K68 2.4G Bluetooth/Wireless Ziyoulang](https://pt.aliexpress.com/item/1005005738622480.html?spm=a2g0o.order_list.order_list_main.36.62b2caa4VJHZsG&gatewayAdapt=glo2bra)
 
 ![Power Toys Configs Keyboard](/assets/images/keyboard_manager_powerToys.png)
 
-<details className="!cursor-default !select-auto">
-<div className="w-full max-w-4xl">
-<summary className="mt-2"> Other Tips</summary>
-
 > Install `npm` after install `node`
+
+#
 
 ```cli
  npm install -g npm
@@ -293,6 +304,3 @@ git config --global core.editor "code"
 git config --global user.name damoclesgil
 git config --global user.email damoclesgil@gmail.com
 ```
-
-</div>
-</details>
