@@ -1,5 +1,18 @@
 import { getDuration } from "@utils/getDuration";
 
+export type PROJECT_TYPE = {
+  title: string;
+  url: string;
+  description: string;
+  active: boolean;
+  img?: string;
+};
+
+export type PROJECTS_TYPE = {
+  year: string;
+  projects: Array<PROJECT_TYPE>;
+};
+
 export const ALL_PROJECTS = [
   {
     year: "2024",
@@ -51,6 +64,7 @@ export const ALL_PROJECTS = [
           "- I Worked in the development team as Lead Front-end in web projects. I use all my software architecture knowledge to improve performance, maintainability, scalability and readability. I also use my development skills with the best customer experience in mind, with disruptive and value-generating solutions.",
         url: "https://www.calculato.com.br/",
         active: true,
+        img: "assets/images/projects/www.calculato.com.br.jpg",
       },
       {
         title: "Calculato Folha",
@@ -157,11 +171,13 @@ export const ALL_PROJECTS = [
         url: "https://actuar.com/",
         active: true,
         description: `This is a website if i developed for the system of gyms`,
+        img: "assets/images/projects/actuar.com.jpg",
       },
       {
         title: "Trei.no",
         url: "https://trei.no/",
         active: true,
+        img: "assets/images/projects/trei.no.jpg",
         description: `An app for helping students training in gyms`,
       },
       {
@@ -197,4 +213,4 @@ export const ALL_PROJECTS = [
       },
     ],
   },
-];
+] as PROJECTS_TYPE[];
