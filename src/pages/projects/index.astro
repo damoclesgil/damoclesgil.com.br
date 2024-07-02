@@ -4,6 +4,7 @@ import Footer from "@components/Footer.astro";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import { SITE } from "@config";
+// import { Icon } from "astro-icon/components";
 import { ALL_PROJECTS } from "./projects";
 // import { format, parseISO } from "date-fns";
 ---
@@ -12,6 +13,8 @@ import { ALL_PROJECTS } from "./projects";
   <Header activeNav="projects" />
   <Main pageTitle="Projects" pageDesc="All projects.">
     <div class="mt-4">
+      <!-- <Icon name="next" /> -->
+      <!-- <Icon class="text-transparent bg-black" name="devicon:nextjs" /> -->
       {
         ALL_PROJECTS.map(item => (
           <>
@@ -46,7 +49,7 @@ import { ALL_PROJECTS } from "./projects";
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        class="break-words underline decoration-dashed underline-offset-8 hover:text-skin-accent mt-4 block"
+                        class="mt-4 block break-words underline decoration-dashed underline-offset-8 hover:text-skin-accent"
                       >
                         <picture class="m-0 rounded-sm">
                           <img

@@ -6,6 +6,7 @@ import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import mdx from "@astrojs/mdx";
+import icon from "astro-icon";
 
 // import vercel from "@astrojs/vercel/serverless";
 import vercel from "@astrojs/vercel/static";
@@ -20,6 +21,12 @@ export default defineConfig({
     react(),
     sitemap(),
     mdx(),
+    icon({
+      include: {
+        mdi: ["*"],
+        devicon: ["*"],
+      },
+    }),
   ],
   markdown: {
     remarkPlugins: [

@@ -6,6 +6,7 @@ export type PROJECT_TYPE = {
   description: string;
   active: boolean;
   img?: string;
+  stacks?: Array<string>;
 };
 
 export type PROJECTS_TYPE = {
@@ -21,6 +22,7 @@ export const ALL_PROJECTS = [
         title: "damoclesgil.com.br",
         url: "https://github.com/damoclesgil/damoclesgil.com.br",
         active: true,
+        stacks: ["astro", "mdx", "tailwindcss", "ts"],
       },
       {
         title: "Empregador App",
@@ -28,6 +30,7 @@ export const ALL_PROJECTS = [
         description:
           "An app for empregador acessing the company to send and give requests",
         active: true,
+        stacks: ["vue", "vite", "pinia", "tailwindcss", "ts"],
       },
       {
         title: "Api ecommerce - loryartcroche",
@@ -35,6 +38,7 @@ export const ALL_PROJECTS = [
         active: true,
         description:
           "Api made for an ecommerce of handmade bags made by Mrs. Lory, this api helps her register her products and track payment orders using stripe.js",
+        stacks: ["strapi", "ts"],
       },
       {
         title: "Front-end ecommerce - loryartcroche",
@@ -42,6 +46,7 @@ export const ALL_PROJECTS = [
         active: true,
         description:
           "Frontend app using next.js for an ecommerce of handmade bags made by Mrs. Lory, this a website is a ecommerce to disclose the handmade bags.",
+        stacks: ["nextjs", "react", "ts"],
       },
     ],
   },
