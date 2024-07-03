@@ -1,6 +1,12 @@
 import { getDuration } from "@utils/getDuration";
 
-export type PROJECT_TYPE = {
+// eslint-disable-next-line -->
+
+// type STACK_TYPE = {
+//   link: string,
+// icon: string
+// }
+type PROJECT_TYPE = {
   title: string;
   url: string;
   description: string;
@@ -21,8 +27,16 @@ export const ALL_PROJECTS = [
       {
         title: "damoclesgil.com.br",
         url: "https://github.com/damoclesgil/damoclesgil.com.br",
+        description:
+          "My Personal Website for post my articles and share with my friends another things.",
         active: true,
-        stacks: ["astro", "mdx", "tailwindcss", "ts"],
+        stacks: [
+          "devicon:astro",
+          "logos:mdx",
+          "devicon:tailwindcss",
+          "devicon:typescript",
+        ],
+        img: "assets/images/projects/damoclesgil.com.br_about_.png",
       },
       {
         title: "Empregador App",
@@ -30,7 +44,14 @@ export const ALL_PROJECTS = [
         description:
           "An app for empregador acessing the company to send and give requests",
         active: true,
-        stacks: ["vue", "vite", "pinia", "tailwindcss", "ts"],
+        img: "assets/images/projects/empregador.app.png",
+        stacks: [
+          "devicon:vuejs",
+          "devicon:vitejs",
+          "logos:vitest",
+          "logos:pinia",
+          "devicon:typescript",
+        ],
       },
       {
         title: "Api ecommerce - loryartcroche",
@@ -38,7 +59,8 @@ export const ALL_PROJECTS = [
         active: true,
         description:
           "Api made for an ecommerce of handmade bags made by Mrs. Lory, this api helps her register her products and track payment orders using stripe.js",
-        stacks: ["strapi", "ts"],
+        stacks: ["logos:strapi-icon", "devicon:typescript", "logos:stripe"],
+        img: "assets/images/projects/loryartcroche/backend/list-products.png",
       },
       {
         title: "Front-end ecommerce - loryartcroche",
@@ -46,7 +68,15 @@ export const ALL_PROJECTS = [
         active: true,
         description:
           "Frontend app using next.js for an ecommerce of handmade bags made by Mrs. Lory, this a website is a ecommerce to disclose the handmade bags.",
-        stacks: ["nextjs", "react", "ts"],
+        img: "assets/images/projects/loryartcroche/frontend/loryartcroche.com.br.png",
+        stacks: [
+          "devicon:nextjs",
+          "logos:graphql",
+          "logos:apollostack",
+          "devicon:react",
+          "devicon:typescript",
+          "logos:vitest",
+        ],
       },
     ],
   },
@@ -57,6 +87,7 @@ export const ALL_PROJECTS = [
         title: "Project Waste Challenge",
         url: "https://github.com/damoclesgil/project-waste-coding-challenge",
         active: true,
+        stacks: ["devicon:vuejs", "devicon:typescript"],
       },
     ],
   },
@@ -76,12 +107,25 @@ export const ALL_PROJECTS = [
         description: "Payroll system",
         url: "https://folha.calculato.com.br/",
         active: true,
+        stacks: [
+          "devicon:vuejs",
+          "devicon:javascript",
+          "logos:graphql",
+          "logos:apollostack",
+          "logos:jest",
+          "devicon:tailwindcss",
+          "devicon:storybook",
+          "devicon:markdown",
+          "logos:eslint",
+          "logos:prettier",
+        ],
       },
       {
         title: "Trabalhador App",
         url: "https://trabalhador.app/trabalhador",
         description: "An App for communication worker app with payroll system",
         active: true,
+        stacks: ["devicon:vuejs", "devicon:javascript"],
       },
     ],
   },
@@ -92,6 +136,7 @@ export const ALL_PROJECTS = [
         title: "Juntos Somos Mais Challenge",
         url: "https://github.com/damoclesgil/jsm-challenge-frontend",
         active: true,
+        stacks: ["devicon:vuejs", "devicon:typescript", "logos:jest"],
       },
     ],
   },
@@ -103,16 +148,19 @@ export const ALL_PROJECTS = [
         url: "https://nectarcrm.com.br/inicio/",
         active: true,
         img: "assets/images/projects/nectarcrm.com.br.jpg",
+        stacks: ["devicon:angularjs", "devicon:javascript", "devicon:java"],
       },
       {
         title: "damoclesgil.github.io",
         url: "https://github.com/damoclesgil/damoclesgil.github.io",
         active: true,
+        stacks: ["devicon:html5", "devicon:javascript", "devicon:css3"],
       },
       {
         title: "Personal Website Using VuePress",
         url: "https://github.com/damoclesgil/portfolio-vuepress",
         active: true,
+        stacks: ["devicon:vuejs", "devicon:markdown"],
       },
     ],
   },

@@ -4,17 +4,14 @@ import Footer from "@components/Footer.astro";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
 import { SITE } from "@config";
-// import { Icon } from "astro-icon/components";
+import { Icon } from "astro-icon/components";
 import { ALL_PROJECTS } from "./projects";
-// import { format, parseISO } from "date-fns";
 ---
 
 <Layout title={`Projects | ${SITE.title}`}>
   <Header activeNav="projects" />
   <Main pageTitle="Projects" pageDesc="All projects.">
     <div class="mt-4">
-      <!-- <Icon name="next" /> -->
-      <!-- <Icon class="text-transparent bg-black" name="devicon:nextjs" /> -->
       {
         ALL_PROJECTS.map(item => (
           <>
@@ -22,7 +19,7 @@ import { ALL_PROJECTS } from "./projects";
             <ul class="mb-6 ml-4 list-inside list-disc">
               {item.projects.map((project, pIndex) => {
                 return (
-                  <li class="mb-4" id={`${pIndex}`}>
+                  <li class="mb-6" id={`${pIndex}`}>
                     {project.active ? (
                       <a
                         href={project.url}
@@ -44,16 +41,35 @@ import { ALL_PROJECTS } from "./projects";
                         set:html={project.description}
                       />
                     )}
+
+                    {project.stacks && (
+                      <div class="mt-5 ml-4 flex items-center">
+                        <p>Tecnologies: </p>
+                        <div class="flex flex-wrap items-center">
+                          {project.stacks.length &&
+                            project.stacks.map(stackIcon => {
+                              return (
+                                <Icon
+                                  class="iconify mx-4"
+                                  title={stackIcon}
+                                  name={stackIcon}
+                                />
+                              );
+                            })}
+                        </div>
+                      </div>
+                    )}
+
                     {project.img && (
                       <a
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        class="mt-4 block break-words underline decoration-dashed underline-offset-8 hover:text-skin-accent"
+                        class="mt-6 mb-2 block break-words underline decoration-dashed underline-offset-8 hover:text-skin-accent"
                       >
                         <picture class="m-0 rounded-sm">
                           <img
-                            class="mb-1 aspect-video h-auto w-full rounded-md rounded-b-none bg-white object-contain"
+                            class="h-auto w-full"
                             src={`/${project.img}`}
                             alt={project.title}
                           />

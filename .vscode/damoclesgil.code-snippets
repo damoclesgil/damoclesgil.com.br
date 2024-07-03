@@ -57,11 +57,29 @@
     "body": ["https://damoclesgil.com.br"],
     "description": "Website meu",
   },
+  "deviconIconify": {
+    "scope": "typescript",
+    "prefix": "dev",
+    "body": ["devicon:"],
+    "description": "devicon Iconify",
+  },
   "assetsFolder": {
     "scope": "typescript",
     "prefix": "ass",
     "body": ["assets/images/projects/${0}"],
     "description": "Assstes / Projects",
+  },
+  "Typescript nocheck": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "tsnocheck",
+    "body": "// @ts-nocheck",
+    "description": "Ignorar todos errors, lembrar de colocar no topo do arquivo."
+  },
+  "Typescript ignore": {
+    "scope": "typescript, typescriptreact, vue",
+    "prefix": "tsignore",
+    "body": "// @ts-ignore",
+    "description": "Ignorar erro da linha seguinte."
   },
   "DescriptionObjectItem":{
     "scope": "typescript",

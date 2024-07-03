@@ -3,7 +3,7 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -29,6 +29,9 @@
   "files.exclude": {
     ".next": false
   },
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  // "css.customData": ["./tailwind.json"],
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   // "vscode_custom_css.imports": [

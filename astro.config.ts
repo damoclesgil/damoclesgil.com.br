@@ -25,6 +25,8 @@ export default defineConfig({
       include: {
         mdi: ["*"],
         devicon: ["*"],
+        logos: ["*"],
+        tabler: ["article"],
       },
     }),
   ],

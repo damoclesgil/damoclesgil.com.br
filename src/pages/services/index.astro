@@ -1,0 +1,41 @@
+---
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import { SITE } from "@config";
+import { Icon } from "astro-icon/components";
+import { ALL_SERVICES } from "./services";
+// import { format, parseISO } from "date-fns";
+---
+
+<Layout title={`Services | ${SITE.title}`}>
+  <Header activeNav="services" />
+  <Main pageTitle="Services" pageDesc="All services.">
+    <div class="mt-4">
+      <ul
+        class="grid gap-4 sm:grid-cols-2 sm:gap-y-8 md:gap-6 lg:grid-cols-3 pb-10"
+      >
+        {
+          ALL_SERVICES.map((service, sIndex) => {
+            return (
+              <li
+                class="relative flex flex-col rounded-lg border p-6 shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] border-skin-line"
+                id={`${sIndex}`}
+              >
+                <Icon
+                  class="iconify"
+                  title={service.icon}
+                  name={service.icon}
+                />
+                <h3 class="text-xl font-bold mt-4">{service.title}</h3>
+                <p class="text-muted mt-2">{service.description}</p>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+  </Main>
+  <Footer />
+</Layout>
