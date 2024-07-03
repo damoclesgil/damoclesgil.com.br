@@ -28,7 +28,7 @@ export const ALL_PROJECTS = [
         title: "damoclesgil.com.br",
         url: "https://github.com/damoclesgil/damoclesgil.com.br",
         description:
-          "My Personal Website for post my articles and share with my friends another things.",
+          "A personal website to post things I've learned and to share some things with my friends",
         active: true,
         stacks: [
           "devicon:astro",
@@ -42,7 +42,7 @@ export const ALL_PROJECTS = [
         title: "Empregador App",
         url: "https://empregador.app",
         description:
-          "An app for empregador acessing the company to send and give requests",
+          "An SPA that communicates with another SPA called Calculato-Folha (payroll system) through requests to help manage workers in a company that has multiple employers.",
         active: true,
         img: "assets/images/projects/empregador.app.png",
         stacks: [
@@ -87,6 +87,8 @@ export const ALL_PROJECTS = [
         title: "Project Waste Challenge",
         url: "https://github.com/damoclesgil/project-waste-coding-challenge",
         active: true,
+        description:
+          "A challenge requested for the company interview called project waste",
         stacks: ["devicon:vuejs", "devicon:typescript"],
       },
     ],
@@ -101,11 +103,17 @@ export const ALL_PROJECTS = [
         url: "https://www.calculato.com.br/",
         active: true,
         img: "assets/images/projects/www.calculato.com.br.jpg",
+        stacks: [
+          "devicon:nextjs",
+          "devicon:typescript",
+          "vscode-icons:file-type-styled",
+        ],
       },
       {
         title: "Calculato Folha",
         description: "Payroll system",
         url: "https://folha.calculato.com.br/",
+        img: "assets/images/projects/calculato-folha.png",
         active: true,
         stacks: [
           "devicon:vuejs",
@@ -123,8 +131,10 @@ export const ALL_PROJECTS = [
       {
         title: "Trabalhador App",
         url: "https://trabalhador.app/trabalhador",
-        description: "An App for communication worker app with payroll system",
+        description:
+          "An SPA to communicate with the manager who uses the calculato-folha",
         active: true,
+        img: "assets/images/projects/trabalhador-app.png",
         stacks: ["devicon:vuejs", "devicon:javascript"],
       },
     ],
@@ -136,6 +146,8 @@ export const ALL_PROJECTS = [
         title: "Juntos Somos Mais Challenge",
         url: "https://github.com/damoclesgil/jsm-challenge-frontend",
         active: true,
+        description:
+          "This a challenge for interview for work in startup of itau to work in cubo",
         stacks: ["devicon:vuejs", "devicon:typescript", "logos:jest"],
       },
     ],
@@ -148,19 +160,25 @@ export const ALL_PROJECTS = [
         url: "https://nectarcrm.com.br/inicio/",
         active: true,
         img: "assets/images/projects/nectarcrm.com.br.jpg",
+        description:
+          "I worked on the development team as Front-End on the core project (NectarCRM) using the angularjs framework.",
         stacks: ["devicon:angularjs", "devicon:javascript", "devicon:java"],
       },
       {
         title: "damoclesgil.github.io",
-        url: "https://github.com/damoclesgil/damoclesgil.github.io",
+        url: "https://damoclesgil.github.io/",
         active: true,
+        img: "assets/images/projects/damoclesgil.github.io.png",
         stacks: ["devicon:html5", "devicon:javascript", "devicon:css3"],
       },
       {
         title: "Personal Website Using VuePress",
         url: "https://github.com/damoclesgil/portfolio-vuepress",
         active: true,
+        description:
+          "This is a Portfolio using a vuepress and is basically a merge of vue and markdown.",
         stacks: ["devicon:vuejs", "devicon:markdown"],
+        img: "assets/images/projects/vuepressblog.png",
       },
     ],
   },
@@ -170,26 +188,61 @@ export const ALL_PROJECTS = [
       {
         title: "Daxplace",
         url: "https://google.com.br",
+        description: `
+              Front-End EngineerFront-End Engineer
+              Daxplace · Full-timeDaxplace · Full-time
+              Apr 2018 - Sep 2019 · 1 yr 6 mosApr 2018 to Sep 2019 · 1 yr 6 mos
+              Goiânia e Região, BrasilGoiânia e Região, Brasil
+              In Daxplace I used Vue in the Front-end, and with Node.js and Laravel in the Back-end.
+
+              Still, in the Daxplace Four, I had a bigger challenge, managing a team of Front-end developers. Yes, here I learned a lot about people and how they work.`,
         active: false,
+        stacks: ["devicon:vuejs", "devicon:laravel", "devicon:wordpress"],
       },
       {
         title: "Realtrade",
         url: "https://realtradeclub.com.br",
         active: false,
+        // img: 'assets/images/projects/realtrade/realtrade_01.jpg',
+        stacks: ["devicon:vuejs", "devicon:laravel"],
+      },
+      {
+        title: "Premyu",
+        url: "https://premyu.com.br",
+        active: false,
+        img: "assets/images/projects/premyu/dashboard.png",
+        stacks: ["devicon:vuejs", "devicon:laravel"],
       },
       {
         title: "Conexão Soluções Corporativas",
         url: "https://conexaopro.com.br/site/",
+        description:
+          "Development of new features to the site, backstage administration and other stuff for the product. Help to create the best UX/UI, using HTML5, CSS, JS and etc.",
         active: true,
+        img: "assets/images/projects/conexao/homepage.png",
+        stacks: [
+          "devicon:php",
+          "logos:codeigniter",
+          "devicon:html5",
+          "devicon:css3",
+          "devicon:jquery",
+        ],
       },
       {
         title: "APCAM",
         url: "https://apcam.org.br/home/institucional",
         active: true,
         img: "assets/images/projects/apcam.org.br.jpg",
-        descriotion: `
+        description: `
         The Association of Breast Cancer Patients - APCAM is a philanthropic, non-profit entity that survives on donations, activities to raise financial resources carried out by the Association's patients and collaborators, as well as research projects developed by researchers from the Network Brazilian Research Institute in Mastology, belonging to the Mastology Program - HC/UFG.
         `,
+        stacks: [
+          "devicon:php",
+          "logos:codeigniter",
+          "devicon:html5",
+          "devicon:css3",
+          "devicon:jquery",
+        ],
       },
       {
         title: "Infotech Goianésia",
@@ -198,6 +251,7 @@ export const ALL_PROJECTS = [
         img: "assets/images/projects/www.infotechgoianesia.com.br.jpg",
         description:
           "A website using nuxt.js to promote an internet provider in Goianésia and nearby regions.",
+        stacks: ["logos:nuxt"],
       },
     ],
   },
@@ -209,36 +263,55 @@ export const ALL_PROJECTS = [
         url: "http://believeescola.com.br/",
         active: true,
         description: `This a an website of school languages, I create using wordpress.`,
+        stacks: ["devicon:wordpress", "devicon:jquery"],
       },
       {
         title: "Favorites Link",
         url: "https://github.com/damoclesgil/favorites-links",
         active: true,
         description: `This a an repo with my favorites that contain links that I find useful in my daily life for development`,
+        stacks: ["devicon:markdown"],
       },
       {
         title: "Boilerplate website",
         url: "https://github.com/damoclesgil/boilerplate-website",
         active: true,
         description: `This is a an repo with my boilerplate for constructing an website static`,
+        stacks: [
+          "devicon:html5",
+          "devicon:css3",
+          "devicon:javascript",
+          "devicon:webpack",
+        ],
       },
       {
-        title: "Actuar Sistemas",
+        title: "Actuar Website",
         url: "https://actuar.com/",
         active: true,
-        description: `This is a website if i developed for the system of gyms`,
+        description: `I worked on many fronts, from developing email marketing, setting up google adwords, creating and maintaining websites and web applications and doing customer service on social networks.`,
         img: "assets/images/projects/actuar.com.jpg",
+        stacks: ["devicon:html5", "devicon:css3", "devicon:jquery"],
+      },
+      {
+        title: "Actuar App",
+        url: "https://actuar.com/",
+        active: true,
+        description: `This is a SPA using Angular for help the gyms in management.`,
+        img: "assets/images/projects/actuar/dashboard.png",
+        stacks: ["devicon:angular", "devicon:typescript"],
       },
       {
         title: "Trei.no",
         url: "https://trei.no/",
         active: true,
-        img: "assets/images/projects/trei.no.jpg",
+        img: "assets/images/projects/treino/treino.png",
         description: `An app for helping students training in gyms`,
+        stacks: ["devicon:ionic", "devicon:typescript"],
       },
       {
         title: "Afig",
         url: "https://www.afig.com.br/",
+        stacks: ["devicon:angular", "devicon:javascript"],
         active: true,
       },
     ],

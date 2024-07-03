@@ -27,6 +27,7 @@ export default defineConfig({
         devicon: ["*"],
         logos: ["*"],
         tabler: ["article"],
+        "vscode-icons": ["*"],
       },
     }),
   ],
