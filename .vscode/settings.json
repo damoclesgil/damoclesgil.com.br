@@ -46,5 +46,13 @@
   // "editor.fontFamily": "Inconsolata Nerd Font Mono",
   // "workbench.colorTheme": "Palenight Operator",
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["Dâmocles", "damoclesgil", "Marçal"]
+  "cSpell.words": ["Dâmocles", "damoclesgil", "Marçal"],
+  "cSpell.enableFiletypes": [
+    "!css",
+    "!javascript",
+    "!text",
+    "!typescript",
+    "mdx"
+  ],
+  "cSpell.language": "en,pt-BR,pt"
 }
