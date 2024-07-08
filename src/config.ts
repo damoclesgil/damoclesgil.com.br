@@ -109,37 +109,38 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "GitLab",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/damoclesgil",
     linkTitle: `${SITE.title} on GitLab`,
     active: false,
   },
   {
     name: "Reddit",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://reddit.com/damoclesgil/",
     linkTitle: `${SITE.title} on Reddit`,
     active: false,
   },
   {
     name: "Skype",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://skype.com/damoclesgil",
     linkTitle: `${SITE.title} on Skype`,
     active: false,
   },
   {
     name: "Steam",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://steam.com/damoclesgil",
     linkTitle: `${SITE.title} on Steam`,
     active: false,
   },
   {
     name: "Telegram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/damoclesgil",
     linkTitle: `${SITE.title} on Telegram`,
     active: false,
   },
   {
     name: "Mastodon",
-    href: "https://github.com/satnaing/astro-paper",
+    // href: "https://github.com/satnaing/astro-paper",
+    href: "https://mastodon.com/damoclesgil",
     linkTitle: `${SITE.title} on Mastodon`,
     active: false,
   },
@@ -150,49 +151,80 @@ export const CAREER: CareerObjects = [
     jobTitle: "Front-end Engineer",
     company: "Calculato",
     href: "https://www.calculato.com.br/",
-    active: false,
+    active: true,
     startDate: "2019-11-29",
+    description:
+      "I Worked in the development team as Lead Front-end in web projects. I use all my software architecture knowledge to improve performance, maintainability, scalability and readability. I also use my development skills with the best customer experience in mind, with disruptive and value generating solutions.",
+    // endDate: "2025-01-01",
   },
   {
     company: "NectarCRM",
     href: "https://nectarcrm.com.br/inicio/",
-    active: false,
+    active: true,
     jobTitle: "Front-end Engineer",
     startDate: "2019-09-01",
+    description:
+      "I worked on the development team as Front-End on the core project (NectarCRM) using the angularjs framework.",
     endDate: "2019-11-01",
   },
   {
     company: "Daxplace",
-    href: "https://nectarcrm.com.br/inicio/",
+    href: "https://daxplace.com.br/",
     active: false,
     jobTitle: "Full-stack developer",
+    description: `In Daxplace I used Vue in the Front-end, and with Node.js and Laravel in the Back-end.
+    Still, in the Daxplace Four, I had a bigger challenge, managing a team of Front-end developers. Yes, here I learned a lot about people and how they work.`,
     startDate: "2018-04-01",
     endDate: "2019-09-18",
   },
   {
     company: "Conexão Soluções Corporativas",
     href: "https://conexaopro.com.br/site/",
-    active: false,
+    active: true,
     jobTitle: "Web Designer",
+    description:
+      "Development of new features to the site, backstage administration and other stuff for the product. Help to create the best UX/UI, using HTML5, CSS, JS and etc.",
     startDate: "2018-01-01",
     endDate: "2018-04-20",
   },
   {
     company: "Actuar Sistemas",
     href: "https://actuar.com/",
-    active: false,
+    active: true,
     jobTitle: "Web Developer",
+    description: `In this company I worked on many fronts, from developing email marketing, setting up google adwords, creating and maintaining websites and web applications and doing customer service on social networks.`,
     startDate: "2017-01-01",
     endDate: "2017-12-31",
   },
   {
     company: "Sage",
     href: "https://www.sage.com/pt-pt/",
-    active: false,
+    active: true,
     jobTitle: "Training and Deployment",
     startDate: "2016-01-01",
     endDate: "2016-10-20",
+    description: `
+    I work for Conduct training and qualification of users to use the software.
+    Responsible for installing, maintaining and configuring software on users' machines.
+    `,
   },
+  {
+    company: "Freelancer",
+    href: "https://www.damoclesgil.com.br",
+    active: true,
+    jobTitle: "Fullstack development",
+    startDate: "2016-10-20",
+    description: `I worked building static websites, e-commerces, blogs and answering questions from people who would like to go into the digital/technological world to acquire more experience and knowledge.
+    `,
+  },
+  // {
+  //   company: "Grupo Pão de Açúcar(GPA)",
+  //   href: "https://www.grup.com/pt-pt/",
+  //   active: true,
+  //   jobTitle: "Supermaket Operator",
+  //   startDate: "2015-07-01",
+  //   endDate: "2015-01-27",
+  // },
 ];
 export const SETUP_ITEMS = [
   {

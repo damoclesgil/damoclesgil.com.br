@@ -25,6 +25,7 @@ export type CareerObjects = {
   active: boolean;
   startDate: string;
   endDate?: string;
+  description?: string;
 }[];
 
 export type TechnologiesObjects = {

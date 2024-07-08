@@ -97,9 +97,8 @@ export const ALL_PROJECTS = [
     year: "2022",
     projects: [
       {
-        title: "Calculato",
-        description:
-          "- I Worked in the development team as Lead Front-end in web projects. I use all my software architecture knowledge to improve performance, maintainability, scalability and readability. I also use my development skills with the best customer experience in mind, with disruptive and value-generating solutions.",
+        title: "Calculato Website",
+        description: "Website of calculato.",
         url: "https://www.calculato.com.br/",
         active: true,
         img: "assets/images/projects/www.calculato.com.br.jpg",
@@ -269,7 +268,7 @@ export const ALL_PROJECTS = [
         title: "Favorites Link",
         url: "https://github.com/damoclesgil/favorites-links",
         active: true,
-        description: `This a an repo with my favorites that contain links that I find useful in my daily life for development`,
+        description: `This a an repo with my favorites that contain links that I find useful in my daily life for development, i create for share with others devs 😉`,
         stacks: ["devicon:markdown"],
       },
       {
@@ -288,7 +287,7 @@ export const ALL_PROJECTS = [
         title: "Actuar Website",
         url: "https://actuar.com/",
         active: true,
-        description: `I worked on many fronts, from developing email marketing, setting up google adwords, creating and maintaining websites and web applications and doing customer service on social networks.`,
+        description: `In this company I worked on many fronts, from developing email marketing, setting up google adwords, creating and maintaining websites and web applications and doing customer service on social networks.`,
         img: "assets/images/projects/actuar.com.jpg",
         stacks: ["devicon:html5", "devicon:css3", "devicon:jquery"],
       },
@@ -312,6 +311,7 @@ export const ALL_PROJECTS = [
         title: "Afig",
         url: "https://www.afig.com.br/",
         stacks: ["devicon:angular", "devicon:javascript"],
+        description: "An free web app for calculating IMC and anamnese.",
         active: true,
       },
     ],
@@ -324,7 +324,7 @@ export const ALL_PROJECTS = [
         url: "https://www.sage.com/pt-pt/",
         active: true,
         description: `
-        - Conduct training and qualification of users to use the software.
+        - I work for Conduct training and qualification of users to use the software.
         <br>
         - Responsible for installing, maintaining and configuring software on users' machines.
         `,
@@ -339,7 +339,7 @@ export const ALL_PROJECTS = [
         active: false,
         url: "http://www.go.senac.br/faculdade/site/",
         description: `
-          I am studying Information Technology Management at the SENAC - Faculty of Technology, Goiás. Duration: 2015-2017
+          I am studied Information Technology Management at the SENAC - Faculty of Technology, Goiás. Duration: 2015-2017
           `,
       },
     ],

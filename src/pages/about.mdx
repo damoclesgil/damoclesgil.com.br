@@ -27,7 +27,7 @@ I'm {getDuration('1997-05-06', null).slice(0, 2)} years old, I'm live in <strong
 
 I have a strong background in web design, user interface, and user experience. I am passionate about creating engaging, responsive, and accessible web pages.
 
-I've worked on various types of projects, such as gyms systems, CRM app, educational websites, payroll systems, and others. I enjoy working in a team and collaborating with other developers, designers, and stakeholders.
+I've worked on various types of projects, such as gyms systems, CRM app, educational websites, payroll systems, and others. I enjoy working in a team and collaborating with other developers, designers, and stakeholders 😁.
 
 {/* <a href="/assets/files/damoclesgil-curriculo.pdf" download="damoclesgil-curriculo.pdf">⬇️ Curriculum Vitae</a> */}
 
@@ -55,7 +55,7 @@ I've worked on various types of projects, such as gyms systems, CRM app, educati
 
 ## Career
 
-I listed my projects [here](/projects)
+I have listed all my [projects here](/projects), if you are interested in seeing it.
 
 <div>
   {CAREER.map((item, index) => (
@@ -64,6 +64,7 @@ I listed my projects [here](/projects)
       <a href={item.href} target="blank">
         {item.company}
       </a>
+      <p className="mb-0">{item.description}</p>
       <div className="mb-0 flex items-center text-skin-accent">
         <p>{format(parseISO(item.startDate), "LLL yyyy")}</p>
         <p className="mx-2 block">–</p>

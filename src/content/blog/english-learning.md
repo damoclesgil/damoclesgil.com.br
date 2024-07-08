@@ -10,11 +10,11 @@ tags:
 description: English Studies
 ---
 
-# My english studies
+## My english studies
 
 Intermediary Level
 
-## Simple Present
+## Simple Present (ies, es)
 
 Examples:
 
@@ -23,15 +23,20 @@ Examples:
 3. Loves
 4. Likes
 
+## Present continuous (ing)
+
+1. are visiting
+2. is checking
+
 ## Adverbs
 
 -
 
-## expressions of frequency.
+## expressions of frequency
 
 -
 
-- Planos de Estudos: Diário (Diary)
+## Planos de Estudos: Diário (Diary)
 
 Atividade de escrita: Descrição de uma rotina diária: 05/07/2024
 
@@ -39,3 +44,9 @@ Today, I left home at 06:30 A.M. (half past six or six and a half) and had break
 
 When I finish my lunch i back for my job and i work for more six yours. After this i go to my car and drove for thirty minutes to my house. When i arrived in my house i talking with my mom and my brother about my day. After some minutes i'm dress an sport outfit to go to then gym. I trained for an hour about. And then I went back to my house for dinner.
 I watched a little series on TV and played on the computer.Around midnight I went to take a shower and sleep. And that's all! See you tomorrow!
+
+---
+
+Atividade de escrita: Descrição de uma rotina diária: 11/07/2024
+
+---
