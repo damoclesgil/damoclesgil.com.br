@@ -1,5 +1,7 @@
 {
   // "typescript.tsdk": "node_modules/.pnpm/typescript@5.0.4/node_modules/typescript/lib",
+  // "typescript.tsdk": "node_modules/typescript/lib",
+  // "typescript.tsdk": "node_modules\\typescript\\lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescript]": {
@@ -45,7 +47,6 @@
   // "editor.fontFamily": "AnonymicePro Nerd Font",
   // "editor.fontFamily": "Inconsolata Nerd Font Mono",
   // "workbench.colorTheme": "Palenight Operator",
-  "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": ["Dâmocles", "damoclesgil", "Marçal"],
   "cSpell.enableFiletypes": [
     "!css",

@@ -10,12 +10,17 @@ import { ALL_PROJECTS } from "./projects";
 
 <Layout title={`Projects | ${SITE.title}`}>
   <Header activeNav="projects" />
-  <Main pageTitle="Projects" pageDesc="All projects.">
+  <Main pageTitle="Projects" pageDesc="Timeline of all my projects.">
     <div class="mt-4">
       {
         ALL_PROJECTS.map(item => (
           <>
-            <h3 class="mb-2 text-lg font-bold">{item.year}</h3>
+            <h3 class="mb-2 text-lg font-bold">
+              {item.year} -{" "}
+              {item.projects.length === 1
+                ? `One Project`
+                : `${item.projects.length} Projects`}
+            </h3>
             <ul class="mb-6 ml-4 list-inside list-disc">
               {item.projects.map((project, pIndex) => {
                 return (
@@ -25,13 +30,17 @@ import { ALL_PROJECTS } from "./projects";
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        class="break-words underline decoration-dashed underline-offset-8 hover:text-skin-accent"
+                        class="font-bold break-words underline decoration-dashed underline-offset-8 hover:text-skin-accent"
                       >
                         {project.title}
                       </a>
                     ) : (
-                      <span class="break-words underline decoration-dashed underline-offset-8">
-                        {project.title}
+                      <span class="break-words font-bold">{project.title}</span>
+                    )}
+
+                    {project.isNew && (
+                      <span class="bg-skin-accent px-2 rounded-md leading-normal pb-0.5 ml-4 font-bold text-sm">
+                        Recently
                       </span>
                     )}
 

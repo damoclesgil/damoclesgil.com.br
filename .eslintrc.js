@@ -3,10 +3,12 @@ module.exports = {
     node: true,
     es2022: true,
     browser: true,
+    // es6: true
   },
   extends: ["eslint:recommended", "plugin:astro/recommended"],
   parserOptions: {
     ecmaVersion: "latest",
+    // ecmaVersion: "2017",
     sourceType: "module",
   },
   overrides: [
@@ -15,9 +17,11 @@ module.exports = {
       parser: "astro-eslint-parser",
       parserOptions: {
         parser: "@typescript-eslint/parser",
-        extraFileExtensions: [".astro"],
+        extraFileExtensions: [".astro", ".ts"],
       },
-      rules: {},
+      // rules: {
+
+      // },
     },
   ],
 };

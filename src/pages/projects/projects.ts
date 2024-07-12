@@ -1,16 +1,11 @@
 import { getDuration } from "@utils/getDuration";
 
-// eslint-disable-next-line -->
-
-// type STACK_TYPE = {
-//   link: string,
-// icon: string
-// }
 type PROJECT_TYPE = {
   title: string;
   url: string;
   description: string;
   active: boolean;
+  isNew?: boolean;
   img?: string;
   stacks?: Array<string>;
 };
@@ -24,6 +19,25 @@ export const ALL_PROJECTS = [
   {
     year: "2024",
     projects: [
+      {
+        title: "Clínica Elementus Website",
+        url: "https://github.com/damoclesgil",
+        description:
+          "Clínica Elementus is a website for divulged an Esthetician Clinic for mans.",
+        active: false,
+        isNew: true,
+        stacks: ["devicon:nextjs", "devicon:tailwindcss", "devicon:typescript"],
+        // img: "assets/images/projects/damoclesgil.com.br_about_.png",
+      },
+      {
+        isNew: true,
+        title: "HubsFlat Website",
+        url: "https://github.com/damoclesgil",
+        description: "HubsFlat is an website for show odonto clinic",
+        active: false,
+        stacks: ["devicon:nextjs", "devicon:tailwindcss", "devicon:typescript"],
+        // img: "assets/images/projects/damoclesgil.com.br_about_.png",
+      },
       {
         title: "damoclesgil.com.br",
         url: "https://github.com/damoclesgil/damoclesgil.com.br",
@@ -167,6 +181,8 @@ export const ALL_PROJECTS = [
         title: "damoclesgil.github.io",
         url: "https://damoclesgil.github.io/",
         active: true,
+        description:
+          "This is an Simple Portfolio using a html, css and javascript.",
         img: "assets/images/projects/damoclesgil.github.io.png",
         stacks: ["devicon:html5", "devicon:javascript", "devicon:css3"],
       },
@@ -175,7 +191,7 @@ export const ALL_PROJECTS = [
         url: "https://github.com/damoclesgil/portfolio-vuepress",
         active: true,
         description:
-          "This is a Portfolio using a vuepress and is basically a merge of vue and markdown.",
+          "This is a Portfolio using a vuepress if you don't know vuepress basically is a merge of vue and markdown 😊💚.",
         stacks: ["devicon:vuejs", "devicon:markdown"],
         img: "assets/images/projects/vuepressblog.png",
       },
@@ -188,13 +204,7 @@ export const ALL_PROJECTS = [
         title: "Daxplace",
         url: "https://google.com.br",
         description: `
-              Front-End EngineerFront-End Engineer
-              Daxplace · Full-timeDaxplace · Full-time
-              Apr 2018 - Sep 2019 · 1 yr 6 mosApr 2018 to Sep 2019 · 1 yr 6 mos
-              Goiânia e Região, BrasilGoiânia e Região, Brasil
-              In Daxplace I used Vue in the Front-end, and with Node.js and Laravel in the Back-end.
-
-              Still, in the Daxplace Four, I had a bigger challenge, managing a team of Front-end developers. Yes, here I learned a lot about people and how they work.`,
+              An Blog for divulgated about the products of Daxplace.`,
         active: false,
         stacks: ["devicon:vuejs", "devicon:laravel", "devicon:wordpress"],
       },
@@ -202,8 +212,14 @@ export const ALL_PROJECTS = [
         title: "Realtrade",
         url: "https://realtradeclub.com.br",
         active: false,
+        // description: "An Plataform for ",
         // img: 'assets/images/projects/realtrade/realtrade_01.jpg',
-        stacks: ["devicon:vuejs", "devicon:laravel"],
+        stacks: [
+          "devicon:vuejs",
+          "devicon:laravel",
+          "devicon:php",
+          "devicon:nodejs",
+        ],
       },
       {
         title: "Premyu",
