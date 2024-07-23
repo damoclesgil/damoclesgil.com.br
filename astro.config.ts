@@ -7,6 +7,7 @@ import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
 import mdx from "@astrojs/mdx";
 import icon from "astro-icon";
+import partytown from "@astrojs/partytown";
 
 // import vercel from "@astrojs/vercel/serverless";
 import vercel from "@astrojs/vercel/static";
@@ -28,6 +29,11 @@ export default defineConfig({
         logos: ["*"],
         tabler: ["article"],
         "vscode-icons": ["*"],
+      },
+    }),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
       },
     }),
   ],
