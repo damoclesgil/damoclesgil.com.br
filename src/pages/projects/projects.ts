@@ -20,6 +20,22 @@ export const ALL_PROJECTS = [
     year: "2024",
     projects: [
       {
+        title: "Battle Monster Challenge Api",
+        url: "https://github.com/damoclesgil/monster-battle-api",
+        description: "Battle Monster Challenge Api.",
+        active: true,
+        isNew: true,
+        stacks: ["devicon:javascript", "devicon:nodejs"],
+      },
+      {
+        title: "Battle Monster Challenge",
+        url: "https://github.com/damoclesgil/monster-battle-challenge",
+        description: "Battle Monster Challenge Front-End.",
+        active: true,
+        isNew: true,
+        stacks: ["devicon:vuejs", "devicon:tailwindcss", "devicon:typescript"],
+      },
+      {
         title: "Clínica Elementus Website",
         url: "https://github.com/damoclesgil",
         description:
