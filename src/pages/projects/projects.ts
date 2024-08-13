@@ -37,13 +37,13 @@ export const ALL_PROJECTS = [
       },
       {
         title: "Clínica Elementus Website",
-        url: "https://github.com/damoclesgil",
+        url: "https://clinicaelementus.com/",
         description:
           "Clínica Elementus is a website for divulged an Esthetician Clinic for mans.",
-        active: false,
+        active: true,
         isNew: true,
         stacks: ["devicon:nextjs", "devicon:tailwindcss", "devicon:typescript"],
-        // img: "assets/images/projects/damoclesgil.com.br_about_.png",
+        img: "assets/images/projects/clinicaelementus.com.jpg",
       },
       {
         isNew: true,
