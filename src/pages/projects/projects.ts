@@ -368,11 +368,11 @@ export const ALL_PROJECTS = [
     projects: [
       {
         title: "Information Technology Management",
-        active: false,
+        active: true,
         url: "http://www.go.senac.br/faculdade/site/",
         description: `
-          I am studied Information Technology Management at the SENAC - Faculty of Technology, Goiás. Duration: 2015-2017
-          `,
+          - I am studied Information Technology Management at the SENAC - Faculty of Technology, Goiás. Duration: 01/01/2015 - 26/11/2017
+          - Total Hours: 2.000 hours`,
       },
     ],
   },
@@ -383,7 +383,8 @@ export const ALL_PROJECTS = [
         title: "Web Designer",
         active: false,
         description: `
-          I am graduated in web designer by the technical school called "MCTech". Duration: 2014-2016
+          - I am graduated in web designer by the technical school called "MCTech". Duration: 2014-2016 (Two Years)
+          - Total Hours: 300 hours.
           `,
       },
     ],
