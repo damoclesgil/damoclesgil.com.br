@@ -94,7 +94,7 @@ export const ALL_PROJECTS = [
       },
       {
         title: "Front-end ecommerce - loryartcroche",
-        url: "https://github.com/damoclesgil/front-loryartcroche",
+        url: "https://www.lorycroche.com.br/",
         active: true,
         description:
           "Frontend app using next.js for an ecommerce of handmade bags made by Mrs. Lory, this a website is a ecommerce to disclose the handmade bags.",
