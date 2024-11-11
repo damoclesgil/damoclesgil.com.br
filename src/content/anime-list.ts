@@ -4,6 +4,8 @@ export const ANIME_LIST = [
     animeTitle: "Solo Leveling",
     imgSrc:
       "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe",
+    description:
+      "This anime is very insane, It is korean anime, based on Manhwa create by Chugong. The anime is basicaly a game who the principal character pass",
   },
   {
     href: "https://www.crunchyroll.com/pt-br/series/GRDV0019R/jujutsu-kaisen",
