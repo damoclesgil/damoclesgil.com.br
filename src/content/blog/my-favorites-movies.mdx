@@ -1,8 +1,8 @@
 ---
 author: Dâmocles Gil Marçal
 pubDatetime: 2024-05-07T09:22:00Z
-title: Favorites Movies.
-slug: favorites-movies
+title: Recently Watched Movies.
+slug: recently-watched-movies
 featured: false
 draft: true
 tags:
@@ -12,7 +12,16 @@ description: List of movies that I liked
 
 import { MOVIES_LIST } from "../movies-list.ts";
 
-<div className="grid grid-cols-3 gap-4 items-center text-center">
+<div>
+
+Lista de Filmes para assistir:
+
+- Robot wild [x]
+- Gladiator 2 [ ]
+
+</div>
+
+<div className="grid grid-cols-1 gap-4 items-start text-left">
   {MOVIES_LIST.map((item, index) => (
     // <a
     //   key={index}

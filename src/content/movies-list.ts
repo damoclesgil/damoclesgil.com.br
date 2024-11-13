@@ -1,11 +1,16 @@
 export const MOVIES_LIST = [
   {
-    title: "A Quiet Place: Day One",
+    title: "Joker - 2019",
     href: "",
     imgSrc: "",
   },
   {
-    title: "Drive",
+    title: "Chappie",
+    href: "",
+    imgSrc: "",
+  },
+  {
+    title: "Baby Drive",
     href: "",
     imgSrc: "",
   },
@@ -36,6 +41,11 @@ export const MOVIES_LIST = [
   },
   {
     title: "Puss in Boots: The Last Wish",
+    href: "",
+    imgSrc: "",
+  },
+  {
+    title: "Interstellar",
     href: "",
     imgSrc: "",
   },
