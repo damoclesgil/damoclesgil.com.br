@@ -12,7 +12,7 @@ description: English Studies
 
 ## My english studies
 
-Intermediary Level
+Intermediary Level, Somes Tasks and annotations.
 
 ## Simple Present (ies, es)
 
@@ -70,7 +70,7 @@ R: I had a dentist appointment yesterday
 
 P: Talk about you
 
-R:I’m 27 years old, I’m live in Goiânia, Brazil, I’m a senior front-end engineer. I’ve been working in the area for 8 yrs.
+R: I’m 27 years old, I’m live in Goiânia, Brazil, I’m a senior front-end engineer. I’ve been working in the area for 8 yrs.
 
 I have a strong background in web design, user interface, and user experience. I am passionate about creating engaging, responsive, and accessible web pages.
 
@@ -84,3 +84,17 @@ I’ve worked on various types of projects, such as gyms systems, CRM app, educa
 
 - English Level
   My english is not too good, but i'm studying for improve this.
+
+### Somes Techniques for improve the performance of your application
+
+- For improve your application, i learn about somes technics that like debounce, throttle, lazy loading components, dependency injection.
+
+## Task of the day (Past Perfect, subject questions)
+
+- História sobre férias
+
+> In my last vacations I went to Vitoria/Espirito Santo, I visited somes places be with beaches, restaurants and capellas. It was an amazing experience, I need visite this place other time. I stayed in an very big and incredible house with a beautiful green view of lots of threes and vegetation.
+
+## Grammarly
+
+### Past perfect Tense, subject questions

@@ -3,6 +3,7 @@ export const MOVIES_LIST = [
     title: "Joker - 2019",
     href: "",
     imgSrc: "",
+    rank: 0,
   },
   {
     title: "Chappie",
