@@ -396,7 +396,7 @@ export const ALL_PROJECTS = [
         title: "Born",
         url: "https://google.com.br",
         active: false,
-        description: `- I was born in 1997. I was ${getDuration("1997-05-06", null).slice(0, 2)} years old.`,
+        description: `- I was born in 1997 on July 5th. I was ${getDuration("1997-05-06", null).slice(0, 2)} years old.`,
       },
     ],
   },
