@@ -30,6 +30,7 @@ export const ALL_PROJECTS = [
       {
         title: "Battle Monster Challenge",
         url: "https://github.com/damoclesgil/monster-battle-challenge",
+        img: "assets/images/projects/monster_challenge.png",
         description: "Battle Monster Challenge Front-End.",
         active: true,
         isNew: true,
@@ -115,10 +116,10 @@ export const ALL_PROJECTS = [
     projects: [
       {
         title: "Project Waste Challenge",
-        url: "https://github.com/damoclesgil/project-waste-coding-challenge",
+        url: "https://project-waste-coding-challenge.netlify.app/",
         active: true,
         description:
-          "A challenge requested for the company interview called project waste",
+          "A challenge requested for the company interview called project waste, you can see the code in my github:https://github.com/damoclesgil/project-waste-coding-challenge",
         stacks: ["devicon:vuejs", "devicon:typescript"],
       },
     ],
@@ -260,6 +261,16 @@ export const ALL_PROJECTS = [
         ],
       },
       {
+        title: "PLAICO",
+        url: "https://plaico.netlify.app/",
+        active: true,
+        img: "assets/images/projects/plaico-website.png",
+        description: `
+        Plaico is a brand of Grupo Danwealth Capital SA, specialized in providing consulting services to the industry and the business chain, which values excellence in the development of Desktop, Mobile and Blockchain technologies, international legal, banking and fiscal counseling , project design, marketing, sales, products and services.
+        `,
+        stacks: ["devicon:html5", "devicon:css3"],
+      },
+      {
         title: "APCAM",
         url: "https://apcam.org.br/home/institucional",
         active: true,
@@ -343,6 +354,7 @@ export const ALL_PROJECTS = [
         title: "Afig",
         url: "https://www.afig.com.br/",
         stacks: ["devicon:angular", "devicon:javascript"],
+        img: "assets/images/projects/afig-actuar.png",
         description: "An free web app for calculating IMC and anamnese.",
         active: true,
       },
