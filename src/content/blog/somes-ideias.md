@@ -14,11 +14,13 @@ description: Some Ideas of developing my Micro SaaS (pains of somes users)
 
 ## Some Ideias I'have Side Projects
 
-- Work Remotly websites?
+- Work Remotly websites? (Já tem muitos)
 - Site de Anúncio (Falando sobre algum conteudo que ajude os outros.)
 <!-- - Ecommerce -->
 - Site que ajuda aprender Ingles
 - Site que recomenda o que vc quer aprender ou especializar?
+- Estou pensando fazer uma aplicação com GO-lang no back e next.js no front-end.
+- Ganhar dinheiro ajundando no age of mythology (que ajuda seria?)
 
 ### Vantagens (Why to Learn?)
 
