@@ -4,18 +4,19 @@ pubDatetime: 2025-01-06T10:15:00Z
 title: Books I Read
 slug: books-read
 featured: false
-draft: true
+draft: false
 tags:
   - books
-description: Livros que lee e o que eu aprendi
+description: Livros que eu li no ano de 2024
 ---
 
-## Aprendizados do Livro 21 lições para o século 21
+## 21 lições para o século 21
 
 - Nó século atual o que mais vem prejudicando as pessoas são as doenças psicologias, com o advento da tecnologia e informacoes e dados a todo instante, tudo que vivenciemos tem enorme impacto nos nossos pensamentos e maneira de agir. Uma notícia ou uma fake new impacta muito no seu dia a dia. Então tentar ter o controle de nos, tentarmos ser mais racionais do que emocionais. Acredito que seja um balanceamento, mas hoje em dia só se dar bem e tem o controle aquele que haje com mais racionalidade nas seu dia a dia.
 - Mente é diferente de Cérebro, muitos cientistas confundem isso, pois mente tem a ver com sentimentos e a definição mais didática dos livro lá.
+- A IA não vai resolver tudo e nem vai ser o vilão da história, quem está por trás no final das contas é o ser Humano e vai ser por muito tempo.
 
-## Aprendizados do livro psicologia financeira
+## Psicologia financeira
 
 - Investimento é no longo prazo, um e exemplo citado de tratar o investimento é como tratar a gripe. E a melhor maneira de tratar uma gripe para ter um melhor retorno no longo do prazo é não se medicando e deixando seu corpo criando mecanismo de proteção para ganhar mais resistência.
 - Seja exemplo, antes de tentar corrigir ou tentar mudar o externo. Um exemplo citado foi de um cara que não arrumava nem o próprio quarto e queria propar falar mal ou tentar propor soluções para os outros e os outros simplesmente não confiarem, devido a pessoa não ser autoridade e não ter o poder de persuasão.
@@ -42,9 +43,10 @@ description: Livros que lee e o que eu aprendi
 - Não fazer o papel de bom moço pode ser uma oportunidade a menos no futuro.
 - Não ir para academia pode te trazer o problema da inercia, que é se não faço exercício também não vou correr atrás de outras coisas.
 
-## Estratégia do Oceoano Azul
+## Estratégia do Oceano Azul
 
 - Ir na maré que todo mundo está indo pode ser uma grande furada, apesar de ser um pouco contra intuitivo, o segredo e focar no seu diferencial e ir com tudo nele.
+- Criar um modelo ou produto bom é basicamente um produto que resolva o real problema de alguém ou de um grupo de pessoas.
 
 ## 14 Hábitos de Desenvolvedor extramente positivo
 
