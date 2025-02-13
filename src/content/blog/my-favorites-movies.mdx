@@ -1,43 +1,49 @@
 ---
 author: Dâmocles Gil Marçal
 pubDatetime: 2024-05-07T09:22:00Z
-title: Recently Watched Movies.
-slug: recently-watched-movies
-featured: false
-draft: true
+title: Favorite Movies.
+slug: favorite-movies
+featured: true
+draft: false
 tags:
-  - anime
+  - movies
+  - favorites
 description: List of movies that I liked
 ---
 
 import { MOVIES_LIST } from "../movies-list.ts";
 
-<div>
+<p>
+  Follow-me on{" "}
+  <a href="https://app.tvtime.com/user/8266515" target="_blank">
+    app.tvtime
+  </a>{" "}
+  😊
+</p>
 
-Lista de Filmes para assistir:
-
-- Robot wild [x]
-- Gladiator 2 [x]
-
-</div>
-
-<div className="grid grid-cols-1 gap-4 items-start text-left">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-start text-left ">
   {MOVIES_LIST.map((item, index) => (
-    // <a
-    //   key={index}
-    //   href={item.href}
-    //   target="blank"
-    //   className="p-3 pt-2 hover:bg-skin-card no-underline"
-    //   title={item.title}
-    // >
-    //   <img
-    //     className="m-auto block"
-    //     width="150"
-    //     src={item.imgSrc}
-    //     alt={`${item.title}`}
-    //   />
-    //   ll
-    // </a>
-    <p className="mt-2 mb-0 text-sm">{item.title}</p>
+    <a
+      key={index}
+      href={
+        item.href === ""
+          ? `https://www.google.com/search?q=${item.title}`
+          : item.href
+      }
+      target="blank"
+      className="p-3 pt-2 hover:bg-skin-card no-underline block"
+      title={item.title}
+    >
+      {item.imgSrc && (
+        <img
+          className="m-auto block w-full h-[330px] object-cover"
+          width={150}
+          height={150}
+          src={item.imgSrc}
+          alt={`${item.title}`}
+        />
+      )}
+      <p className="mt-2 mb-0 text-sm">{item.title}</p>
+    </a>
   ))}
 </div>
