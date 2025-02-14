@@ -12,14 +12,14 @@ description: Livros que eu li no ano de 2024
 
 ## 21 lições para o século 21
 
-- Nó século atual o que mais vem prejudicando as pessoas são as doenças psicologias, com o advento da tecnologia e informacoes e dados a todo instante, tudo que vivenciemos tem enorme impacto nos nossos pensamentos e maneira de agir. Uma notícia ou uma fake new impacta muito no seu dia a dia. Então tentar ter o controle de nos, tentarmos ser mais racionais do que emocionais. Acredito que seja um balanceamento, mas hoje em dia só se dar bem e tem o controle aquele que haje com mais racionalidade nas seu dia a dia.
+- Nó século atual o que mais vem prejudicando as pessoas são as doenças psicologias, com o advento da tecnologia e informações e dados a todo instante, tudo que vivenciemos tem enorme impacto nos nossos pensamentos e maneira de agir. Uma notícia ou uma fake new impacta muito no seu dia a dia. Então tentar ter o controle de nos, tentarmos ser mais racionais do que emocionais. Acredito que seja um balanceamento, mas hoje em dia só se dar bem e tem o controle aquele que haje com mais racionalidade nas seu dia a dia.
 - Mente é diferente de Cérebro, muitos cientistas confundem isso, pois mente tem a ver com sentimentos e a definição mais didática dos livro lá.
 - A IA não vai resolver tudo e nem vai ser o vilão da história, quem está por trás no final das contas é o ser Humano e vai ser por muito tempo.
 
 ## Psicologia financeira
 
 - Investimento é no longo prazo, um e exemplo citado de tratar o investimento é como tratar a gripe. E a melhor maneira de tratar uma gripe para ter um melhor retorno no longo do prazo é não se medicando e deixando seu corpo criando mecanismo de proteção para ganhar mais resistência.
-- Seja exemplo, antes de tentar corrigir ou tentar mudar o externo. Um exemplo citado foi de um cara que não arrumava nem o próprio quarto e queria propar falar mal ou tentar propor soluções para os outros e os outros simplesmente não confiarem, devido a pessoa não ser autoridade e não ter o poder de persuasão.
+- Seja exemplo, antes de tentar corrigir ou tentar mudar o externo. Um exemplo citado foi de um cara que não arrumava nem o próprio quarto e queria propor soluções para os outros. O resultado que deu é que as pessoas simplesmente não confiarem, devido a pessoa não ser autoridade e não ter o poder de persuasão.
 
 ## Como fazer amigos e influenciar pessoas
 
@@ -32,9 +32,9 @@ description: Livros que eu li no ano de 2024
 - Evitar conflitos, sempre desistir de uma discussão (falar que concorda com o próximo e pronto e que aprendi muito com você!), pois não vai levar a lugar nenhum.
 - Se quiser que alguma pessoa faça algo, não peça ou dê ordem, conduza-a para fazer determinada coisa.
 
-## Pensar enriquece - Napolean Hill
+## Pensar enriquece - Napoleon Hill
 
-- Todos os ricos tinham um proposito bem definido, por exemplo o do SteveJobs foi fazer um computador bonito e que o usuário vai ter uma melhor experiencia. O Jeff Bezos foi de criar a melhor solução de entrega e resolver a logística de livros. Do markinho Zukemberg foi de criar um rede social na qual os usuário ficasem a maior parte do tempo presos.
+- Todos os ricos tinham um proposito bem definido, por exemplo o do SteveJobs foi fazer um computador bonito e que o usuário vai ter uma melhor experiencia. O Jeff Bezos foi de criar a melhor solução de entrega e resolver a logística de livros. Do Markinho Zukemberg foi de criar um rede social na qual os usuário ficasem a maior parte do tempo presos.
 - Ter uma ideia de empreender seria pensar o que faz falta no dia a dia. O melhor benefício do capitalismo é o poder de escolha, só se tem sucesso se seu produto/serviço sana o problema de alguém, então se tem um produto ruim basta vc não comprar e se tem um produto bom essa cara vai crescer.
 
 ## 15 Poder dos hábitos
