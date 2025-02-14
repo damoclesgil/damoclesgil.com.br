@@ -3,7 +3,7 @@ author: Dâmocles Gil Marçal
 pubDatetime: 2024-07-02T14:40:00Z
 title: Debounce vs Throttling
 slug: debounce-throttling
-featured: true
+featured: false
 draft: false
 tags:
   - javascript

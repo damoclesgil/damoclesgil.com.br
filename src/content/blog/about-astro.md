@@ -3,7 +3,7 @@ author: Dâmocles Gil Marçal
 pubDatetime: 2024-03-02T21:20:00Z
 title: Why I migrate my blog publication from Next.js to astro
 slug: astro-migrate
-featured: true
+featured: false
 draft: false
 tags:
   - astro
