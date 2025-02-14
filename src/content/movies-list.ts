@@ -1,11 +1,11 @@
 export const MOVIES_LIST = [
   {
-    title: "Groundhog Day (O Feitiço do Tempo)",
-    href: "https://www.primevideo.com/-/pt/detail/Feiti%C3%A7o-do-Tempo/0LGXVI2R0SST8MRPQXHLOOJC7M",
+    title: "Repetente",
+    href: "https://www.netflix.com/br/title/81761732",
     imgSrc:
-      "https://m.media-amazon.com/images/S/pv-target-images/13c05b9f1c865b315e0318fb00dbc505f919bdbb8bdde1aa5307061ecffeaf48.jpg",
-    rank: 0,
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTZYCGCvRZc8wlVNJiqa-2-U4GXx0SgyNclhbCfMaRIkA4Q0wnCgkYm6sjPsk3HgdByweG",
   },
+
   {
     title: "Joker - 2019",
     href: "",
@@ -23,6 +23,13 @@ export const MOVIES_LIST = [
     href: "",
     imgSrc:
       "https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/title-key-art/234064_District9_2009_1400x2100_US.jpg?itok=MYv7hEGU",
+  },
+  {
+    title: "Groundhog Day (O Feitiço do Tempo)",
+    href: "https://www.primevideo.com/-/pt/detail/Feiti%C3%A7o-do-Tempo/0LGXVI2R0SST8MRPQXHLOOJC7M",
+    imgSrc:
+      "https://m.media-amazon.com/images/S/pv-target-images/13c05b9f1c865b315e0318fb00dbc505f919bdbb8bdde1aa5307061ecffeaf48.jpg",
+    rank: 0,
   },
   {
     title: "Baby Drive",
