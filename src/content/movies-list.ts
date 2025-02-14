@@ -95,4 +95,10 @@ export const MOVIES_LIST = [
     href: "",
     imgSrc: "https://m.media-amazon.com/images/I/912Ht9rUWWS.jpg",
   },
+  {
+    title: "O Sexto Sentido",
+    href: "",
+    imgSrc:
+      "https://m.media-amazon.com/images/M/MV5BMjEzOWVhMGMtYjdmYi00MTk1LWFhNjMtNDYzNjNlOGFmMDQ2XkEyXkFqcGc@._V1_.jpg",
+  },
 ];
