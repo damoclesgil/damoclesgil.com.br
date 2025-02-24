@@ -2,86 +2,6 @@
 
 @config '../../tailwind.config.cjs';
 
-
-@theme {
-  /* Cores de texto */
-  --color-skin-fill: 255, 255, 255;
-  --color-skin-base: 40, 39, 40;
-  --color-skin-accent: 0, 193, 106;
-  --color-skin-inverted: 251, 254, 251;
-
-  /* Cores de fundo */
-  /* --color-skin-background-fill: 251, 254, 251;
-  --color-skin-background-accent: 0, 193, 106;
-  --color-skin-background-inverted: 40, 39, 40; */
-  --color-skin-card: 230, 230, 230;
-  --color-skin-card-muted: 205, 205, 205;
-
-  /* Cores de contorno */
-  --color-skin-outline-fill: 0, 193, 106;
-
-  /* Cores de borda */
-  --color-skin-border-line: 0, 193, 106;
-  --color-skin-border-fill: 40, 39, 40;
-  --color-skin-border-accent: 0, 193, 106;
-
-  /* Cores de preenchimento */
-  --color-skin-fill-base: 40, 39, 40;
-  --color-skin-fill-accent: 0, 193, 106;
-}
-
-@theme {
-  /* Cores de texto */
-  --color-skin-text-base: 40, 39, 40;
-  --color-skin-text-accent: 0, 193, 106;
-  --color-skin-text-inverted: 251, 254, 251;
-
-  /* Cores de fundo */
-  --color-skin-background-fill: 251, 254, 251;
-  --color-skin-background-accent: 0, 193, 106;
-  --color-skin-background-inverted: 40, 39, 40;
-  --color-skin-background-card: 230, 230, 230;
-  --color-skin-background-card-muted: 205, 205, 205;
-
-  /* Cores de contorno */
-  --color-skin-outline-fill: 0, 193, 106;
-
-  /* Cores de borda */
-  --color-skin-border-line: 0, 193, 106;
-  --color-skin-border-fill: 40, 39, 40;
-  --color-skin-border-accent: 0, 193, 106;
-
-  /* Cores de preenchimento */
-  --color-skin-fill-base: 40, 39, 40;
-  --color-skin-fill-accent: 0, 193, 106;
-}
-
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-}
-
-@utility display-none {
-  @apply hidden;
-}
-
-@utility focus-outline {
-  @apply outline-2 outline-offset-1 focus-visible:no-underline focus-visible:outline-dashed;
-}
-
 @layer base {
   :root,
   html[data-theme="light"] {
@@ -209,3 +129,84 @@
     white-space: pre;
   }
 }
+
+
+@theme {
+  /* Cores de texto */
+  --color-skin-fill: var(--color-fill);
+  --color-skin-base: 40, 39, 40;
+  --color-skin-accent: 0, 193, 106;
+  --color-skin-inverted: 251, 254, 251;
+
+  /* Cores de fundo */
+  /* --color-skin-background-fill: 251, 254, 251;
+  --color-skin-background-accent: 0, 193, 106;
+  --color-skin-background-inverted: 40, 39, 40; */
+  --color-skin-card: 230, 230, 230;
+  --color-skin-card-muted: 205, 205, 205;
+
+  /* Cores de contorno */
+  --color-skin-outline-fill: 0, 193, 106;
+
+  /* Cores de borda */
+  --color-skin-border-line: 0, 193, 106;
+  --color-skin-border-fill: 40, 39, 40;
+  --color-skin-border-accent: 0, 193, 106;
+
+  /* Cores de preenchimento */
+  --color-skin-fill-base: 40, 39, 40;
+  --color-skin-fill-accent: 0, 193, 106;
+}
+
+@theme {
+  /* Cores de texto */
+  --color-skin-text-base: 40, 39, 40;
+  --color-skin-text-accent: 0, 193, 106;
+  --color-skin-text-inverted: 251, 254, 251;
+
+  /* Cores de fundo */
+  --color-skin-background-fill: 251, 254, 251;
+  --color-skin-background-accent: 0, 193, 106;
+  --color-skin-background-inverted: 40, 39, 40;
+  --color-skin-background-card: 230, 230, 230;
+  --color-skin-background-card-muted: 205, 205, 205;
+
+  /* Cores de contorno */
+  --color-skin-outline-fill: 0, 193, 106;
+
+  /* Cores de borda */
+  --color-skin-border-line: 0, 193, 106;
+  --color-skin-border-fill: 40, 39, 40;
+  --color-skin-border-accent: 0, 193, 106;
+
+  /* Cores de preenchimento */
+  --color-skin-fill-base: 40, 39, 40;
+  --color-skin-fill-accent: 0, 193, 106;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility display-none {
+  @apply hidden;
+}
+
+@utility focus-outline {
+  @apply outline-2 outline-offset-1 focus-visible:no-underline focus-visible:outline-dashed;
+}
+
