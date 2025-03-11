@@ -12,6 +12,10 @@ description: Some Goals for 2025
 
 ## Goals for my next year (2025)
 
-- Long term goal, take a 8k/dol / monthly working remotely for another company outside Brazil country.
+- [] Acquire Fluent English
 
-- Short term Goal, should be acquire advanced English.
+- [] Long term goal, take a 5~7k/dol / monthly working remotely for another company outside Brazil country.
+
+- [] Short term Goal, should be acquire advanced English.
+
+- [] Learn Go Lang
