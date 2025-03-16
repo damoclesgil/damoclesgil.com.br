@@ -48,11 +48,12 @@
   "editor.minimap.enabled": false,
   // "editor.fontFamily": "FiraMono Nerd Font",
   // "editor.fontFamily": "SpaceMono Nerd Font",
-  // "editor.fontFamily": "FiraCode Nerd Font",
   // "editor.fontFamily": "Operator Mono Lig",
   // "editor.fontFamily": "AnonymicePro Nerd Font",
   // "editor.fontFamily": "Inconsolata Nerd Font Mono",
   // "workbench.colorTheme": "Palenight Operator",
+  // "editor.fontFamily": "FiraCode Nerd Font",
+  "workbench.preferredDarkColorTheme": "SynthWave '84",
   "cSpell.words": ["Dâmocles", "damoclesgil", "Marçal"],
   "cSpell.enableFiletypes": [
     "!css",
