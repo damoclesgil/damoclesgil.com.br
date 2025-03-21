@@ -1,11 +1,12 @@
-version: "3"
-
 services:
   damoclesgil:
-    image: node:20
+    image: node:22
     ports:
       - 4321:4321
     working_dir: /app
-    command: npm run dev
+    command: sh -c "npm install -g npm@11.2.0 && npm install && npm run dev:host"
     volumes:
       - ./:/app
+      - /app/node_modules
+
+      # Para rodar isso no windows é necessário desabilitar o firewall do windows

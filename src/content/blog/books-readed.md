@@ -63,3 +63,47 @@ description: Livros que eu li no ano de 2024
 - Alguns exemplos de ativos: ações, fundos imobiliários, rendas fixas e empresas/negócios.
 - Imóvel (Uma casa que você compra para você) é um passivo, pois você não tem retorno.
 - O que te torna rico é quantidade de tempo que você não precisa mais trabalhar seria a tal da independência financeira.
+
+## Clean Code
+
+According to “Clean code” book by Uncle Bob, he defined some guidances and rules that developers should follow. This is more imperative for the less experienced developers. With more experience, comes the possibility of breaking some rules or reinventing them with justifications.
+
+### No code comments
+
+A good code needs no comment. The variables, methods, and any other component of the code such as attributes should use easily identifiable and descriptive names.
+
+### “Code comments are smell, remove them.”
+
+Dead comments or code should be deleted.
+Any unused piece of code or comments should be deleted. The best place to find them is in the version control systems.
+
+Incorrect behaviour at boundaries.
+Boundaries should always be unit tested. No behaviour should be assumed.
+
+### Positive conditionals
+
+Positive conditionals are easier to read than negative conditionals.
+
+### Standard architecture, coding, and design guidelines should be followed
+
+All the set standard architecture, coding, and design guidelines should be adhered to. Tools should also be used to ensure that this is accurate.
+
+### Good and Consistent naming
+
+Try to call variables, methods, classes to be understandable from the caller perspective. And it should be consistent.
+
+### KISS principle should be applied
+
+Needless complexity should be avoided. With increase in complexity, some design and codes in the system become useless. All designs and codes should be kept as simple as possible.
+
+### Use of exceptions instead of return codes
+
+In exceptional cases, an exception should be thrown, when the method fails to do its intended purpose. Null or return codes shouldn’t be used.
+
+### Make things small
+
+**Class** size and method size both matter.
+Typically, method should be small and compact in size. Ideally, <100 lines of code.
+
+Boy scout rule- Leave the campground cleaner than you found it.
+Leave the campground cleaner than you found it. Don’t ask for permission to refactor the code.
