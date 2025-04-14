@@ -4,7 +4,7 @@ pubDatetime: 2024-12-04T10:15:00Z
 title: Goals
 slug: goals
 featured: false
-draft: false
+draft: true
 tags:
   - goals
 description: Some Goals
@@ -86,3 +86,7 @@ description: Some Goals
 
 1. [ ] Meta 1: Mudar de casa
 1. [ ] Meta 2: Juntar pelo Menos 400 mil investidos.
+
+### Meta 2035
+
+1. [] Meta 1: Chegar no primeiro milhão.
