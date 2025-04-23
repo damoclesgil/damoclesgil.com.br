@@ -1,3 +1,15 @@
+---
+author: Dâmocles Gil Marçal
+pubDatetime: 2024-07-01T14:40:00Z
+title: linkedinho
+slug: linkedinho
+featured: false
+draft: true
+tags:
+  - linkedin
+description: linkedinho.
+---
+
 ## Linkedinho Busca Avançada
 
 Pesquisa booleana linkedin

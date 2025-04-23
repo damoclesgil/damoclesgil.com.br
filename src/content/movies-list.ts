@@ -101,4 +101,10 @@ export const MOVIES_LIST = [
     imgSrc:
       "https://m.media-amazon.com/images/M/MV5BMjEzOWVhMGMtYjdmYi00MTk1LWFhNjMtNDYzNjNlOGFmMDQ2XkEyXkFqcGc@._V1_.jpg",
   },
+  {
+    title: "Shot Caller",
+    href: "",
+    imgSrc:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Shot_Caller_poster.jpg/220px-Shot_Caller_poster.jpg",
+  },
 ];
