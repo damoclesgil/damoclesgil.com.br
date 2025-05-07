@@ -34,7 +34,7 @@ description: Livros que eu li no ano de 2024
 
 ## Pensar enriquece - Napoleon Hill
 
-- Todos os ricos tinham um proposito bem definido, por exemplo o do SteveJobs foi fazer um computador bonito e que o usuário vai ter uma melhor experiencia. O Jeff Bezos foi de criar a melhor solução de entrega e resolver a logística de livros. Do Markinho Zukemberg foi de criar um rede social na qual os usuário ficasem a maior parte do tempo presos.
+- Todos os ricos tinham um proposito bem definido, por exemplo o do SteveJobs foi fazer um computador bonito e que o usuário vai ter uma melhor experiencia. O Jeff Bezos foi de criar a melhor solução de entrega e resolver a logística de livros. Do Markinho Zukemberg foi de criar um rede social na qual os usuário ficarem a maior parte do tempo presos.
 - Ter uma ideia de empreender seria pensar o que faz falta no dia a dia. O melhor benefício do capitalismo é o poder de escolha, só se tem sucesso se seu produto/serviço sana o problema de alguém, então se tem um produto ruim basta vc não comprar e se tem um produto bom essa cara vai crescer.
 
 ## 15 Poder dos hábitos
@@ -77,8 +77,8 @@ A good code needs no comment. The variables, methods, and any other component of
 Dead comments or code should be deleted.
 Any unused piece of code or comments should be deleted. The best place to find them is in the version control systems.
 
-Incorrect behaviour at boundaries.
-Boundaries should always be unit tested. No behaviour should be assumed.
+Incorrect behavior at boundaries.
+Boundaries should always be unit tested. No behavior should be assumed.
 
 ### Positive conditionals
 
@@ -107,3 +107,9 @@ Typically, method should be small and compact in size. Ideally, <100 lines of co
 
 Boy scout rule- Leave the campground cleaner than you found it.
 Leave the campground cleaner than you found it. Don’t ask for permission to refactor the code.
+
+## Em nome do Povo
+
+- Este livro explica como funciona o dinheiro, como foi a origem da moeda de troca no início da humanidade, como era antes, bem legal mesmo porquê teve uma mudança bem grande para transformar no que é hoje.
+- Também explica o IPCA que é o índice que é refletido no preço dos produtos do consumidor e quem ajusta isso no final é os próprios consumidores aparentemente.
+- O livro também aborda uma parte interessante em relação a aposentadoria, que é um modelo insustentável feito no Brasil.

@@ -54,7 +54,14 @@
   // "workbench.colorTheme": "Palenight Operator",
   // "editor.fontFamily": "FiraCode Nerd Font",
   "workbench.preferredDarkColorTheme": "SynthWave '84",
-  "cSpell.words": ["Dâmocles", "damoclesgil", "Marçal"],
+  "cSpell.words": [
+    "Bezos",
+    "Dâmocles",
+    "damoclesgil",
+    "Marçal",
+    "Markinho",
+    "Zukemberg"
+  ],
   "cSpell.enableFiletypes": [
     "!css",
     "!javascript",
