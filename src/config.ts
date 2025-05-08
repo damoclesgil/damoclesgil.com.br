@@ -154,7 +154,7 @@ export const CAREER: CareerObjects = [
     active: true,
     startDate: "2019-11-29",
     description:
-      "I Worked in the development team as Lead Front-end in web projects. I use all my software architecture knowledge to improve performance, maintainability, scalability and readability. I also use my development skills with the best customer experience in mind, with disruptive and value generating solutions.",
+      "I worked as the Lead Front-End Developer on web projects, leveraging my expertise in software architecture to enhance performance, maintainability, scalability, and code readability. I focused on delivering high-quality user experiences through innovative, value-driven solutions.",
     // endDate: "2025-01-01",
   },
   {
@@ -164,7 +164,7 @@ export const CAREER: CareerObjects = [
     jobTitle: "Front-end Engineer",
     startDate: "2019-09-01",
     description:
-      "I worked on the development team as Front-End on the core project (NectarCRM) using the angularjs framework.",
+      "I contributed to the core project, NectarCRM, as a Front-End Developer, building features and interfaces using the AngularJS framework.",
     endDate: "2019-11-01",
   },
   {
@@ -172,8 +172,9 @@ export const CAREER: CareerObjects = [
     href: "https://daxplace.com.br/",
     active: false,
     jobTitle: "Full-stack developer",
-    description: `In Daxplace I used Vue in the Front-end, and with Node.js and Laravel in the Back-end.
-    Still, in the Daxplace Four, I had a bigger challenge, managing a team of Front-end developers. Yes, here I learned a lot about people and how they work.`,
+    description: `
+    At Daxplace, I worked with Vue.js on the Front-End and used both Node.js and Laravel on the Back-End.
+Still, during the Daxplace Four project, I faced a bigger challenge: leading a team of Front-End developers. This experience taught me a lot—not just about code, but about people and how they work.`,
     startDate: "2018-04-01",
     endDate: "2019-09-18",
   },
@@ -217,14 +218,16 @@ export const CAREER: CareerObjects = [
     description: `I worked building static websites, e-commerces, blogs and answering questions from people who would like to go into the digital/technological world to acquire more experience and knowledge.
     `,
   },
-  // {
-  //   company: "Grupo Pão de Açúcar(GPA)",
-  //   href: "https://www.grup.com/pt-pt/",
-  //   active: true,
-  //   jobTitle: "Supermaket Operator",
-  //   startDate: "2015-07-01",
-  //   endDate: "2015-01-27",
-  // },
+  {
+    company: "Grupo Pão de Açúcar(GPA)",
+    href: "https://www.grup.com/pt-pt/",
+    active: true,
+    jobTitle: "Supermaket Operator",
+    description:
+      "My first job was at a famous supermarket in Brazil. In this company, I was responsible for managing product stock, receiving customers, and attending to their needs.",
+    startDate: "2015-07-01",
+    endDate: "2016-06-27",
+  },
 ];
 export const SETUP_ITEMS = [
   {
@@ -234,7 +237,7 @@ export const SETUP_ITEMS = [
     name: "Gabinete Gamer NZXT H510 Preto, Mid Tower, Vidro Temperado.",
   },
   {
-    link: "https://www.kabum.com.br/produto/241048/processador-intel-core-i7-12700k-3-6ghz-5-0ghz-max-turbo-12-nucleos-20-threads-lga-1700-video-integrado-bx8071512700k?gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqvj0sIKdSyVsXz1Hf9aovmJnGmFbdps7E8lBhkVohVhNOV_ksC3F7RoC3_4QAvD_BwE",
+    link: "https://www.kabum.com.br/produto/241048/processador-intel-core-i7-12700k-3-6ghz-5-0ghz-max-turbo-12-nucleos-20-threads-lga-1700-video-integrado-bx8071512700k?gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqqpITgU_E00KRaAMGR4_DQkCLWhUMVvw6HGKFxaJZY55GxfhWx4j5hoCLhIQAvD_BwE",
     img: "https://images.kabum.com.br/produtos/fotos/241048/processador-intel-core-i7-12700k-cache-25mb-3-6ghz-5-0ghz-max-turbo-lga-1700-bx8071512700k_1634830258_gg.jpg",
     alt: "Processador",
     name: "Processador Intel 12th Gen Intel(R) Core(TM) i7-12700K 3.60 GHz",
