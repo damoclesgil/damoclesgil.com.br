@@ -3,6 +3,8 @@ import { SITE, SETUP_ITEMS } from "@config";
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
+import { Image } from "astro:assets";
+
 import Main from "@layouts/Main.astro";
 ---
 
@@ -10,11 +12,12 @@ import Main from "@layouts/Main.astro";
   <Header activeNav="setup" />
   <Main pageTitle="Setup 🖥️">
     <div class="mb-12">
-      <img
+      <Image
         src="/assets/images/setup_gil.jpg"
         width="1920"
         height="1080"
         alt="Setup Dâmocles Gil"
+        loading="eager"
         title="Setup Dâmocles Gil"
       />
       <h2 class="mt-5 mb-[-1.5rem] text-center text-lg">Desktop Computer</h2>
@@ -30,10 +33,13 @@ import Main from "@layouts/Main.astro";
             rel="noopener noreferrer"
           >
             <picture class="m-0 rounded-sm">
-              <img
+              <Image
                 class="mb-1 aspect-video h-auto w-full rounded-md rounded-b-none bg-white object-contain"
                 src={setup.img}
                 alt={setup.alt}
+                title={setup.name}
+                width={800}
+                height={450}
               />
               <strong class="mt-4 block text-lg font-bold">{setup.name}</strong>
             </picture>
@@ -66,10 +72,12 @@ import Main from "@layouts/Main.astro";
       rel="noopener noreferrer"
     >
       <picture class="m-0 rounded-sm">
-        <img
+        <Image
           class="mb-1 aspect-video h-auto w-full rounded-md rounded-b-none bg-white object-contain"
           src="https://m.media-amazon.com/images/I/61ltlqh4dqL._AC_SX679_.jpg"
           alt="Notebook Dell G3 3590"
+          width={865}
+          height={490}
         />
       </picture>
     </a>
@@ -86,10 +94,12 @@ import Main from "@layouts/Main.astro";
         rel="noopener noreferrer"
       >
         <picture class="m-0 rounded-sm">
-          <img
+          <Image
             class="mb-1 aspect-video h-auto w-full rounded-md rounded-b-none bg-white object-contain"
             src="https://a-static.mlcdn.com.br/800x560/celular-samsung-galaxy-s23-5g-512gb-8gb-ram-camera-tripla-50mp-12-10-tela-infinita-de-6-1/samsung/5532/c87ba7cc04dab5e514b5d203d20c1379.jpeg"
             alt="Samsung Galaxy S23 512GB"
+            width={865}
+            height={490}
           />
         </picture>
       </a>
@@ -107,10 +117,12 @@ import Main from "@layouts/Main.astro";
       rel="noopener noreferrer"
     >
       <picture class="m-0 rounded-sm">
-        <img
+        <Image
           class="mb-1 aspect-video h-auto w-full rounded-md rounded-b-none bg-white object-contain"
           src="https://samsungbrshop.vtexassets.com/arquivos/ids/221809-800-auto?v=638514865881430000&width=800&height=auto&aspect=true"
           alt="Samsung Galaxy S23 512GB"
+          width={865}
+          height={490}
         />
       </picture>
     </a>

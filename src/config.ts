@@ -273,11 +273,17 @@ export const SETUP_ITEMS = [
     name: "Monitor Gamer AOC Hero 27 Full HD, 144 Hz - G-SYNC e Free-Sync",
   },
   {
-    link: "https://pt.dhgate.com/product/royal-kludge-rk919-108-keys-usb-wired-keyboard/636280132.html",
-    img: "https://www.dhresource.com/webp/m/0x0/f2/albu/g15/M00/54/B3/rBVa3l_8zOGAIpUVAANPWPePuwI172.jpg",
-    alt: "TECLADO ROYAL KLUDGE RK919",
-    name: "Teclado ROYAL KLUDGE RK919",
+    link: "https://www.kabum.com.br/produto/111161/monitor-gamer-aoc-hero-27-full-hd-wide-144-hz-1ms-ips-hdmi-e-vga-g-sync-ajuste-de-angulo-27g2-bk?gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqt6x3h6QWDXQfCvbMnYCT4n-8R01QKPPj3VklQNNC3FazUD4ZTzevhoCXwIQAvD_BwE",
+    img: "https://images.kabum.com.br/produtos/fotos/111161/monitor-gamer-aoc-hero-w-led-27-widescreen-fhd-ips-hdmi-displayport-g-sync-compatible-144hz-1ms-altura-ajustavel-27g2-bk_1584370236_gg.jpg",
+    alt: "Monitor Gamer AOC",
+    name: "Monitor Gamer AOC Hero 27 Full HD, 144 Hz - G-SYNC e Free-Sync",
   },
+  // {
+  //   link: "https://pt.dhgate.com/product/royal-kludge-rk919-108-keys-usb-wired-keyboard/636280132.html",
+  //   img: "https://www.dhresource.com/webp/m/0x0/f2/albu/g15/M00/54/B3/rBVa3l_8zOGAIpUVAANPWPePuwI172.jpg",
+  //   alt: "TECLADO ROYAL KLUDGE RK919",
+  //   name: "Teclado ROYAL KLUDGE RK919",
+  // },
   {
     link: "https://www.google.com/search?q=k68+teclado&oq=k68+teclado",
     img: "https://lojabrmetaverso.com.br/cdn/shop/files/TecladoMecanicoK68SemFios26_1200x.png?v=1711558413",
@@ -304,13 +310,13 @@ export const SETUP_ITEMS = [
   },
   {
     link: "https://www.geniodesks.com.br/mesa-regulagem-eletrica/mesa-com-regulagem-de-altura-geniodesk-pro/produto-mesa-com-regulagem-de-altura-geniodesk-pro?fee=4&fep=337&gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqlZ51lCSNFHxqioZOuTvvAlrzwpBXUA3jTSiq4Pfoyvdfxu2_LdQTRoCsm0QAvD_BwE",
-    img: "https://www.geniodesks.com.br/media/catalog/product/cache/1/image/1200x/af097278c5db4767b0fe9bb92fe21690/a/c/acionador-_web_-_geniodesk_8.jpg",
+    img: "https://www.geniodesks.com.br/media/catalog/product/cache/1/image/1200x/af097278c5db4767b0fe9bb92fe21690/m/e/mesa_com_regulagem_de_altura_el_trica_-_geniodesk_pro_1.jpg",
     alt: "Mesa GenioDesk PRO ",
     name: "Mesa GenioDesk PRO ",
   },
   {
     link: "https://m.dxracer.com.br/cadeira-dxracer-f-series-p08nw-p2426355",
-    img: "https://ds92okzpvwldu.cloudfront.net/Custom/Content/Products/24/26/2426355_cadeira-dxracer-f-series-p08nw_m3_637878076946363675.png",
+    img: "/assets/images/cadeira_gamer_nex_max_preta_bran.jpg",
     alt: "Cadeira",
     name: "Cadeira Gamer DXRacer NEX MAX (PC188-NW)",
   },
@@ -328,10 +334,10 @@ export const SETUP_ITEMS = [
     name: "HyperX Microfone Gamer QuadCast",
   },
   {
-    link: "https://produto.mercadolivre.com.br/MLB-2023753268-suporte-articulado-p-microfones-hyperx-quadcast-e-solocast-_JM",
-    img: "https://http2.mlstatic.com/D_NQ_NP_665040-MLB53610704816_022023-O.webp",
-    alt: "Suporte Articulado",
-    name: "Suporte Articulado P/ Microfones Hyperx Quadcast E Solocast",
+    link: "https://www.amazon.com.br/FIFINE-microfone-adaptador-gerenciamento-ajust%C3%A1vel-BM88/dp/B0C45H4WG9/ref=asc_df_B0C45H4WG9?mcid=5216dbcd7c763499a4b71c92dbcb0b93&tag=googleshopp00-20&linkCode=df0&hvadid=709887777034&hvpos=&hvnetw=g&hvrand=12263391416439611207&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9217326&hvtargid=pla-2187330045731&language=pt_BR&gad_source=1&th=1",
+    img: "https://m.media-amazon.com/images/I/51iwlWH8v0L._AC_SX679_.jpg",
+    alt: "Suporte Articulado Fifine BM88",
+    name: "Suporte Articulado Fifine BM8",
   },
   {
     link: "https://www.pichau.com.br/fonte-xpg-core-reactor-750w-80-plus-gold-full-modular-preto-corereactor750g-bkcbr?gad_source=1&gclid=CjwKCAiA29auBhBxEiwAnKcSqhN22nVBW9Nlj-bLukzsjCrV4dH0qMTCuSbPUDNWME6fBpbTXw1iYhoCrNcQAvD_BwE",
@@ -344,6 +350,12 @@ export const SETUP_ITEMS = [
     img: "https://m.media-amazon.com/images/I/511Y7Yr9EEL._AC_SX679_.jpg",
     alt: "Webcam Full HD Logitech BRIO 500 Branco",
     name: "Webcam Full HD Logitech BRIO 500 Branco",
+  },
+  {
+    link: "https://www.kabum.com.br/produto/99173/mesa-controladora-streaming-elgato-stream-deck-mini-6-teclas-lcd-usb-10gai9901",
+    img: "https://images3.kabum.com.br/produtos/fotos/99173/99173_1542106672_index_g.jpg",
+    alt: "Mesa controladora Streaming Elgato Stream Deck Mini, 6 teclas LCD, USB",
+    name: "Mesa controladora Streaming Elgato Stream Deck Mini, 6 teclas LCD, USB",
   },
   {
     link: "https://produto.mercadolivre.com.br/MLB-1919131534-oculos-anti-raios-azuis-gamerleituranoturnotv-_JM?attributes=COLOR_SECONDARY_COLOR%3ASDEgLSBQcmV0byBjb20gTGVudGVzIEFtYXJlbGFz&quantity=1",
