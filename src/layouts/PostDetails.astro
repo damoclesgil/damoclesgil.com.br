@@ -65,7 +65,7 @@ const layoutProps = {
       </svg><span>Go back</span>
     </button>
   </div>
-  <main id="main-content">
+  <main id="main-content" class="post-content">
     <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
     <Datetime
       pubDatetime={pubDatetime}
@@ -102,14 +102,7 @@ const layoutProps = {
   <Footer />
 </Layout>
 
-<style>
-  main {
-    @apply mx-auto w-full max-w-4xl px-4 pb-12;
-  }
-  .post-title {
-    @apply text-2xl font-semibold text-skin-accent;
-  }
-</style>
+<style></style>
 
 <script is:inline>
   /** Create a progress indicator
@@ -181,7 +174,7 @@ const layoutProps = {
 
       const copyButton = document.createElement("button");
       copyButton.className =
-        "copy-code absolute right-3 -top-3 rounded bg-skin-card px-2 py-1 text-xs leading-4 text-skin-base font-medium";
+        "copy-code absolute right-3 -top-3 rounded hover:bg-skin-accent/70 px-2 py-1 text-xs leading-4 text-skin-base font-medium";
       copyButton.innerHTML = copyButtonLabel;
       codeBlock.setAttribute("tabindex", "0");
       codeBlock.appendChild(copyButton);

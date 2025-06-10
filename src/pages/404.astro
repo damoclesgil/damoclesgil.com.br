@@ -9,7 +9,7 @@ import LinkButton from "@components/LinkButton.astro";
 <Layout title={`404 Not Found | ${SITE.title}`}>
   <Header />
 
-  <main id="main-content">
+  <main id="main-content page-404">
     <div class="not-found-wrapper">
       <h1 aria-label="404 Not Found">404</h1>
       <span aria-hidden="true">¯\_(ツ)_/¯</span>
@@ -26,17 +26,4 @@ import LinkButton from "@components/LinkButton.astro";
   <Footer />
 </Layout>
 
-<style>
-  #main-content {
-    @apply mx-auto flex max-w-4xl flex-1 items-center justify-center;
-  }
-  .not-found-wrapper {
-    @apply mb-14 flex flex-col items-center justify-center;
-  }
-  .not-found-wrapper h1 {
-    @apply text-9xl font-bold text-skin-accent;
-  }
-  .not-found-wrapper p {
-    @apply mt-4 text-2xl sm:text-3xl;
-  }
-</style>
+<style></style>

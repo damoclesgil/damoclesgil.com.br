@@ -18,7 +18,7 @@ const { props } = Astro;
 ---
 
 <Breadcrumbs />
-<main id="main-content">
+<main id="main-content" class="main-content">
   {
     "titleTransition" in props ? (
       <h1>
@@ -35,14 +35,4 @@ const { props } = Astro;
   <slot />
 </main>
 
-<style>
-  #main-content {
-    @apply mx-auto w-full max-w-4xl px-4 pb-4;
-  }
-  #main-content h1 {
-    @apply text-2xl font-semibold sm:text-3xl;
-  }
-  #main-content p {
-    @apply mb-6 mt-2 italic;
-  }
-</style>
+<style></style>

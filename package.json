@@ -30,6 +30,7 @@
     "@iconify-json/tabler": "1.2.19",
     "@iconify-json/vscode-icons": "1.2.22",
     "@resvg/resvg-js": "2.6.2",
+    "@tailwindcss/vite": "^4.1.8",
     "astro": "5.9.2",
     "date-fns": "4.1.0",
     "fuse.js": "7.1.0",
@@ -38,14 +39,13 @@
     "remark-collapse": "0.1.2",
     "remark-toc": "9.0.0",
     "satori": "0.15.2",
-    "tailwindcss": "3.4.17",
+    "tailwindcss": "4.1.8",
     "typescript": "5.8.3",
     "typescript-eslint": "8.34.0"
   },
   "devDependencies": {
     "@astrojs/react": "4.3.0",
     "@astrojs/sitemap": "3.4.1",
-    "@astrojs/tailwind": "6.0.2",
     "@divriots/jampack": "0.33.1",
     "@tailwindcss/typography": "0.5.16",
     "@types/react": "19.1.7",

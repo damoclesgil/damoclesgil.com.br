@@ -1,0 +1,140 @@
+@import "tailwindcss";
+@config "../../tailwind.config.cjs";
+@plugin "@tailwindcss/typography";
+
+/* @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *)); */
+
+@custom-variant theme-dark (&:where([data-theme="dark"] *));
+
+
+@layer base {
+  :root {
+    --color-fill: 251, 254, 251;
+    --color-text-base: 40, 39, 40;
+    --color-accent: 0, 193, 106;
+    --color-card: 230, 230, 230;
+    --color-card-muted: 205, 205, 205;
+    --color-border: 0, 193, 106;
+  }
+  html[data-theme="dark"] {
+    --color-fill: 33, 39, 55;
+    --color-text-base: 234, 237, 243;
+    --color-accent: 0, 220, 130;
+    --color-card: 0, 96, 57;
+    --color-card-muted: 0, 91, 54;
+    --color-border: 0, 220, 130;
+  }
+  #sun-svg,
+  html[data-theme="dark"] #moon-svg {
+    display: none;
+  }
+  #moon-svg,
+  html[data-theme="dark"] #sun-svg {
+    display: block;
+  }
+}
+
+@theme { 
+  --font-display: "IBM Plex Mono", "sans-serif"; 
+  --color-fill: rgb(var(--color-fill)); 
+  --color-text-base: rgb(var(--color-base)); 
+  --color-accent: rgb(var(--color-accent)); 
+  --color-card: rgb(var(--color-card)); 
+  --color-card-muted: rgb(var(--color-card-muted)); 
+  --color-muted: rgb(var(--color-border)); 
+  --color-skin-accent: rgb(var(--color-accent)); 
+}
+
+@layer base {
+  body {
+    @apply flex min-h-[100vh] flex-col bg-[rgb(var(--color-fill))] font-mono text-[rgb(var(--color-text-base))] selection:bg-skin-accent/70;
+  }
+  section,
+  footer {
+    @apply mx-auto max-w-4xl px-4;
+  }
+  a {
+    @apply outline-2 outline-offset-1 outline-[rgb(var(--color-fill))] focus-visible:no-underline focus-visible:outline-dashed;
+  }
+  svg {
+    @apply inline-block h-6 w-6 fill-[rgb(var(--color-text-base))] group-hover:fill-[rgb(var(--color-accent))];
+  }
+  svg.iconify {
+    @apply h-8 w-8 fill-inherit;
+  }
+  svg.icon-tabler {
+    @apply scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110;
+  }
+  
+  .prose {
+    @apply prose-headings:!mb-3 prose-headings:!text-[rgb(var(--color-text-base))] prose-h3:italic prose-p:!text-[rgb(var(--color-text-base))] prose-a:!text-[rgb(var(--color-text-base))] prose-a:!decoration-dashed prose-a:underline-offset-8 hover:prose-a:text-[rgb(var(--color-accent))] prose-blockquote:!border-l-[rgb(var(--color-accent))/50] prose-blockquote:opacity-80 prose-figcaption:!text-[rgb(var(--color-text-base))] prose-figcaption:opacity-70 prose-strong:!text-[rgb(var(--color-text-base))] prose-code:rounded prose-code:bg-[rgb(var(--color-card))]/70  prose-code:p-1 prose-code:before:!content-none prose-code:after:!content-none prose-ol:!text-[rgb(var(--color-text-base))] prose-ul:overflow-x-clip prose-ul:!text-[rgb(var(--color-text-base))] prose-li:marker:!text-[rgb(var(--color-accent))] prose-table:text-[rgb(var(--color-text-base))] prose-th:border prose-th:border-[rgb(var(--color-border))] prose-td:border prose-td:border-[rgb(var(--color-border))] prose-img:!my-2 prose-img:mx-auto prose-img:border-2 prose-img:border-[rgb(var(--color-border))] prose-hr:!border-[rgb(var(--color-border))];
+  }
+  .prose a {
+    @apply break-words hover:!text-[rgb(var(--color-accent))];
+  }
+  
+  .prose thead th:first-child,
+  tbody td:first-child,
+  tfoot td:first-child {
+    padding-left: 0.5714286em;
+  }
+  .prose h2#table-of-contents {
+    @apply mb-2;
+  }
+  .prose details {
+    @apply inline-block cursor-pointer select-none text-[rgb(var(--color-text-base))];
+  }
+  .prose summary {
+    @apply outline-2 outline-offset-1 outline-[rgb(var(--color-fill))] focus-visible:no-underline focus-visible:outline-dashed;
+  }
+  .prose h2#table-of-contents + p {
+    @apply hidden;
+  }
+
+  /* ===== scrollbar ===== */
+  html {
+    overflow-y: scroll;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    @apply w-3;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-[rgb(var(--color-fill))];
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[rgb(var(--color-card))];
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[rgb(var(--color-card-muted))];
+  }
+
+  code,
+  blockquote {
+    word-wrap: break-word;
+  }
+
+  pre > code {
+    white-space: pre;
+  }
+}
+
+@layer components {
+  .display-none {
+    @apply hidden;
+  }
+  .focus-outline {
+    @apply outline-2 outline-offset-1 outline-[rgb(var(--color-fill))] focus-visible:no-underline focus-visible:outline-dashed;
+  }
+}
+
+
+@import "./header.css";
+@import "./others.css";

@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
@@ -8,6 +7,7 @@ import { SITE } from "./src/config";
 import mdx from "@astrojs/mdx";
 import icon from "astro-icon";
 import partytown from "@astrojs/partytown";
+import tailwindcss from "@tailwindcss/vite";
 
 // import vercel from "@astrojs/vercel/serverless";
 import vercel from "@astrojs/vercel";
@@ -16,9 +16,6 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
   site: SITE.website,
   integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
     react(),
     sitemap(),
     mdx(),
@@ -53,6 +50,7 @@ export default defineConfig({
     },
   },
   vite: {
+    plugins: [tailwindcss()],
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
     },
