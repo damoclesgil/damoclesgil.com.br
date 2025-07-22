@@ -126,15 +126,17 @@
   }
 }
 
-@layer components {
-  .display-none {
-    @apply hidden;
-  }
-  .focus-outline {
-    @apply outline-2 outline-offset-1 outline-[rgb(var(--color-fill))] focus-visible:no-underline focus-visible:outline-dashed;
-  }
-}
+
 
 
 @import "./header.css";
 @import "./others.css";
+
+@layer components {
+  /* .display-none {
+    @apply hidden !important;
+  } */
+  .focus-outline {
+    @apply outline-2 outline-offset-1 outline-[rgb(var(--color-fill))] focus-visible:no-underline focus-visible:outline-dashed;
+  }
+}
