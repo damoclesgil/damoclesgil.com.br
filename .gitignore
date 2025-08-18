@@ -42,3 +42,4 @@ pnpm-lock.yaml
 package-lock.json
 yarn-lock.json
 .pnpm-store/*
+.vscode/mcp.json
