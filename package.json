@@ -1,7 +1,7 @@
 {
   "name": "damoclesgil.com.br",
   "version": "2.0.0",
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.0.0",
   "scripts": {
     "dev": "astro dev",
     "dev:host": "astro dev --host",
