@@ -1,5 +1,11 @@
 export const MOVIES_LIST = [
   {
+    title: "Project Hail Mary",
+    href: "https://www.primevideo.com/dp/amzn1.dv.gti.414eb1af-ee27-476c-bc46-bedd48595f59?autoplay=0&ref_=atv_cf_strg_wb",
+    imgSrc:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThlZCHAC6LWAOw-ZHriSFzMau3h3KbpXcI_BDtiy8516N0nCBfMsdEy3zl5SlN_joylPKNvQ&s=10",
+  },
+  {
     title: "Repetente",
     href: "https://www.netflix.com/br/title/81761732",
     imgSrc:

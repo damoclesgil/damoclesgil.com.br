@@ -17,6 +17,26 @@ export type PROJECTS_TYPE = {
 
 export const ALL_PROJECTS = [
   {
+    year: "2026",
+    projects: [
+      {
+        title: "Organizer CSV ",
+        url: "https://organizer-csv.vercel.app/",
+        img: "assets/images/projects/organizer_csv.png",
+        description: "Organizer CSV handle your CSV online.",
+        active: true,
+        isNew: true,
+        stacks: [
+          "devicon:vuejs",
+          "devicon:tailwindcss",
+          "devicon:typescript",
+          "devicon:go",
+          "devicon:docker",
+        ],
+      },
+    ],
+  },
+  {
     year: "2024",
     projects: [
       {
@@ -141,7 +161,8 @@ export const ALL_PROJECTS = [
       },
       {
         title: "Calculato Folha",
-        description: "Payroll system",
+        description:
+          "Payroll system very complete, Comprehensive metrics on hiring, salary payments, terminations, taxes, and other obligations. The system also integrates with eSocial, offering full workforce management for your company. Additionally, it enables direct communication with employees through the Worker App.",
         url: "https://folha.calculato.com.br/",
         img: "assets/images/projects/calculato-folha.png",
         active: true,
